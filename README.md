@@ -17,4 +17,3 @@ Big thank you to Potion Seller (Check out their great mission trees and modifica
 
 To install create a new mod using the Paradox launcher, and add Ante Bellum as a dependency to the descriptor file, and then copy over all files into your new mod folder.
 
-![alt text](https://github.com/Skullcrusher896/ABF/blob/[main]/thumbnail.png?raw=true)
