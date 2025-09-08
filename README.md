@@ -16,3 +16,5 @@ I plan to continue adding more smaller gameplay adjustments like these to the mo
 Big thank you to Potion Seller (Check out their great mission trees and modifications), suoncha (creator of The Lost World), and NewYoung (ABE) for all their help getting this off the ground!
 
 To install create a new mod using the Paradox launcher, and add Ante Bellum as a dependency to the descriptor file, and then copy over all files into your new mod folder.
+
+![alt text](https://github.com/Skullcrusher896/ABF/blob/[main]/thumbnail.png?raw=true)
