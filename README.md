@@ -46,7 +46,7 @@ V 0.02 "Whisper of the East"
  - Added decision to release Celtic Union as a personal union under Gallia 
  - Varangian Culture for Norse countries 
  - Wendish Culture Spread in Germany 
- - Shahi Diwan Mechanic, no assimilation outside of Iran and India, but bonuses for assimilating Indian and Iranian buffed!
+ - Shahi Diwan Mechanic, nassimilation outside of Iran and India grants no bonsues, but bonuses for assimilating Indian and Iranian buffed!
  
 ### Bug Fixes ####
 - Renamed German cultures to be more in line with naming conventions
@@ -55,3 +55,6 @@ V 0.02 "Whisper of the East"
 - Fixed Sino-Japanese Spread and renamed Culture to Fusau (representing references to Japan in Chinese culture)
 - Fixed Japanese government reforms to be available for Sino-Japanese culture 
 - Standardized tool tip color coding 
+- Fixed Ghurid assimilation not having localization 
+
+
