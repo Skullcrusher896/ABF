@@ -1,0 +1,160 @@
+
+#Hindusthani Assimilation Bonus - Shahi
+on_province_owner_change = {
+SHH = {
+    if = {
+      limit = {
+        NOT = {
+        any_province = { 
+            culture_group = hindusthani
+            NOT = { 
+                owned_by = ROOT 
+                }
+            }
+        }
+      }
+      add_country_modifier = {
+        name = ABA_SHH_hindusthani_assimilated
+        duration = -1
+      }
+  }
+  else_if = {
+  limit = {
+    any_province = {
+      culture_group = hindusthani
+      NOT = { owned_by = ROOT }
+    }
+    has_country_modifier = ABA_SHH_hindusthani_assimilated
+  }
+  remove_country_modifier = ABA_SHH_hindusthani_assimilated
+   }
+  }
+}
+
+#Western Aryan Assimilation Bonus - Shahi
+on_province_owner_change = {
+SHH = {
+    if = {
+      limit = {
+        NOT = {
+        any_province = { 
+            culture_group = western_aryan
+            NOT = { 
+                owned_by = ROOT 
+                }
+            }
+        }
+      }
+      add_country_modifier = {
+        name = ABA_SHH_w_aryan_assimilated
+        duration = -1
+      }
+  }
+  else_if = {
+  limit = {
+    any_province = {
+      culture_group = western_aryan
+      NOT = { owned_by = ROOT }
+    }
+    has_country_modifier = ABA_SHH_w_aryan_assimilated
+  }
+  remove_country_modifier = ABA_SHH_w_aryan_assimilated
+   }
+  }
+}
+
+#Eastern Aryan Assimilation Bonus - Shahi
+on_province_owner_change = {
+SHH = {
+    if = {
+      limit = {
+        NOT = {
+        any_province = { 
+            culture_group = eastern_aryan
+            NOT = { 
+                owned_by = ROOT 
+                }
+            }
+        }
+      }
+      add_country_modifier = {
+        name = ABA_SHH_e_aryan_assimilated
+        duration = -1
+      }
+  }
+  else_if = {
+  limit = {
+    any_province = {
+      culture_group = eastern_aryan
+      NOT = { owned_by = ROOT }
+    }
+    has_country_modifier = ABA_SHH_e_aryan_assimilated
+  }
+  remove_country_modifier = ABA_SHH_e_aryan_assimilated
+   }
+  }
+}
+
+#Eastern Aryan Assimilation Bonus - Shahi
+on_province_owner_change = {
+SHH = {
+    if = {
+      limit = {
+        NOT = {
+        any_province = { 
+            culture_group = dravidian
+            NOT = { 
+                owned_by = ROOT 
+                }
+            }
+        }
+      }
+      add_country_modifier = {
+        name = ABA_SHH_dravidian_assimilated
+        duration = -1
+      }
+  }
+  else_if = {
+  limit = {
+    any_province = {
+      culture_group = dravidian
+      NOT = { owned_by = ROOT }
+    }
+    has_country_modifier = ABA_SHH_dravidian_assimilated
+  }
+  remove_country_modifier = ABA_SHH_dravidian_assimilated
+   }
+  }
+}
+
+#Central Indian Assimilation Bonus - Shahi
+on_province_owner_change = {
+SHH = {
+    if = {
+      limit = {
+        NOT = {
+        any_province = { 
+            culture_group = central_indic
+            NOT = { 
+                owned_by = ROOT 
+                }
+            }
+        }
+      }
+      add_country_modifier = {
+        name = ABA_SHH_central_indic_assimilated
+        duration = -1
+      }
+  }
+  else_if = {
+  limit = {
+    any_province = {
+      culture_group = central_indic
+      NOT = { owned_by = ROOT }
+    }
+    has_country_modifier = ABA_SHH_central_indic_assimilated
+  }
+  remove_country_modifier = ABA_SHH_central_indic_assimilated
+   }
+  }
+}

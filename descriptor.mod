@@ -8,7 +8,7 @@ tags={
 	"Religion"
 	"National Ideas"
 }
-name="Ante Bellum Flavor Expanded"
+name="Ante Bellum Flavor"
 dependencies={
 	"Ante Bellum"
 }
