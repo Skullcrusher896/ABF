@@ -17,7 +17,6 @@ Big thank you to Potion Seller (Check out their great mission trees and modifica
 
 To install create a new mod using the Paradox launcher, and add Ante Bellum as a dependency to the descriptor file, and then copy over all files into your new mod folder.
 
-<<<<<<< HEAD
 -------- UPDATE V.0.1----Initial Release-----
 -Sino-japanese conversion upon taking Mandate of Heaven
 -Korean-Japanese settler culture
