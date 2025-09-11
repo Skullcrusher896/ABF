@@ -57,6 +57,19 @@ V 0.02 "Whisper of the East"
 - Standardized tool tip color coding 
 - Fixed Ghurid assimilation not having localization 
 
+-------- UPDATE V.0.3----Mission Pack 1----
+V0.03 "Mission Pack"
+- New Polish/Intermarium Missions
+- New Shahi Missions
+- Ability for Poland to convert the Lavra into a Catholic Cathedral 
+- Ability to rename Intermarium after formation
+- Added Cossack culture spread for Hetmanate
+- Gaelic Religion for Gallia 
+
+### Bug Fixes ####
+- fixed tooltips to remove certain articles
+- Renamed Yugoslavian German culture to Jugoschwäbisch
+
 
 =======
 >>>>>>> d7f19dd7fcae844d4933afc63f47aaba75470395
