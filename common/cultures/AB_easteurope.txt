@@ -1577,6 +1577,19 @@ east_slavic = {
 			Anastasiya Predslava Zbyslava Anna Kateryna Maria
 		}
 	}
+	aba_malorussian_culture = {
+		male_names = {
+			Ivan Dmytro Yuriy Andriy Semen Borys Fedir Oleg Afanasiy Akim Oleksandr Olexei Anatoliy Arkadiy 
+			Dorofiy Feodosiy Feofilakt Gavryil Innokentiy Iosif Lavrentiy Makariy Matviy Mykhailo Nazariy 
+			Onisim Pavlo Prokip Petro Radomyr Saveliy Sergiy Terentiy Valeriy Yakim Yevgeniy Yaroslav Yaropolk 
+			Vyacheslav Vsevolod Igor Izyaslav Rostyslav Volodymyr Mstyslav Glib Roman Ryuryk Svyatoslav Ingvar 	
+			Stanislav Danyil Nykifor
+		}
+		female_names = {
+			Gavryila Larysa Oleksandra Alla Bronyslava Svitlana Yuliya Yaroslava Vladyslava Lyudmyla Nadija Rostyslava
+			Anastasiya Predslava Zbyslava Anna Kateryna Maria
+		}
+	}
 	aba_kharbinskiye_cossack_culture = { 
 		male_names = {
 			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 

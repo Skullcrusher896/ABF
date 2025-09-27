@@ -70,6 +70,15 @@ V0.03 "Mission Pack"
 - fixed tooltips to remove certain articles
 - Renamed Yugoslavian German culture to Jugoschwäbisch
 
+-------- UPDATE V.0.4----Mission Pack 2 - Mini Update ----
+- New Hetmanate/Zaphorizhzhia Tree
+
+### Bug Fixes ####
+- Fixed modifier for Great Trunk Road
+- Integrate new patch for Netherlands tree 
+- Balanced Cossack regiment modifier 
+- Fixed Silesian culture spawn 
+
 
 =======
 >>>>>>> d7f19dd7fcae844d4933afc63f47aaba75470395
