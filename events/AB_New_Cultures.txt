@@ -929,9 +929,7 @@ province_event = {
 		}
 		religion = orthodox
 		NOT = {
-			OR = {
-				culture_group = east_slavic
-			}
+			culture_group = east_slavic
 		}
 		OR = {
 			    area = crimea_area
@@ -1259,7 +1257,6 @@ province_event = {
 	title = ab_new_cultures.30.t
 	desc = ab_new_cultures.30.d
 	picture = CULTURE_eventPicture
-
 	hidden = yes
 
 	mean_time_to_happen = {
@@ -1270,20 +1267,18 @@ province_event = {
 		owner = {
 			has_country_flag = aba_malorussian_cossack_culture_spread
 		}
+		religion = orthodox
 		NOT = {
-				culture_group = east_slavic
+			culture_group = east_slavic
 		}
-		OR = {
 		region = baltic_region
-	  }
-			religion = orthodox
 	}
 
 	option = {
 		name = ab_new_cultures.30.a
-		change_culture = aba_malorussian_culture
+		change_culture = aba_malorussian_cossack_culture
+		change_original_culture = aba_malorussian_cossack_culture
 	}
-
 }
 
 
