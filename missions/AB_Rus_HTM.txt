@@ -148,9 +148,6 @@ cossack_first_group = {
 			province_id = 2406
 		}
 		trigger = { 
-			5172 =  {
-				base_production = 5
-			}
 			280 = {
 				base_production = 5
 			}
@@ -165,9 +162,6 @@ cossack_first_group = {
 			}
 		}
 		effect = { 
-			5172 = {
-				add_building = workshop
-			}
 			280 = {
 				add_building = workshop
 			}
@@ -2196,7 +2190,6 @@ cossack_fifth_group = {
 		}
 		trigger = { 
 			average_home_autonomy = 0.00
-			average_unrest = -1
 			government_rank = 3
 		}
 		effect = { 
