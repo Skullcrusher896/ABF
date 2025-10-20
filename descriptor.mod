@@ -11,6 +11,7 @@ tags={
 name="Ante Bellum Flavor"
 dependencies={
 	"Ante Bellum"
+	"战争前夜汉化"
 }
 picture="thumbnail.png"
 supported_version="v1.37.5.0"
