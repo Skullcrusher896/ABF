@@ -282,6 +282,7 @@ ABA_ahin_posh = {
 	#can we build it?
 	build_trigger = {
 			owner = {
+				mission_completed = tcr_purushapura
 				OR = {
 					tag = SLH
 					tag = KRR
@@ -289,9 +290,6 @@ ABA_ahin_posh = {
 					was_tag = SLH
 					was_tag = KRR
 					was_tag = KUC
-				}
-				OR = {
-					mission_completed = tcr_purushapura 
 				}
 				OR = {
 					has_country_flag = ABA_TCR_India
@@ -325,7 +323,8 @@ ABA_ahin_posh = {
 					religion = mahayana
 				}
 			}
-	}
+		}
+	
 
 	#what to do when it's built
 	on_built = {
@@ -341,6 +340,7 @@ ABA_ahin_posh = {
 	can_use_modifiers_trigger = {
 		OR = {
 			owner = {
+				mission_completed = tcr_purushapura
 				OR = {
 					tag = SLH
 					tag = KRR
@@ -348,9 +348,6 @@ ABA_ahin_posh = {
 					was_tag = SLH
 					was_tag = KRR
 					was_tag = KUC
-				}
-				OR = {
-					mission_completed = tcr_purushapura 
 				}
 				OR = {
 					has_country_flag = ABA_TCR_India
@@ -391,6 +388,7 @@ ABA_ahin_posh = {
 	can_upgrade_trigger = {
 		OR = {
 			owner = {
+				mission_completed = tcr_purushapura 
 				OR = {
 					tag = SLH
 					tag = KRR
@@ -398,9 +396,6 @@ ABA_ahin_posh = {
 					was_tag = SLH
 					was_tag = KRR
 					was_tag = KUC
-				}
-				OR = {
-					mission_completed = tcr_purushapura 
 				}
 				OR = {
 					has_country_flag = ABA_TCR_India
@@ -596,6 +591,7 @@ ABA_ahin_posh = {
 		}
 	}
 }
+  
 
 ABA_chashma_i_shir = {
 	# province it starts in
@@ -627,6 +623,7 @@ ABA_chashma_i_shir = {
 	#can we build it?
 	build_trigger = {
 			owner = {
+				mission_completed = tcr_rebuild_bactra
 				OR = {
 					tag = SLH
 					tag = KRR
@@ -634,9 +631,6 @@ ABA_chashma_i_shir = {
 					was_tag = SLH
 					was_tag = KRR
 					was_tag = KUC
-				}
-				OR = {
-					mission_completed = tcr_rebuild_bactra
 				}
 				OR = {
 					has_country_flag = ABA_TCR_Persia
@@ -658,6 +652,7 @@ ABA_chashma_i_shir = {
 	can_use_modifiers_trigger = {
 		OR = {
 			owner = {
+				mission_completed = tcr_rebuild_bactra
 				OR = {
 					tag = SLH
 					tag = KRR
@@ -665,9 +660,6 @@ ABA_chashma_i_shir = {
 					was_tag = SLH
 					was_tag = KRR
 					was_tag = KUC
-				}
-				OR = {
-					mission_completed = tcr_rebuild_bactra
 				}
 				OR = {
 					has_country_flag = ABA_TCR_Persia
@@ -680,6 +672,7 @@ ABA_chashma_i_shir = {
 	can_upgrade_trigger = {
 		OR = {
 			owner = {
+				mission_completed = tcr_rebuild_bactra
 				OR = {
 					tag = SLH
 					tag = KRR
@@ -687,9 +680,6 @@ ABA_chashma_i_shir = {
 					was_tag = SLH
 					was_tag = KRR
 					was_tag = KUC
-				}
-				OR = {
-					mission_completed = tcr_rebuild_bactra
 				}
 				OR = {
 					has_country_flag = ABA_TCR_Persia

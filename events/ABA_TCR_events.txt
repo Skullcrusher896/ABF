@@ -23,7 +23,9 @@ country_event = {
  				limit = { has_custom_ideas = no }
  				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-		
+		change_country_color = { 
+     	color = { 33  96  48 } 
+		}
 	}
 
 	option = { #Persia
@@ -39,6 +41,9 @@ country_event = {
  				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
  			}
+		change_country_color = { 
+     	color = { 86 17  62 }
+		}
 	}
 
 	option = { #China
@@ -55,8 +60,11 @@ country_event = {
 				limit = { has_custom_ideas = no }
  				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-	   }
+		change_country_color = { 
+     	color = { 249 191 1 }
+		}
 	}
+}
 
 
 #Indian Religion #1
