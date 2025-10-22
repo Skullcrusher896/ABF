@@ -3479,7 +3479,10 @@ ab_persia_zun_19 = {
 			448 = {
 				has_tax_building_trigger = yes
 			}
+			custom_trigger_tooltip = {
+			tooltip = ABA_ZUN_UNLOCKED_PATH
 			has_country_flag = ABA_zun_ghazni
+			}
 		}
 		
 		provinces_to_highlight = {
