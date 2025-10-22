@@ -1,4 +1,8 @@
 ﻿l_english:
+
+#GUI Modding
+AB_UNLOCK_MISSION_SWITCH: "§GUnlocks§! §YMission Switch§!, allows us to switch between different mission trees in the §YMission Tab§!."
+
 # Cultures #
 #Asia
  japanese_nikkei: "Nikkei"
