@@ -1084,6 +1084,7 @@ country_event = {
 				}
 			  }
 			}
+			set_country_flag = ABA_tcr_built_mathura_temple_allowed
 			524 = {
 				add_great_project = {
 				type = ABA_temple_of_mathura_buddhist_hindu
@@ -1106,6 +1107,7 @@ country_event = {
 					religion = nestorian
 				}
 			  }
+			set_country_flag = ABA_tcr_built_mathura_temple_allowed  
 			524 = {
 				add_great_project = {
 				type = ABA_temple_of_mathura_christian
@@ -1128,6 +1130,7 @@ country_event = {
 					religion = zoroastrian
 				}
 			  }
+			set_country_flag = ABA_tcr_built_mathura_temple_allowed  
 			524 = {
 				add_great_project = {
 				type = ABA_temple_of_mathura_zoroastrianism
