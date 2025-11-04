@@ -90,21 +90,12 @@ country_event = {
 }
 
 #Mission Switch
-#Mission Switch
 country_event = {
 	id = aba_zun_event.4
 	title = aba_zun_event.4.t
 	desc = aba_zun_event.4.d
 	picture = AB_ECLIPSE_eventPicture
 	
-  is_triggered_only = yes
-
-    immediate = {
-        hidden_effect = {
-            clr_country_flag = ABA_zun_persia_path
-            clr_country_flag = ABA_zun_india_path
-        }
-    }
   is_triggered_only = yes
 
     immediate = {
@@ -120,9 +111,6 @@ country_event = {
 		set_country_flag = ABA_zun_india_path
 		swap_non_generic_missions = yes
 		complete_mission = zuni_overpower
-		complete_mission = zuni_zunbils
-		complete_mission = zuni_forward
-		complete_mission = zuni_unite
 		complete_mission = zuni_zunbils
 		complete_mission = zuni_forward
 		complete_mission = zuni_unite
