@@ -15,4 +15,5 @@ dependencies={
 }
 picture="thumbnail.png"
 supported_version="v1.37.5.0"
+path="mod/ABF"
 remote_file_id="3564325360"

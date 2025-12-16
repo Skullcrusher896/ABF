@@ -20,6 +20,9 @@ country_event = {
 			complete_mission = zuni_forward
 			complete_mission = zuni_unite
 		}
+		set_country_flag = ab_unlock_mission_switch
+		custom_tooltip = AB_UNLOCK_MISSION_SWITCH
+		country_event = { id = aba_zun_event.5 } #Trigger color choice event
 	}
 
 	option = {
@@ -33,6 +36,9 @@ country_event = {
 			complete_mission = zunp_forward
 			complete_mission = zunp_unite
 		}
+		set_country_flag = ab_unlock_mission_switch
+		custom_tooltip = AB_UNLOCK_MISSION_SWITCH
+		country_event = { id = aba_zun_event.5 } #Trigger color choice event
 	}
 }
 
@@ -83,26 +89,107 @@ country_event = {
 	}
 }
 
-#Switch Focus Westward 
+#Mission Switch
 country_event = {
 	id = aba_zun_event.4
 	title = aba_zun_event.4.t
 	desc = aba_zun_event.4.d
 	picture = AB_ECLIPSE_eventPicture
 	
-	is_triggered_only = yes
-	
-	hidden = yes
+  is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            clr_country_flag = ABA_zun_persia_path
+            clr_country_flag = ABA_zun_india_path
+        }
+    }
 
 	option = {
 		name = aba_zun_event.4.a
+		clr_country_flag = ABA_zun_persia_path
+		set_country_flag = ABA_zun_india_path
+		swap_non_generic_missions = yes
+		complete_mission = zuni_overpower
+		complete_mission = zuni_zunbils
+		complete_mission = zuni_forward
+		complete_mission = zuni_unite
+		if = {
+			limit = {
+				mission_completed = zunp_rebuild
+			}
+			complete_mission = zuni_rebuild
+		}
+		if = {
+			limit = {
+				mission_completed = zunp_court
+			}
+			complete_mission = zuni_court
+		}
+		if = {
+			limit = {
+				mission_completed = zunp_cloth
+			}
+			complete_mission = zuni_cloth
+		}
+		if = {
+			limit = {
+				mission_completed = zunp_caravans
+			}
+			complete_mission = zuni_caravans
+		}
+		if = {
+			limit = {
+				mission_completed = zunp_silk_road
+			}
+			complete_mission = zuni_silk_road
+		}
+		if = {
+			limit = {
+				mission_completed = zunp_industralize
+			}
+			complete_mission = zuni_industralize
+		}
+		if = {
+			limit = {
+				mission_completed = zunp_cities
+			}
+			complete_mission = zuni_cities
+		}
+		if = {
+			limit = {
+				mission_completed = zunp_shrines
+			}
+			complete_mission = zuni_shrines
+		}
+		if = {
+			limit = {
+				mission_completed = zunp_wrath
+			}
+			complete_mission = zuni_wrath
+		}
+		if = {
+			limit = {
+				mission_completed = zunp_sah_bahar
+			}
+			complete_mission = zuni_sah_bahar
+		}
+		if = {
+			limit = {
+				mission_completed = zunp_coast_2
+			}
+			complete_mission = zuni_coast_2
+		}
+	}
+
+	option = { #Persia Path
+		name = aba_zun_event.4.b
 		clr_country_flag = ABA_zun_india_path
 		set_country_flag = ABA_zun_persia_path
 		swap_non_generic_missions = yes
 		complete_mission = zunp_overpower
-			complete_mission = zunp_zunbils
-			complete_mission = zunp_forward
-			complete_mission = zunp_unite
+		complete_mission = zunp_zunbils
+		complete_mission = zunp_unite
 		if = {
 			limit = {
 				mission_completed = zuni_rebuild
@@ -172,7 +259,7 @@ country_event = {
 	}
 }
 
-#Switch Focus Eastward 
+#Choose Color
 country_event = {
 	id = aba_zun_event.5
 	title = aba_zun_event.5.t
@@ -180,83 +267,15 @@ country_event = {
 	picture = AB_ECLIPSE_eventPicture
 	
 	is_triggered_only = yes
-	
-	hidden = yes
 
-	option = {
+	option = { #Keep Rob Purple
 		name = aba_zun_event.5.a
-		clr_country_flag = ABA_zun_persia_path
-		set_country_flag = ABA_zun_india_path
-		swap_non_generic_missions = yes
-		complete_mission = zuni_overpower
-			complete_mission = zuni_zunbils
-			complete_mission = zuni_forward
-			complete_mission = zuni_unite
-		if = {
-			limit = {
-				mission_completed = zunp_rebuild
-			}
-			complete_mission = zuni_rebuild
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_court
-			}
-			complete_mission = zuni_court
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_cloth
-			}
-			complete_mission = zuni_cloth
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_caravans
-			}
-			complete_mission = zuni_caravans
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_silk_road
-			}
-			complete_mission = zuni_silk_road
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_industralize
-			}
-			complete_mission = zuni_industralize
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_cities
-			}
-			complete_mission = zuni_cities
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_shrines
-			}
-			complete_mission = zuni_shrines
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_wrath
-			}
-			complete_mission = zuni_wrath
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_sah_bahar
-			}
-			complete_mission = zuni_sah_bahar
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_coast_2
-			}
-			complete_mission = zuni_coast_2
+	}
+
+	option = { #Zun Pearl White
+		name = aba_zun_event.5.b
+		change_country_color = { 
+			color = { 255 255 255 }
 		}
 	}
 }

@@ -293,9 +293,12 @@ ab_persia_tcr_china_1 = {
 			tcr_raise_banners
 		}
 		provinces_to_highlight = { 
+		OR = {
 		province_id = 2109
 		province_id = 2111
 		province_id = 2107	
+		}
+		NOT = { base_production = 8 }
 		}
 		trigger = { 
 			2109 = {
@@ -380,11 +383,14 @@ ab_persia_tcr_china_1 = {
 			tcr_xinan
 		}
 		provinces_to_highlight = { 
+			OR = {
 			area = fujian_area
 			province_id = 2173
 			province_id = 673
 			province_id = 4199
 			province_id = 681
+			}
+			NOT = { has_production_building_trigger = yes }
 		}
 		trigger = { 
 			fujian_area = {
@@ -461,12 +467,14 @@ ab_persia_tcr_china_1 = {
 			tcr_china_reunite
 		}
 		provinces_to_highlight = { 
+		OR = {
 		province_id = 5106
 		province_id = 668
 		province_id = 667
 		province_id = 669
 		province_id = 2149
 		province_id = 5083
+		}
 		}
 		trigger = {
 			5106 = {
@@ -571,7 +579,7 @@ ab_persia_tcr_china_1 = {
 			tcr_indo_china_campaign
 		}
 		provinces_to_highlight = { 
-			region = malaya_region
+			area = malacca_area
 			NOT = { country_or_subject_holds = ROOT }
 		}
 		trigger = { 
@@ -793,6 +801,7 @@ ab_persia_tcr_india_1 = {
 				}
 				custom_tooltip = ABA_TCR_purushapura_ahin_posh_project_tt
 				hidden_effect = {
+				set_country_flag = ABA_TCR_purushapura_ahin_posh_project_allowed
 				578 = {
 					add_great_project = {
 						type = ABA_ahin_posh
@@ -817,10 +826,12 @@ ab_persia_tcr_india_1 = {
 			tcr_gujurat
 		}
 		provinces_to_highlight = { 
+			OR = {
 			province_id = 4457
 			province_id = 517
 			province_id = 529
 			province_id = 2089
+			}
 		}
 		trigger = { 
 			4457 = {
@@ -1925,21 +1936,7 @@ ab_persia_tcr_2 = {
 				name = tcr_trade
 				duration = 7300
 			}
-			kyzylkum_area  = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			syr_darya_area  = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			balchasj_area  = {
+			central_asia_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -2071,6 +2068,13 @@ ab_persia_tcr_china_2 = {
 				}
 			}
 		}
+			korea_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 			manchuria_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -2130,13 +2134,6 @@ ab_persia_tcr_china_2 = {
 			add_country_modifier = {
 				name = "yua_china_reconquest"
 				duration = 9125
-			}
-			xinan_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -2560,10 +2557,16 @@ ab_persia_tcr_india_2 = {
 			monthly_adm = 10
 			monthly_dip = 10
 			monthly_mil = 10
+			OR = {
 			estate_loyalty = {
 				estate = estate_burghers
 				loyalty = 60
 			}
+			estate_loyalty = {
+				estate = estate_jains
+				loyalty = 60
+			}
+		}
 
 		}
 		effect = {
@@ -3665,13 +3668,6 @@ ab_persia_tcr_china_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			mongolia_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 
@@ -3879,7 +3875,7 @@ ab_persia_tcr_china_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			vietnam_area = {
+			indo_china_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -4767,7 +4763,8 @@ ab_persia_tcr_india_3 = {
 			trc_confederal_army
 		}
 		provinces_to_highlight = { 
-			region = west_india_region
+			area = marwar_area
+			area = jangladesh_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = { 
@@ -4972,23 +4969,10 @@ ab_persia_tcr_persia_3 = {
 
 		effect = {
 			add_war_exhaustion = -3
+			add_mil_power = 50
 			add_country_modifier = {
 				name = per_march
 				duration = 5475
-			}
-			palestine_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			trans_jordan_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -5710,6 +5694,21 @@ ab_persia_tcr_china_4 = {
 				name = "tcr_cutting"
 				duration = 5475
 			}
+			south_hebei_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			hebei_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
 		}
 	}
 
@@ -5777,8 +5776,10 @@ ab_persia_tcr_china_4 = {
 			tcr_china_reunite
 		}
 		provinces_to_highlight = { 
-			area = northern_kyushu
-			area = kyushu_area
+			OR = {
+				area = northern_kyushu
+				area = kyushu_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = { 
@@ -5792,8 +5793,8 @@ ab_persia_tcr_china_4 = {
 			}
 		}
 		effect = { 
-			custom_tooltip = abf_chi_japan_culture_convert_tt
-			set_country_flag = sinicized_japanese_culture_spread
+			custom_tooltip = abf_chi_japan_culture_convert_tcr_tt
+			set_country_flag = tcr_sinicized_japanese_culture_spread
 			country_event = { id = ABA_tcr_event.15 }
 		}
 	}
@@ -6212,8 +6213,10 @@ ab_persia_tcr_india_4 = {
 			tcr_center_of_world
 		}
 		provinces_to_highlight = { 
+		OR = {
 		province_id = 524
 		province_id = 578
+		}
 		}
 		trigger = { 
 			legitimacy = 75
@@ -6451,21 +6454,7 @@ ab_persia_tcr_persia_4 = {
 				id = ab_persia.4
 			}
 			custom_tooltip = AB_EMPTY
-			aleppo_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			syria_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			syrian_desert_area = {
+			mashriq_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
@@ -6578,11 +6567,13 @@ ab_persia_tcr_persia_4 = {
 			tcr_turkey
 		}
 		provinces_to_highlight = { 
+			OR = {
 			area = thrace_area
 			area = northern_greece_area
 			area = macedonia_area
 			area = morea_area
 			area = ionian_islands_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = { 
@@ -7528,8 +7519,10 @@ ab_persia_tcr_india_5 = {
 			tcr_coromandel
 		}
 		provinces_to_highlight = { 
+		OR = {
 		area = lanka_area
 		area = south_lanka_area
+		}
 		NOT = { base_production = 5}
 		}
 		trigger = { 
@@ -7616,6 +7609,7 @@ ab_persia_tcr_india_5 = {
 			tcr_masters_of_india
 		}
 		provinces_to_highlight = { 
+			OR = {
 			province_id = 4477
 			province_id = 558
 			province_id = 555
@@ -7626,6 +7620,7 @@ ab_persia_tcr_india_5 = {
 			province_id = 2075
 			province_id = 507
 			province_id = 578
+			}
 
 		}
 		trigger = { 
@@ -7871,6 +7866,7 @@ ab_persia_tcr_perisa_5 = {
 		 }
 		 custom_tooltip = ABA_TCR_bactra_chashma_project_tt
 		 hidden_effect = {
+		 set_country_flag = ABA_TCR_bactra_chashma_project_allowed
 		 450 = {
 			add_great_project = {
 			type = ABA_chashma_i_shir
@@ -8045,70 +8041,49 @@ ab_persia_tcr_perisa_5 = {
 		required_missions = {
 			trc_bridging
 		}
-		trigger = {
-			num_of_owned_provinces_with = {
-				value = 8
-				trade_goods = wool
-				has_production_building_trigger = yes
-				base_production = 6
-			}
-		}
-		
 		provinces_to_highlight = {
-			owned_by = ROOT
 			trade_goods = wool
 			NOT = {
-				AND = {
-					base_production = 6
-					has_production_building_trigger = yes
+				num_of_times_improved = 3
+			}
+			owned_by = ROOT
+		}
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					num_of_times_improved = 3
+					trade_goods = wool
 				}
+				amount = 8
 			}
 		}
 		
 		effect = {
-			custom_tooltip = PER_SILK_INDUSTRY
+			custom_tooltip = ZUN_CLOTH
 			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						has_production_building_trigger = yes
-						trade_goods = wool
-						base_production = 6
-					}
-					random_list = {
-						20 = { 
-							change_trade_goods = silk
-						}
-						80 = { 
+                for = {
+                    amount = 3
+                    effect = "
+                        random_owned_province = {
+							limit = {
+								trade_goods = wool
+							}
 							change_trade_goods = cloth
-						}
-					}
-				}
+                        }
+                    "
+                }
 			}
-			if = {
-				limit = {
-					development_in_provinces = {
-						value = 200
-						trade_goods = silk
-					}
-				}
-				custom_tooltip = PER_SILK_PRICE
-				change_price = {
-					trade_goods = silk
-					key = persian_silk_industry
-					value = 0.2
-					duration = -1
-				}
+			add_country_modifier = {
+				name = "zun_growing"
+				duration = 7300
 			}
-			else = {
-				custom_tooltip = PER_SILK_PRICE_NO
-				tooltip = {
-					change_price = {
-						trade_goods = silk
-						key = persian_silk_industry
-						value = 0.2
-						duration = -1
-					}
-				}
+			define_advisor = {
+				type = natural_scientist
+				skill = 3
+				religion = ROOT
+				culture = ROOT
+				cost_multiplier = 0.5
 			}
 		}
 	}
