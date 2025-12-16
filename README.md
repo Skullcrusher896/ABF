@@ -1,84 +1,38 @@
+[h1] Introduction [/h1]
+
 Every time I've played Ante Bellum, I've always enjoyed the long missions trees with cultural conversion aspects, making my own head canon for the nations I play along the way. But many nations don't have the option to shape the malleable cultural identities that inhabit the world of Ante Bellum.
 
-Today I bring to you Ante Bellum Flavor - Expanded Content, a mod focused on light adjustments to Ante Bellum for the purposes of immersion and subtle gameplay enhancements. Similar to Halfdan's mod, this mod seeks to create a more lived in and dynamic world, with new gameplay options, primarily for nations that have not received an update or a mini-update in a long time.
+Today I bring to you Ante Bellum Flavor, a mod focused on light adjustments to Ante Bellum for the purposes of immersion and subtle gameplay enhancements. Similar to Halfdan's mod, this mod seeks to create a more lived in and dynamic world, with new gameplay options, primarily for nations that have not received an update or a mini-update in a long time.
 
-Features so far:
-- 15 new spawnable cultures! (For Germans, Norse, Slavs, and more!)
-- Enhanced integration into India and Persia for Afghan nations
-- Take the Mandate of Heaven as Japan, and embrace your Sinic roots!
-- Claim the mantle of Ruthenia as the Golden Horde/Tartaria, establish your own Tsardom!
-- Unique government form for the Danubian Federation
-- Continue the Crusade as Sweden, employing Carolean Paladins and integrating the Finnish into your culture group!
+#### Features so far  ###
+-30+ new spawnable cultures! (For Germans, Norse, Slavs, and more!)
+-New Government reforms!
+-Enhanced integration into India and Persia for Afghan nations
+-Take the Mandate of Heaven as Japan, and embrace your Sinic roots!
+-Claim the mantle of Ruthenia as the Golden Horde/Tartaria, establish your own Tsardom!
+-Unique government form for the Danubian Federation
+-Continue the Crusade as Sweden, employing Carolean Paladins and integrating the Finnish into your culture group!
 - Assert the dominance of Gallic culture and revive Brittonic culture!
+- Restore Slavic Hegemony in Germany as Wendia!
+- Become the masters of India as Shahi, Ghor, Zun, or Tocharia now with unique assimilation mechanics and bonuses!
+- Colonize the vast Steppes after defeating the Golden Horde with new Cossack settler cultures!
+- 7 New Monuments!
+- New Mission Trees!: Catholic Poland, Shahi of Afghanistan, the Hetmanate/Zaz, Bulgaria!, and two massive branching mission trees for Zun/Rob, Tocharia (and all the nations that form it), Ghurids, and Lendia!
+  -Thanks to suoncha (creator of The Lost World), you can seamlessly switch between mission trees using the "Switch Button" available to Zun for the time! 
+
+
+(Full list of features in Change log)
 
 I plan to continue adding more smaller gameplay adjustments like these to the mod, as well as updated and enhanced mission trees in line with Ante Bellum's gameplay philosophy later down the line.
 
 Big thank you to Potion Seller (Check out their great mission trees and modifications), suoncha (creator of The Lost World), and NewYoung (ABE) for all their help getting this off the ground!
 
+Compatible with The Lost World, this along with the map borders overhaul are required submods for the The Lost World Now, 
+
+Get the Chinese Translation here: https://steamcommunity.com/sharedfiles/filedetails/?id=3588231749&searchtext=
+
+Join us on the ante bellum discord!
+
 To install create a new mod using the Paradox launcher, and add Ante Bellum as a dependency to the descriptor file, and then copy over all files into your new mod folder.
-
--------- UPDATE V.0.1----Initial Release-----
--Sino-japanese conversion upon taking Mandate of Heaven
--Korean-Japanese settler culture
--New Colonial Cultures (Nikkei, etc.)
--German settler cultures for Eastern Plains (Ruthenian, Russia, Volga, Pontic Steppe, Poland, Yugoslavia) for Stryia,Germany,Saxony,Prussia/Brandenburg, and Teutonic Order/Livonia, Rhineland Nations, and Bavaria 
--Litvin for Baltic Moravia
--Litvin for Baltic Rus'
--Assimilation mechanic for Ghorids and access to the Rajputs estate
--Integrate the Hindus Privilege for Shahi by completing the "Indian Sweep" Event
--Golden Horde Tsardom
--Dutch Baltic Culture - Olender/Holländer for Dutch
--Anglo-Norse and Norse-Gaelic For Norway 
--Norse-Gaelic for Denmark
--Ability to move Finnish to the Scandinavian Culture Group as mission reward
--Holy Paladins for Sweden
--Unique government for the Danubian Federation 
--Gallic and Brittonic Revolution culture spread for Gallia
-
--------- UPDATE V.0.2----Whispers of the East----
-V 0.02 "Whisper of the East"
- - Ability to move Jurchen and Japanese cultures to Chinese group as Claimants of the Mandate (Includes Yuan and Warlords as long as you directly own Japan)
- - Add new Swedish settler cultures for Estonia and Finnish culture for Karelia 
- - Added culture shifts to German formable tree 
- - Russian Cossack settler cultures for the Steppe and Central Asia, as well as Pomorian spread for Novgorod, Nagaybak culture for Russian central asia 
- - Russian Kharbinskiye for Manchuria Region
- - Alban culture for Albion
- - Added decision to release Celtic Union as a personal union under Gallia 
- - Varangian Culture for Norse countries 
- - Wendish Culture Spread in Germany 
- - Shahi Diwan Mechanic, nassimilation outside of Iran and India grants no bonsues, but bonuses for assimilating Indian and Iranian buffed!
- 
-### Bug Fixes ####
-- Renamed German cultures to be more in line with naming conventions
-- Fixed error where new German cultures wouldn't merge with unified German culture, add contingency for unified Germanic culture 
-- Fixed error that would spawn Japanese-Korean culture despite having Sinicized Japanese culture
-- Fixed Sino-Japanese Spread and renamed Culture to Fusau (representing references to Japan in Chinese culture)
-- Fixed Japanese government reforms to be available for Sino-Japanese culture 
-- Standardized tool tip color coding 
-- Fixed Ghurid assimilation not having localization 
-
--------- UPDATE V.0.3----Mission Pack 1----
-V0.03 "Mission Pack"
-- New Polish/Intermarium Missions
-- New Shahi Missions
-- Ability for Poland to convert the Lavra into a Catholic Cathedral 
-- Ability to rename Intermarium after formation
-- Added Cossack culture spread for Hetmanate
-- Gaelic Religion for Gallia 
-
-### Bug Fixes ####
-- fixed tooltips to remove certain articles
-- Renamed Yugoslavian German culture to Jugoschwäbisch
-
--------- UPDATE V.0.4----Mission Pack 2 - Mini Update ----
-- New Hetmanate/Zaphorizhzhia Tree
-
-### Bug Fixes ####
-- Fixed modifier for Great Trunk Road
-- Integrate new patch for Netherlands tree 
-- Balanced Cossack regiment modifier 
-- Fixed Silesian culture spawn 
-
-
 =======
 >>>>>>> d7f19dd7fcae844d4933afc63f47aaba75470395
