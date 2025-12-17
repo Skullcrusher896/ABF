@@ -15,5 +15,5 @@ dependencies={
 }
 picture="thumbnail.png"
 supported_version="v1.37.5.0"
-path="mod/ABF"
+path="C:/Users/jadyn/OneDrive/Documents/Paradox Interactive/Europa Universalis IV/mod/ABF"
 remote_file_id="3564325360"

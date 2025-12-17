@@ -1127,8 +1127,54 @@ germanic = {
 			Elisabeth Enda Gertrud Gisela
 			Hedwig Heilwig Helene Hildegard Ida Emma Irmgard 
 			Judith Katharina
-			Margarete Mathilde Matilda Mechthild Reginlint 
-			Richardis Ricarda Rodelinda Sophia Sophia Suanhilde Swanahild Wienke 
+			Margarete Mathilde Matilda Mechthild Reginlint
+			Richardis Ricarda Rodelinda Sophia Sophia Suanhilde Swanahild Wienke
+			Wiltrud Wulfhild Ulfhild
+		}
+		dynasty_names = {
+			"von Schwarzburg" "von Schönburg" "von Schlotheim" "von Salza" "von Kospoth"
+			"von Knuth" "von Wettin" "Askanier" "von Hohenzollern" "von Erffa" "von Bodungen" "von Eckersberg" "von Brandenstein" "von Pappenheim" "von Wiehe"
+			"von Westernhagen" "von Jena" "von Trützschler" "von Plessen" "von Haugwitz" "von Kanitz" "von Falkenhayn" "von Thüna"
+			"von Thüringen" "von Nostitz" "von Bieberstein" "von Meerheimb" "von Freiberg" "von Neitschütz" "von Minckwitz" "von Arnswaldt" "von Auerswald" "aus dem Winckel"
+			"von Beichlingen" "von Bendeleben" "von Beneckendorff"  "von Berbisdorf" "von Bissingen" "von Bock" "von Bomsdorff" "von Bose" "von Breitenbach"
+			"von Breitenbuch" "von Brühl" "von Bünau" "von Hoym" "Holtzendorff" "von Hohenthal" "von Heynitz" "von Hessler" "von Helldorff" "von Harling" "von Görschen" "von Glaubitz"
+			"von Gfug" "von Gersdorff" "von Germar" "von Fritsch" "von Friesen" "von Flanss" "von Etzdorff" "von Erdmannsdorff" "von Einsiedel" "von Dyhrn" "von Dieskau" "von Creytzen" "von Carlowitz" "von Maltitz" "von Mansfeld" "von Miltitz" "von Mücheln" "von Pflugk" "von Pölnitz" "von Ponickau" "von Rackel"
+			"von Raumer" "von Rechenberg" "von Rex" "Sack" "von Scheidingen" "von Schleinitzstrasse" "von Schönberg" "Senfft von Pilsach" "von Stolberg" "von Kannewurf" "Karras" "von Keller" "von Kirchbach" "von Sternberg" "von Leisnig"
+			"von Liebenau" "von Loeben" "von Logau" "von Lüttichau" "von Taube" "von Tettau" Vitzthum "von Wolffersdorff" Wöhrmann "von Werthern" "von Wackerbarth" "von Bredow" "von Brandt"
+		}
+	}
+	# New ABA Cultuure
+	weichseldeutsche_culture = {
+		male_names = {
+			Friedrich Albrecht Christian Heinrich Rudolf August Ernst Georg Moritz Alexander Anton Hektor
+			Johann Karl Clemens Wenzel Franz Xaver Joachim Joseph Magnus Maximilian Severinus Wolfgang
+			Andreas Bruno Burkhard Günther HermannLukas Micharl Reimund Ulrich Wilfried Wolfram Konrad Edwin Marcus Osmund Peter Ralph Reginald Sigehelm Wulfhelm Wulfhere Alfred
+			Alwin Adémar Alwin Adolf Albert Albrecht Arnold Baltasar
+			Benedict Bernd Bernard Bernhard Bertold Bertram Bertrand Burchard
+			Claus Nicholas Cobbo Cord Dietmar Diederik Ekkehard Ekbert Engelbert Engelhard
+			Erik Albert Ewald Frederick Gerard Gebhard Giselmar Gottschalk Günther Hans
+			Heideke Herbert Hermann Hinrik Jacob Jaspar Caspar Jochim Joakim Johann Kersten
+			Christian Laurentz Lambert Liawizo Liemar Liudger Otto Ludolf Ludwig
+			Louis Mathias Matthew Meinwerk Merten Martin Michael Norbert Ordulf
+			Peter Philip Renard Reinmar Roger Rudolf Ralph Sigbert Sigisbert
+			Sigfrid Siegfried Sigward Sigurd Simon Steffen Thomas Waldemar
+			Werner Victor Werneke Weybrecht Wichbert Wichmann Wigebert Wolter Walter Wulff Ulf
+		}
+		female_names = {
+			Amalia Bianka Eleonora
+			Agatha Balthild
+			Christina Cuthburg
+			Cynehild Cyneswith Cynethryth Eadburg Edith
+			Gunhilda Gunhild Helga Judith
+			Maud Matilda Sigri
+			Wulfhild
+			Addila Adela Adelheid Alof Agnes Anna Athela Beatrix Beatrice Bertha Bertha
+			Bertrada Bia Beatrice Bisina Bithild Brigida Brigid Elisabeth
+			Elisabeth Enda Gertrud Gisela
+			Hedwig Heilwig Helene Hildegard Ida Emma Irmgard
+			Judith Katharina
+			Margarete Mathilde Matilda Mechthild Reginlint
+			Richardis Ricarda Rodelinda Sophia Sophia Suanhilde Swanahild Wienke
 			Wiltrud Wulfhild Ulfhild
 		}
 		dynasty_names = {
@@ -1146,11 +1192,39 @@ germanic = {
 	germanic_silesian = {
 		primary = SIL
 		male_names = {
-			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt 
-			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut 
-			Horst Joachim Kaspar Kurt Leo Ludwig Lukas Manfred Michael Nikolaus Oskar Otto Philipp Reiner Rudolf 
-			Rupprecht Siegfried Siegmund Thomas Urs Viktor Werner Alvydas Arelis Auctune Bajoras Beidras Budo Dagonis 
-			Ekkelis Galindas Galindo Gauronas Gerdautas Glande Golding Jauguttis Karatas Klukis Kugis Milzas Nomedas 
+			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt
+			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut
+			Horst Joachim Kaspar Kurt Leo Ludwig Lukas Manfred Michael Nikolaus Oskar Otto Philipp Reiner Rudolf
+			Rupprecht Siegfried Siegmund Thomas Urs Viktor Werner Alvydas Arelis Auctune Bajoras Beidras Budo Dagonis
+			Ekkelis Galindas Galindo Gauronas Gerdautas Glande Golding Jauguttis Karatas Klukis Kugis Milzas Nomedas
+			Prusas Sergonis Ulinniks Ulitis Jens Johann Engelbert Fromhold Johannes Henning Silvester Dietrich
+		}
+		female_names = {
+			Raphaela Sabine Vera Betten Dagas Gelennis Gerkus Grasus Gulbis Mila Milyuns Weslikan Ziedas Gertrud Ida
+		}
+	}
+	# ABA New Culture
+	russlanddeutsche_culture = {
+		male_names = {
+			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt
+			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut
+			Horst Joachim Kaspar Kurt Leo Ludwig Lukas Manfred Michael Nikolaus Oskar Otto Philipp Reiner Rudolf
+			Rupprecht Siegfried Siegmund Thomas Urs Viktor Werner Alvydas Arelis Auctune Bajoras Beidras Budo Dagonis
+			Ekkelis Galindas Galindo Gauronas Gerdautas Glande Golding Jauguttis Karatas Klukis Kugis Milzas Nomedas
+			Prusas Sergonis Ulinniks Ulitis Jens Johann Engelbert Fromhold Johannes Henning Silvester Dietrich
+		}
+		female_names = {
+			Raphaela Sabine Vera Betten Dagas Gelennis Gerkus Grasus Gulbis Mila Milyuns Weslikan Ziedas Gertrud Ida
+		}
+	}
+	#New Aba Culture
+	wolhynien_culture = {
+		male_names = {
+			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt
+			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut
+			Horst Joachim Kaspar Kurt Leo Ludwig Lukas Manfred Michael Nikolaus Oskar Otto Philipp Reiner Rudolf
+			Rupprecht Siegfried Siegmund Thomas Urs Viktor Werner Alvydas Arelis Auctune Bajoras Beidras Budo Dagonis
+			Ekkelis Galindas Galindo Gauronas Gerdautas Glande Golding Jauguttis Karatas Klukis Kugis Milzas Nomedas
 			Prusas Sergonis Ulinniks Ulitis Jens Johann Engelbert Fromhold Johannes Henning Silvester Dietrich
 		}
 		female_names = {
@@ -1421,8 +1495,54 @@ germanic = {
 			Elisabeth Enda Gertrud Gisela
 			Hedwig Heilwig Helene Hildegard Ida Emma Irmgard 
 			Judith Katharina
-			Margarete Mathilde Matilda Mechthild Reginlint 
-			Richardis Ricarda Rodelinda Sophia Sophia Suanhilde Swanahild Wienke 
+			Margarete Mathilde Matilda Mechthild Reginlint
+			Richardis Ricarda Rodelinda Sophia Sophia Suanhilde Swanahild Wienke
+			Wiltrud Wulfhild Ulfhild
+		}
+		dynasty_names = {
+			"Hohenstaufen" "von Schwarzburg" "von Schönburg" "von Schlotheim" "von Salza" "von Kospoth"
+			"von Knuth" "von Wettin" "Askanier" "von Hohenzollern" "von Erffa" "von Bodungen" "von Eckersberg" "von Brandenstein" "von Pappenheim" "von Wiehe"
+			"von Westernhagen" "von Jena" "von Trützschler" "von Plessen" "von Haugwitz" "von Kanitz" "von Falkenhayn" "von Thüna"
+			"von Thüringen" "von Nostitz" "von Bieberstein" "von Meerheimb" "von Freiberg" "von Neitschütz" "von Minckwitz" "von Arnswaldt" "von Auerswald" "aus dem Winckel"
+			"von Beichlingen" "von Bendeleben" "von Beneckendorff"  "von Berbisdorf" "von Bissingen" "von Bock" "von Bomsdorff" "von Bose" "von Breitenbach"
+			"von Breitenbuch" "von Brühl" "von Bünau" "von Hoym" "Holtzendorff" "von Hohenthal" "von Heynitz" "von Hessler" "von Helldorff" "von Harling" "von Görschen" "von Glaubitz"
+			"von Gfug" "von Gersdorff" "von Germar" "von Fritsch" "von Friesen" "von Flanss" "von Etzdorff" "von Erdmannsdorff" "von Einsiedel" "von Dyhrn" "von Dieskau" "von Creytzen" "von Carlowitz" "von Maltitz" "von Mansfeld" "von Miltitz" "von Mücheln" "von Pflugk" "von Pölnitz" "von Ponickau" "von Rackel"
+			"von Raumer" "von Rechenberg" "von Rex" "Sack" "von Scheidingen" "von Schleinitzstrasse" "von Schönberg" "Senfft von Pilsach" "von Stolberg" "von Kannewurf" "Karras" "von Keller" "von Kirchbach" "von Sternberg" "von Leisnig"
+			"von Liebenau" "von Loeben" "von Logau" "von Lüttichau" "von Taube" "von Tettau" Vitzthum "von Wolffersdorff" Wöhrmann "von Werthern" "von Wackerbarth" "von Bredow" "von Brandt"
+		}
+	}
+	donauschwaben_culture = {
+		primary = SWA
+		male_names = {
+			Friedrich Albrecht Christian Heinrich Rudolf August Ernst Georg Moritz Alexander Anton Hektor
+			Johann Karl Clemens Wenzel Franz Xaver Joachim Joseph Magnus Maximilian Severinus Wolfgang
+			Andreas Bruno Burkhard Günther HermannLukas Micharl Reimund Ulrich Wilfried Wolfram Konrad Edwin Marcus Osmund Peter Ralph Reginald Sigehelm Wulfhelm Wulfhere Alfred
+			Alwin Adémar Alwin Adolf Albert Albrecht Arnold Baltasar
+			Benedict Bernd Bernard Bernhard Bertold Bertram Bertrand Burchard
+			Claus Nicholas Cobbo Cord Dietmar Diederik Ekkehard Ekbert Engelbert Engelhard
+			Erik Albert Ewald Frederick Gerard Gebhard Giselmar Gottschalk Günther Hans
+			Heideke Herbert Hermann Hinrik Jacob Jaspar Caspar Jochim Joakim Johann Kersten
+			Christian Laurentz Lambert Liawizo Liemar Liudger Otto Ludolf Ludwig
+			Louis Mathias Matthew Meinwerk Merten Martin Michael Norbert Ordulf
+			Peter Philip Renard Reinmar Roger Rudolf Ralph Sigbert Sigisbert
+			Sigfrid Siegfried Sigward Sigurd Simon Steffen Thomas Waldemar
+			Werner Victor Werneke Weybrecht Wichbert Wichmann Wigebert Wolter Walter Wulff Ulf
+		}
+		female_names = {
+			Amalia Bianka Eleonora
+			Agatha Balthild
+			Christina Cuthburg
+			Cynehild Cyneswith Cynethryth Eadburg Edith
+			Gunhilda Gunhild Helga Judith
+			Maud Matilda Sigri
+			Wulfhild
+			Addila Adela Adelheid Alof Agnes Anna Athela Beatrix Beatrice Bertha Bertha
+			Bertrada Bia Beatrice Bisina Bithild Brigida Brigid Elisabeth
+			Elisabeth Enda Gertrud Gisela
+			Hedwig Heilwig Helene Hildegard Ida Emma Irmgard
+			Judith Katharina
+			Margarete Mathilde Matilda Mechthild Reginlint
+			Richardis Ricarda Rodelinda Sophia Sophia Suanhilde Swanahild Wienke
 			Wiltrud Wulfhild Ulfhild
 		}
 		dynasty_names = {
@@ -2259,22 +2379,154 @@ scandinavian = { #Nordic
 	norwegian = {
 		primary = NOR
 		male_names = {
-				Ale Alfr Alf Alfgeir Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast 
-				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard 
-				Botulfr Bragi Brage Buðli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik 
-				Eskild Falki Faste Frirek Frode Freyr Frej Folki Folke 
-				Gandalfr Geirr Gnupa Gorm Grimr Grim Guðmundr 
-				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
-				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing 
-				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Jon Kettil Kettilmund 
-				Kjartan Klas Knut Kol Kolbjörn Magnus Oddr 
-				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr 
-				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg Sigurðr Sigurd Starkad Steinn Sten 
-				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr Sämund 
-				Sölvi Sölve Sörkver Tjudmund Toke Tolir Þorbjörn Torbjörn Þorfinn Torfinn Þorbrandr Torbrand 
-				Þordr Tord Þorgil Torkel Þorsteinn Torsten Þorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf 
-				Vagn Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav 
-				Harald Inge Aksel Ansgard Arvid Bernt Bjørn Eilert Elias Esben 
+				Ale Alfr Alf Alfgeir Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast
+				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard
+				Botulfr Bragi Brage Buðli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
+				Eskild Falki Faste Frirek Frode Freyr Frej Folki Folke
+				Gandalfr Geirr Gnupa Gorm Grimr Grim Guðmundr
+				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
+				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing
+				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Jon Kettil Kettilmund
+				Kjartan Klas Knut Kol Kolbjörn Magnus Oddr
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr
+				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg Sigurðr Sigurd Starkad Steinn Sten
+				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr Sämund
+				Sölvi Sölve Sörkver Tjudmund Toke Tolir Þorbjörn Torbjörn Þorfinn Torfinn Þorbrandr Torbrand
+				Þordr Tord Þorgil Torkel Þorsteinn Torsten Þorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
+				Vagn Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav
+				Harald Inge Aksel Ansgard Arvid Bernt Bjørn Eilert Elias Esben
+				Kennet Knut Njåld Njord Oddmund Søren Tollak
+		}
+		female_names = {
+			Torhild Aleta Alfhildr Alfhild Alfridh Alvör Asa Åsa Aslaug Asta Astrid
+			Birgitta Brigid Björg Bodil Bothildr Bothild Edla Elin Freyja Freja
+			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla
+			Holmfrid Inga Ingfrid Ingibjörg Ingeborg Ingjerðr Ingegerd Ingrid
+			Kraka Maer Malmfrið Malmfrid
+			Rikissa Rögnfrid Ragnfrid Rögnhildr Ragnhild Saga Sif Sigrid Skuld
+			Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa Þora Thora Þordis Thordis Þyra
+			Thyra
+		}
+		dynasty_names = {
+			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
+			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
+			"Galtung" "Heubsch" "Kløcker" "Løvenskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "Rømer" "Handingmann" "Skaktavl" "Tordenstierne" Roos
+			# CKII
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "Adelswärd" "Kane" "Blixen" "Løvendal" "Balke"
+			"Vedel" "Bjelke" "Galle" "Griis"
+		}
+	}
+	#new ABA Culture
+	aba_norman_nordic_culture = {
+		primary = NOR
+		male_names = {
+				Ale Alfr Alf Alfgeir Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast
+				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard
+				Botulfr Bragi Brage Buðli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
+				Eskild Falki Faste Frirek Frode Freyr Frej Folki Folke
+				Gandalfr Geirr Gnupa Gorm Grimr Grim Guðmundr
+				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
+				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing
+				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Jon Kettil Kettilmund
+				Kjartan Klas Knut Kol Kolbjörn Magnus Oddr
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr
+				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg Sigurðr Sigurd Starkad Steinn Sten
+				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr Sämund
+				Sölvi Sölve Sörkver Tjudmund Toke Tolir Þorbjörn Torbjörn Þorfinn Torfinn Þorbrandr Torbrand
+				Þordr Tord Þorgil Torkel Þorsteinn Torsten Þorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
+				Vagn Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav
+				Harald Inge Aksel Ansgard Arvid Bernt Bjørn Eilert Elias Esben
+				Kennet Knut Njåld Njord Oddmund Søren Tollak
+		}
+		female_names = {
+			Torhild Aleta Alfhildr Alfhild Alfridh Alvör Asa Åsa Aslaug Asta Astrid
+			Birgitta Brigid Björg Bodil Bothildr Bothild Edla Elin Freyja Freja
+			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla
+			Holmfrid Inga Ingfrid Ingibjörg Ingeborg Ingjerðr Ingegerd Ingrid
+			Kraka Maer Malmfrið Malmfrid
+			Rikissa Rögnfrid Ragnfrid Rögnhildr Ragnhild Saga Sif Sigrid Skuld
+			Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa Þora Thora Þordis Thordis Þyra
+			Thyra
+		}
+		dynasty_names = {
+			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
+			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
+			"Galtung" "Heubsch" "Kløcker" "Løvenskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "Rømer" "Handingmann" "Skaktavl" "Tordenstierne" Roos
+			# CKII
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "Adelswärd" "Kane" "Blixen" "Løvendal" "Balke"
+			"Vedel" "Bjelke" "Galle" "Griis"
+		}
+	}
+	abf_varangians_culture = {
+		male_names = {
+				Ale Alfr Alf Alfgeir Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast
+				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard
+				Botulfr Bragi Brage Buðli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
+				Eskild Falki Faste Frirek Frode Freyr Frej Folki Folke
+				Gandalfr Geirr Gnupa Gorm Grimr Grim Guðmundr
+				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
+				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing
+				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Jon Kettil Kettilmund
+				Kjartan Klas Knut Kol Kolbjörn Magnus Oddr
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr
+				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg Sigurðr Sigurd Starkad Steinn Sten
+				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr Sämund
+				Sölvi Sölve Sörkver Tjudmund Toke Tolir Þorbjörn Torbjörn Þorfinn Torfinn Þorbrandr Torbrand
+				Þordr Tord Þorgil Torkel Þorsteinn Torsten Þorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
+				Vagn Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav
+				Harald Inge Aksel Ansgard Arvid Bernt Bjørn Eilert Elias Esben
+				Kennet Knut Njåld Njord Oddmund Søren Tollak
+		}
+		female_names = {
+			Torhild Aleta Alfhildr Alfhild Alfridh Alvör Asa Åsa Aslaug Asta Astrid
+			Birgitta Brigid Björg Bodil Bothildr Bothild Edla Elin Freyja Freja
+			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla
+			Holmfrid Inga Ingfrid Ingibjörg Ingeborg Ingjerðr Ingegerd Ingrid
+			Kraka Maer Malmfrið Malmfrid
+			Rikissa Rögnfrid Ragnfrid Rögnhildr Ragnhild Saga Sif Sigrid Skuld
+			Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa Þora Thora Þordis Thordis Þyra
+			Thyra
+		}
+		dynasty_names = {
+			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
+			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
+			"Galtung" "Heubsch" "Kløcker" "Løvenskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "Rømer" "Handingmann" "Skaktavl" "Tordenstierne" Roos
+			# CKII
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "Adelswärd" "Kane" "Blixen" "Løvendal" "Balke"
+			"Vedel" "Bjelke" "Galle" "Griis"
+		}
+	}
+	anglonorse_culture = {
+		primary = NOR
+		male_names = {
+				Ale Alfr Alf Alfgeir Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast
+				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard
+				Botulfr Bragi Brage Buðli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
+				Eskild Falki Faste Frirek Frode Freyr Frej Folki Folke
+				Gandalfr Geirr Gnupa Gorm Grimr Grim Guðmundr
+				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
+				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing
+				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Jon Kettil Kettilmund
+				Kjartan Klas Knut Kol Kolbjörn Magnus Oddr
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr
+				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg Sigurðr Sigurd Starkad Steinn Sten
+				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr Sämund
+				Sölvi Sölve Sörkver Tjudmund Toke Tolir Þorbjörn Torbjörn Þorfinn Torfinn Þorbrandr Torbrand
+				Þordr Tord Þorgil Torkel Þorsteinn Torsten Þorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
+				Vagn Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav
+				Harald Inge Aksel Ansgard Arvid Bernt Bjørn Eilert Elias Esben
 				Kennet Knut Njåld Njord Oddmund Søren Tollak
 		}
 		female_names = {
