@@ -528,6 +528,18 @@ ABA_htm_steppe_dev = {
     local_development_cost = -0.2
 }
 
+aba_htm_infilitrate_glh_spy = {
+    defensiveness = -0.25
+}
+
+aba_htm_uniate_church = {
+    local_missionary_strength = -1
+    local_religious_unity_contribution = -1
+    local_unrest = -4
+    trade_goods_size_modifier = 0.33
+    local_tax_modifier = 0.33
+}
+
 ####### Zun #######
 
 aba_ZNN_war_elephants = {

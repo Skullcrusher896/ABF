@@ -775,11 +775,11 @@ pol_catholic_first = {
 					add_local_autonomy = -25
 				}
 				hidden_effect = {
-					if = {
+					every_owned_province = {
 						limit = {
-							culture_group = scandinavian
+							culture_group = scandinavian 
 						}
-						change_primary_culture = scandinavian_culture
+						change_culture = scandinavian_culture
 					}
 					add_accepted_culture_or_dip_power = {
 						culture = scandinavian_culture
@@ -1775,98 +1775,100 @@ pol_catholic_second = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = ABA_POL_WAR_AGAINST_SCANS
-					if = {
-						limit = {
-							exists = SWE
+					OR = {
+						if = {
+							limit = {
+								exists = SWE
+							}
+							has_won_war_against = { who = SWE max_years_since = 50 }
 						}
-						has_won_war_against = { who = SWE max_years_since = 50 }
-					}
-					else = {
-						NOT = {
-							exists = SWE
+						else = {
+							NOT = {
+								exists = SWE
+							}
 						}
-					}
-					if = {
-						limit = {
-							exists = NOR
+						if = {
+							limit = {
+								exists = NOR
+							}
+							has_won_war_against = { who = NOR max_years_since = 50 }
 						}
-						has_won_war_against = { who = NOR max_years_since = 50 }
-					}
-					else = {
-						NOT = {
-							exists = NOR
+						else = {
+							NOT = {
+								exists = NOR
+							}
 						}
-					}
-					if = {
-						limit = {
-							exists = DAN
+						if = {
+							limit = {
+								exists = DAN
+							}
+							has_won_war_against = { who = DAN max_years_since = 50 }
 						}
-						has_won_war_against = { who = DAN max_years_since = 50 }
-					}
-					else = {
-						NOT = {
-							exists = DAN
+						else = {
+							NOT = {
+								exists = DAN
+							}
 						}
-					}
-					if = {
-						limit = {
+						if = {
+							limit = {
+								OR = {
+									AND = {
+										exists = NSE
+										was_tag = DAN
+									}
+									AND = {
+										exists = NSE
+										was_tag = NOR
+									}
+								}
+							}
+							has_won_war_against = { who = NSE max_years_since = 50 }
+						}
+						else = {
 							OR = {
 								AND = {
-									exists = NSE
+									NOT = {
+										exists = NSE
+									}
 									was_tag = DAN
 								}
 								AND = {
-									exists = NSE
+									NOT = {
+										exists = NSE
+									}
 									was_tag = NOR
 								}
 							}
 						}
-						has_won_war_against = { who = NSE max_years_since = 50 }
-					}
-					else = {
-						OR = {
-							AND = {
-								NOT = {
-									exists = NSE
+						if = {
+							limit = {
+								OR = {
+									AND = {
+										exists = SCA
+										was_tag = DAN
+									}
+									AND = {
+										exists = SCA
+										was_tag = SWE
+									}
 								}
-								was_tag = DAN
 							}
-							AND = {
-								NOT = {
-									exists = NSE
-								}
-								was_tag = NOR
-							}
+							has_won_war_against = { who = SCA max_years_since = 50 }
 						}
-					}
-					if = {
-						limit = {
+						else = {
 							OR = {
 								AND = {
-									exists = SCA
+									NOT = {
+										exists = SCA
+									}
 									was_tag = DAN
 								}
 								AND = {
-									exists = SCA
+									NOT = {
+										exists = SCA
+									}
 									was_tag = SWE
 								}
-							}
-						}
-						has_won_war_against = { who = SCA max_years_since = 50 }
-					}
-					else = {
-						OR = {
-							AND = {
-								NOT = {
-									exists = SCA
-								}
-								was_tag = DAN
-							}
-							AND = {
-								NOT = {
-									exists = SCA
-								}
-								was_tag = SWE
 							}
 						}
 					}
@@ -2492,6 +2494,7 @@ pol_catholic_second = {
 		}
 
 		effect = {
+			set_country_flag = ABF_pol_foreign_legion
 			country_event = {
 				id = aba_pol_events.2
 			}
@@ -3459,7 +3462,7 @@ pol_catholic_third = {
 		}
 		effect = {
 			country_event = {
-				id = aba_pol_events.1
+				id = aba_pol_events.99
 			}
 
 		}
@@ -3870,6 +3873,7 @@ pol_catholic_third = {
 			}
 		}
 		effect = { 
+			set_country_flag = aba_pol_westernization_cossacks
 			add_country_modifier = {
 					name = aba_pol_westernized_army
 					duration = -1	

@@ -2,13 +2,13 @@ namespace = aba_pol_events
 
 #Krakow University Event
 country_event = {
-	id = aba_pol_events.1
-	title = aba_pol_events.1.T
-	desc = aba_pol_events.1.D
+	id = aba_pol_events.99
+	title = aba_pol_events.99.t
+	desc = aba_pol_events.99.d
 	picture = CITY_DEVELOPMENT_eventPicture
 	is_triggered_only = yes
 	option = {
-		name = aba_pol_events.1.a
+		name = aba_pol_events.99.a
 		if = {
 			limit = { has_dlc = "Rule Britannia" } 
 			change_innovativeness = 3 

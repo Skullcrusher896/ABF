@@ -1016,7 +1016,7 @@ province_event = {
 
 }
 
-#Pomorian Culture Spread in North (Novogorod) Spread 
+#Kharbinskiye Spread
 province_event = {
 	id = ab_new_cultures.24
 	title = ab_new_cultures.24.t

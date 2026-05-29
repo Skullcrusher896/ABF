@@ -46,6 +46,7 @@ estate_cossacks = {
 		OR = {
 			has_government_attribute = enables_estate_cossacks
 			has_enabled_estate = { estate = estate_cossacks }
+			has_country_flag = aba_pol_westernization_cossacks
 			AND = {
 				OR = {
 					has_unlocked_estate = { estate = estate_cossacks }
