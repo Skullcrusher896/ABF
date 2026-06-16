@@ -1438,13 +1438,9 @@ cossack_second_group = {
 				}
 			}
 			NOT = {
-				AND = {
-					NOT = {
-						exists = POL
-					}
-					NOT = {
-						exists = PLC
-					}
+				OR = {
+					exists = POL
+					exists = PLC
 				}
 			}
 		}

@@ -1639,7 +1639,7 @@ province_event = {
 
 	option = {
 		name = ab_new_cultures.39.a
-		change_culture = aba_polish_west_harbiner
+		change_culture = aba_budjak_cossack_culture
 	}
 }
 
