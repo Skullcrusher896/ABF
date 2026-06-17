@@ -240,10 +240,16 @@ permanent_marathas_council_reform = {
 
 governmental_purbias_register_reform = {
 	icon = "rajput_kingdom"
+	
 	potential = {
 		has_dlc = "Dharma"
 		has_estate = estate_rajput
 		technology_group = indian
+		NOT = {
+			has_unlocked_government_reform = {
+				government_reform = aba_znn_governmental_indo_afghan_rajputs
+			}
+		}
 	}
 	modifiers = {
 		recover_army_morale_speed = 0.05
@@ -2663,6 +2669,11 @@ rajput_military_leadership_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_estate = estate_rajput
+		NOT = {
+			has_unlocked_government_reform = {
+				government_reform = aba_znn_governmental_indo_afghan_rajputs
+			}
+		}
 	}
 	trigger = {
 		if = {
@@ -2692,6 +2703,11 @@ the_maratha_army_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_estate = estate_maratha
+		NOT = {
+			has_unlocked_government_reform = {
+				government_reform = aba_znn_governmental_indo_afghan_rajputs
+			}
+		}
 	}
 	trigger = {
 		if = {

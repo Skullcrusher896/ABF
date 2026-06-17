@@ -5108,8 +5108,19 @@ bengali_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Dharma"
-		primary_culture = bengali
-		religion_group = muslim
+		OR = {
+			AND = {
+				primary_culture = bengali
+				religion_group = muslim
+			}
+			AND = {
+				has_country_flag = ABA_ZNN_UNLOCK_INDIA_GOVERNMENTS_FLAG
+				num_of_owned_provinces_with = {
+					value = 1
+					region = bengal_region
+				}
+			}
+		}
 	}
 	modifiers = {
 		merchants = 1
@@ -5142,12 +5153,17 @@ poligar_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Dharma"
-		technology_group = indian
 		OR = {
-			culture_group = dravidian
-			primary_culture = oriya
-			primary_culture = sinhala
-		}
+			AND = {
+				technology_group = indian
+				OR = {
+					culture_group = dravidian
+					primary_culture = oriya
+					primary_culture = sinhala
+				}
+			}
+			has_country_flag = ABA_ZNN_UNLOCK_INDIA_GOVERNMENTS_FLAG
+		} 
 	}
 	modifiers = {
 		infantry_power = 0.1
@@ -5181,11 +5197,16 @@ deccani_society_reform = {
 	potential = {
 		has_dlc = "Dharma"
 		is_revolutionary = no
-		technology_group = indian
-		religion_group = muslim
 		OR = {
-			culture_group = dravidian
-			primary_culture = marathi
+			AND = {
+				technology_group = indian
+				religion_group = muslim
+				OR = {
+					culture_group = dravidian
+					primary_culture = marathi
+				}
+			}
+			has_country_flag = ABA_ZNN_UNLOCK_INDIA_GOVERNMENTS_FLAG
 		}
 	}
 	modifiers = {
@@ -5804,11 +5825,17 @@ sidhi_recruitment = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Dharma"
-		technology_group = indian
-		religion_group = muslim
+		### ABA ]]]
 		OR = {
-			culture_group = dravidian
-			primary_culture = marathi
+			AND = {
+				technology_group = indian
+				religion_group = muslim
+				OR = {
+					culture_group = dravidian
+					primary_culture = marathi
+				}
+			}
+			has_country_flag = ABA_ZNN_UNLOCK_INDIA_GOVERNMENTS_FLAG
 		}
 	}
 	modifiers = {
@@ -6175,11 +6202,16 @@ dakhni_culture_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Dharma"
-		technology_group = indian
-		religion_group = muslim
 		OR = {
-			culture_group = dravidian
-			primary_culture = marathi
+			AND = {
+				technology_group = indian
+				religion_group = muslim
+				OR = {
+					culture_group = dravidian
+					primary_culture = marathi
+				}
+			}
+			has_country_flag = ABA_ZNN_UNLOCK_INDIA_GOVERNMENTS_FLAG
 		}
 	}
 	modifiers = {

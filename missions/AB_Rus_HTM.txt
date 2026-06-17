@@ -3735,6 +3735,7 @@ cossack_fourth_group = {
 				}
 				add_or_upgrade_dock_building = yes
 				add_or_upgrade_shipyard_building = yes
+				change_trade_goods = iron
 			}
 			custom_tooltip = AB_EMPTY
 			286 = {

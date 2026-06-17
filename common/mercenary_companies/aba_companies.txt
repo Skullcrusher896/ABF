@@ -2,6 +2,7 @@
 ### TCR
 ABA_tcr_gorkhas_merc_1 = {
     regiments_per_development = 0.055
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     cavalry_weight = 0.3
 	artillery_weight = 0.3 
 	cavalry_cap = 8
@@ -14,19 +15,19 @@ ABA_tcr_gorkhas_merc_1 = {
 			has_country_flag = ABA_tcr_gorkhas_unlocked
 			mission_completed = tcr_gorkhas
 		}
-		was_tag =  TCR
 	}
 	modifier = { 
-		shock_damage_received = -0.15
-		shock_damage = 0.15
-		land_morale = 0.15
+		shock_damage_received = -0.10
+		shock_damage = 0.10
+		land_morale = 0.10
 		discipline = 0.05
-		land_attrition = -0.20
+		land_attrition = -0.15
 		 }
 }
 
 ABA_tcr_gorkhas_merc_2 = {
     regiments_per_development = 0.055
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     cavalry_weight = 0.3
 	artillery_weight = 0.3 
 	cavalry_cap = 8
@@ -39,14 +40,13 @@ ABA_tcr_gorkhas_merc_2 = {
 			has_country_flag = ABA_tcr_gorkhas_unlocked
 			mission_completed = tcr_gorkhas
 		}
-		was_tag =  TCR
 	}
 	modifier = { 
-		fire_damage_received = -0.15
-		fire_damage = 0.15
-		land_morale = 0.15
+		fire_damage_received = -0.10
+		fire_damage = 0.10
+		land_morale = 0.10
 		discipline = 0.05
-		land_attrition = -0.20
+		land_attrition = -0.15
 		 }
 }
 

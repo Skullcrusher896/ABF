@@ -43,7 +43,7 @@ ABA_SHH_great_trunk_road: "Great Trunk Road"
 ABA_shh_staple_ports_of_india: "Staple Port of India"
 
 ################################## Mission Tooltips ##################################
-ABA_SHH_great_trunk_road_tt: "\nThe §GGreat Trunk Road§! will be revived, granting bonsues to the provinces it runs through!\n"
+ABA_SHH_great_trunk_road_tt: "The §GGreat Trunk Road§! will be revived, granting all required provinces the following modifier:"
 ABA_shh_staple_ports_of_india_tt: "\nWe establish §Gstaple ports§! for trading with foreigners across the coast of India!\n"
 
 ################################## Country Renames ##################################

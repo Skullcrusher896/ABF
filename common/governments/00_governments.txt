@@ -212,6 +212,7 @@ monarchy = {
 				ABA_tcr_celestial_empire
 				aba_pol_catholic_commonwealth_of_crowns
 				aba_crownpoland
+				aba_znn_persinate_radiant_state_reform
 				# ]]]
 			}
 		}
@@ -339,6 +340,9 @@ monarchy = {
 				magdeburg_rights_reform
 				bav_council_of_eight
 				mgygyula
+				# ]]]
+				# ABA ]]]
+				aba_znn_tribal_loyalties_reform
 				# ]]]
 			}
 		}
@@ -650,6 +654,7 @@ monarchy = {
 				# ]]]
 				#ABA 
 				aba_pol_catholic_husaria_buffed
+				aba_znn_governmental_indo_afghan_rajputs
 				# ]]]
 			}
 		}
@@ -710,6 +715,9 @@ monarchy = {
 				rhl_atheist_ideas
 				# Baltic
 				est_harmony
+				# ]]]
+				#ABA ]]]
+				aba_znn_religious_syncretism_reform
 				# ]]]
 			}
 		}

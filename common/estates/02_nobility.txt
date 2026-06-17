@@ -412,6 +412,7 @@ estate_nobles = {
 		# ABA ]]]
 		ABA_estate_nobles_POL_serdom_enforced
 		ABA_estate_nobles_POL_serdom_abolished
+		ABA_ZNN_estate_nobles_maratha_special_privilege
 		# ]]]
 	}
 

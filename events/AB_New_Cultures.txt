@@ -1314,7 +1314,7 @@ province_event = {
 	}
 }
 
-#Donauschwaben (German cultures Spread 
+#Rostaslavi
 province_event = {
 	id = ab_new_cultures.31
 	title = ab_new_cultures.31.t

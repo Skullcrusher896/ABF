@@ -399,6 +399,9 @@ estate_church = {
 		estate_church_pagan_reconciliation
 		estate_church_interfaith_unity
 		# ]]]
+		# ABF [[[
+		ABA_znn_estate_church_sun_pilgrims
+		# ]]]
 	}
 
 	agendas = {

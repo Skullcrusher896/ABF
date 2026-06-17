@@ -4756,6 +4756,23 @@ taj_mahal = {
 			power_projection_from_insults = 1
 		}
 
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = ABA_INDIA_EXTENDED_PATRONAGE
+					owner = {
+						has_country_flag = aba_znn_great_project_india_buff 
+					}
+				}
+			}
+			modifier = {
+				great_project_upgrade_time = -0.25
+				great_project_upgrade_cost = -0.25
+			}
+		}
+		# ]]]
+
 		#what effects happen when this tier is achieved
 		on_upgraded = {	
 		}
@@ -5884,6 +5901,23 @@ golden_temple = {
 			min_autonomy_in_territories = -0.15
 			
 		}
+
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = ABA_INDIA_EXTENDED_PATRONAGE
+					owner = {
+						has_country_flag = aba_znn_great_project_india_buff 
+					}
+				}
+			}
+			modifier = {
+				min_autonomy_in_territories = -0.05
+				global_autonomy = -0.025
+			}
+		}
+		# ]]]
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {	
@@ -7852,8 +7886,16 @@ fire_temple_of_ateshgah = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_or_accepts_religion = {
-			religion = zoroastrian
+		OR = {
+			province_is_or_accepts_religion = {
+				religion = zoroastrian
+			}
+			owner = {
+				custom_trigger_tooltip = {
+					tooltip = enable_korean_palace_tt 
+					has_country_flag = aba_znn_baku_sun_temple_reward
+				}
+			}
 		}
 	}
 
@@ -7869,15 +7911,31 @@ fire_temple_of_ateshgah = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion = {
-			religion = zoroastrian
+		OR = {
+			province_is_or_accepts_religion = {
+				religion = zoroastrian
+			}
+			owner = {
+				custom_trigger_tooltip = {
+					tooltip = enable_korean_palace_tt 
+					has_country_flag = aba_znn_baku_sun_temple_reward
+				}
+			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion = {
-			religion = zoroastrian
+		OR = {
+			province_is_or_accepts_religion = {
+				religion = zoroastrian
+			}
+			owner = {
+				custom_trigger_tooltip = {
+					tooltip = enable_korean_palace_tt 
+					has_country_flag = aba_znn_baku_sun_temple_reward
+				}
+			}
 		}
 	}
 
@@ -7939,6 +7997,23 @@ fire_temple_of_ateshgah = {
 			culture_conversion_cost = -0.05
 		}
 
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = enable_korean_palace_tt
+					owner = {
+						has_country_flag = aba_znn_baku_sun_temple_reward
+					}
+				}
+			}
+			modifier = {
+				fire_damage_received = 0.025
+				culture_conversion_cost = 0.025
+			}
+		}
+		# ]]]
+
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
@@ -7969,6 +8044,24 @@ fire_temple_of_ateshgah = {
 			fire_damage_received = -0.05
 			culture_conversion_cost = -0.05
 		}
+
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = enable_korean_palace_tt
+					owner = {
+						has_country_flag = aba_znn_baku_sun_temple_reward
+					}
+				}
+			}
+			modifier = {
+				discipline = -0.01
+				fire_damage_received = 0.025
+				culture_conversion_cost = 0.025
+			}
+		}
+		# ]]]
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
@@ -8001,6 +8094,25 @@ fire_temple_of_ateshgah = {
 			fire_damage = 0.05			
 			culture_conversion_cost = -0.1
 		}
+
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = enable_korean_palace_tt
+					owner = {
+						has_country_flag = aba_znn_baku_sun_temple_reward
+					}
+				}
+			}
+			modifier = {
+				discipline = -0.025
+				fire_damage_received = 0.05
+				fire_damage = -0.025
+				culture_conversion_cost = 0.05
+			}
+		}
+		# ]]]
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {	
@@ -12051,6 +12163,25 @@ ellora_caves = {
 			tolerance_heathen = 1
 			brahmins_hindu_loyalty_modifier = 0.15
 		}
+
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = ABA_INDIA_EXTENDED_PATRONAGE
+					owner = {
+						has_country_flag = aba_znn_great_project_india_buff 
+					}
+				}
+			}
+			modifier = {
+				tolerance_own = 1
+				tolerance_heretic = 1
+				tolerance_heathen = 1
+			}
+		}
+		# ]]]
+
 		on_upgraded = {
 		}
 	}
@@ -12582,6 +12713,25 @@ gomateshwara_statue = {
 		}
 		on_upgraded = {
 		}
+
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = ABA_INDIA_EXTENDED_PATRONAGE
+					owner = {
+						has_country_flag = aba_znn_great_project_india_buff 
+					}
+				}
+			}
+			modifier = {
+				tolerance_of_heretics_capacity = 1
+				tolerance_of_heathens_capacity = 1
+				envoy_travel_time = -0.10
+			}
+		}
+		# ]]]
+
 	}
 }
 
@@ -12738,6 +12888,24 @@ chola_temples = {
 		}
 		on_upgraded = {
 		}
+
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = ABA_INDIA_EXTENDED_PATRONAGE
+					owner = {
+						has_country_flag = aba_znn_great_project_india_buff 
+					}
+				}
+			}
+			modifier = {
+				global_missionary_strength = 0.01
+				culture_conversion_cost = -0.15
+			}
+		}
+		# ]]]
+
 	}
 }
 
@@ -13072,6 +13240,24 @@ hampi = {
 			religious_unity = 0.25
 			all_estate_loyalty_equilibrium = 0.15
 		}
+
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = ABA_INDIA_EXTENDED_PATRONAGE
+					owner = {
+						has_country_flag = aba_znn_great_project_india_buff 
+					}
+				}
+			}
+			modifier = {
+				prestige = 0.5
+				religious_unity = 0.10
+			}
+		}
+		# ]]]
+
 		on_upgraded = {
 		}
 	}
@@ -13578,6 +13764,23 @@ kashi_vishwanath = {
 			ae_impact = -0.1
 			brahmins_hindu_loyalty_modifier = 0.15
 		}
+
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = ABA_INDIA_EXTENDED_PATRONAGE
+					owner = {
+						has_country_flag = aba_znn_great_project_india_buff 
+					}
+				}
+			}
+			modifier = {
+				overextension_impact_modifier = -0.10
+			}
+		}
+		# ]]]
+
 		on_upgraded = {			
 		}
 	}
@@ -13734,6 +13937,23 @@ khajuraho = {
 			monthly_heir_claim_increase = 0.3
 			heir_chance = 0.5
 		}
+
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = ABA_INDIA_EXTENDED_PATRONAGE
+					owner = {
+						has_country_flag = aba_znn_great_project_india_buff 
+					}
+				}
+			}
+			modifier = {
+				legitimacy = 1
+			}
+		}
+		# ]]]
+
 		on_upgraded = {
 		}
 	}
@@ -14330,6 +14550,24 @@ mehrangarh_fort = {
 			advisor_cost = -0.2
 			special_unit_forcelimit = 0.1
 		}
+
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = ABA_INDIA_EXTENDED_PATRONAGE
+					owner = {
+						has_country_flag = aba_znn_great_project_india_buff 
+					}
+				}
+			}
+			modifier = {
+				special_unit_forcelimit = 0.1
+				special_unit_cost_modifier = -0.1
+			}
+		}
+		# ]]]
+
 		on_upgraded = {
 		}
 	}
@@ -15801,6 +16039,23 @@ sun_temple_konarak = {
 			prestige_decay = -0.01
 			religious_unity = 0.25
 		}
+
+		# ABA [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = ABA_INDIA_EXTENDED_PATRONAGE
+					owner = {
+						has_country_flag = aba_znn_great_project_india_buff 
+					}
+				}
+			}
+			modifier = {
+				monthly_church_power = 0.05
+			}
+		}
+		# ]]]
+
 		on_upgraded = {
 		}
 	}
@@ -18947,17 +19202,29 @@ shah_rukn_e_alam_tomb = {
 	starting_tier = 1
 	type = monument
 	build_trigger = {
+		custom_trigger_tooltip = {
+			tooltip = ab_per_destroyed_monument
+			NOT = { has_province_flag = aba_znn_destroyed_shah }
+		}
 	}
 	on_built = {
 	}
 	on_destroyed = {
 	}
 	can_use_modifiers_trigger = {
+		custom_trigger_tooltip = {
+			tooltip = ab_per_destroyed_monument
+			NOT = { has_province_flag = aba_znn_destroyed_shah }
+		}
 		province_is_or_accepts_religion_group = {
 			religion_group = muslim
 		}
 	}
 	can_upgrade_trigger = {
+		custom_trigger_tooltip = {
+			tooltip = ab_per_destroyed_monument
+			NOT = { has_province_flag = aba_znn_destroyed_shah }
+		}
 		province_is_or_accepts_religion_group = {
 			religion_group = muslim
 		}

@@ -1,0 +1,295 @@
+zunjustice = {
+	icon = "adulegalsystem"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+		OR = {
+			tag = ROB
+			was_tag = ROB
+		}
+	}
+	modifiers = {
+		adm_advisor_cost = -0.15
+		autonomy_change_time = -0.25
+	}
+}
+
+zunsilk = {
+	icon = "trading_city"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+		OR = {
+			tag = ROB
+			was_tag = ROB
+			tag = SHH
+			was_tag = SHH
+			tag = GHU
+			was_tag = GHU
+		}
+	}
+	custom_attributes = {
+		upgrade_cot_development = yes
+	}
+	modifiers = {
+		caravan_power = 0.2
+		center_of_trade_upgrade_cost = -0.1
+	}
+}
+
+zunfortress = {
+	icon = "chinawall"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+		OR = {
+			tag = ROB
+			was_tag = ROB
+		}
+	}
+	modifiers = {
+		defensiveness = 0.1
+		max_hostile_attrition = 1
+		hostile_attrition = 1
+	}
+}
+
+zunradiant = {
+	icon = "zunist"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+		religion = zunist
+		NOT = {
+			has_unlocked_government_reform = {
+				government_reform = aba_znn_persinate_radiant_state_reform
+			}
+		}
+	}
+	modifiers = {
+		tolerance_own = 1
+		church_power_modifier = 0.1
+		church_influence_modifier = 0.1
+		church_loyalty_modifier = 0.1
+	}
+	government_abilities = {
+        zunist_radiance_mechanic
+    }
+}
+
+zunadministration = {
+	icon = "noble_indian"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+		OR = {
+			tag = ROB
+			was_tag = ROB
+		}
+	}
+	modifiers = {
+		state_governing_cost = -0.1
+		global_unrest = -2
+	}
+}
+
+zunroutes = {
+	icon = "litamber"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+		OR = {
+			tag = ROB
+			was_tag = ROB
+		}
+	}
+	modifiers = {
+		movement_speed = 0.05
+		trade_efficiency = 0.1
+		trade_steering = 0.1
+	}
+}
+
+zundivine = {
+	icon = "persiacyrus"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+		OR = {
+			tag = ROB
+			was_tag = ROB
+		}
+	}
+	modifiers = {
+		max_absolutism = 10
+		manpower_in_true_faith_provinces= 0.1
+	}
+}
+
+### ABA ]]]
+aba_znn_governmental_indo_afghan_rajputs = {
+	icon = "rajput_kingdom"
+	potential = {
+		has_dlc = "Dharma"
+		has_estate = estate_rajput
+		has_unlocked_government_reform = {
+			government_reform = aba_znn_governmental_indo_afghan_rajputs
+		}
+	}
+	modifiers = {
+		recover_army_morale_speed = 0.05
+		fire_damage = 0.05
+		fire_damage_received = -0.05
+		allowed_rajput_fraction = 0.1
+		rajput_influence_modifier = 0.1
+		rajput_loyalty_modifier = 0.10
+		nobles_influence_modifier = -0.10
+		nobles_loyalty_modifier = -0.05
+	}
+	custom_attributes = {
+		better_purbias_interaction = yes
+	}
+	effect = {
+		if = {
+			limit = {
+				has_country_modifier = look_up_purbias
+			}
+			remove_country_modifier = look_up_purbias
+			add_country_modifier = {
+				name = look_up_purbias_upgraded
+				duration = -1
+			}
+		}
+	}
+	removed_effect = {
+		if = {
+			limit = {
+				has_country_modifier = look_up_purbias_upgraded
+			}
+			remove_country_modifier = look_up_purbias_upgraded
+			add_country_modifier = {
+				name = look_up_purbias
+				duration = -1
+			}
+		}
+	}
+	ai = {
+		factor = 3
+		modifier = {
+			factor = 0.1
+			estate_influence = {
+				estate = estate_rajput
+				influence = 90
+			}			
+		}
+	}
+}
+
+aba_znn_religious_syncretism_reform = {
+	icon = "millet_courts"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		has_unlocked_government_reform = {
+			government_reform = aba_znn_religious_syncretism_reform
+		}
+	}
+	modifiers = {
+		church_influence_modifier = 0.05
+		tolerance_of_heathens_capacity = 1
+		tolerance_of_heretics_capacity = 1
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_tax_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = gov_expanded_temple_rights_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	post_removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = gov_expanded_temple_rights_mod
+				}
+				remove_province_modifier = gov_expanded_temple_rights_mod
+			}
+		}
+	}
+
+	custom_attributes = {
+		temples_modifier = yes
+		enforced_interfaith_dialogue_buff = yes
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+aba_znn_tribal_loyalties_reform = {
+	icon = "indian_crown"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = ROB
+			was_tag = ROB
+		}
+		has_unlocked_government_reform = {
+			government_reform = aba_znn_tribal_loyalties_reform
+		}
+	}
+	modifiers = {
+		movement_speed = 0.1
+		land_forcelimit_modifier = 0.10
+		manpower_in_culture_group_provinces = 0.1
+		nobles_influence_modifier = 0.15
+	}
+}
+
+aba_znn_persinate_radiant_state_reform = {
+	icon = "zunist"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		is_revolutionary = no
+		religion = zunist
+		has_unlocked_government_reform = {
+			government_reform = aba_znn_persinate_radiant_state_reform
+		}
+	}
+
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		has_pashas = yes
+		custom_attributes = {
+			pasha_extra_bonuses = yes
+		}
+	}
+
+	modifiers = {
+		tolerance_own = 2
+		church_power_modifier = 0.15
+		governing_capacity_modifier = 0.1
+		church_influence_modifier = 0.1
+		church_loyalty_modifier = 0.1
+	}
+
+	government_abilities = {
+        zunist_radiance_mechanic
+    }
+}
+
+### ]]]

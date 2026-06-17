@@ -140,19 +140,6 @@ ab_building_tax_effect = {
 			duration = -1
 		}
 	}
-	#ABF
-	if = {
-		limit = {
-			FROM = {
-				has_country_flag = ABA_TCR_temple_buff
-			}
-			religion = ROOT
-		}
-		add_province_modifier = {
-			name = ABA_tcr_temple_expansion
-			duration = -1
-		}
-	}
 	if = {
 		limit = {
 			FROM = {
@@ -172,6 +159,33 @@ ab_building_tax_effect = {
 		}
 		add_base_tax = 1
 		add_base_manpower = 1
+	}
+	#ABF
+	if = {
+		limit = {
+			FROM = {
+				has_country_flag = aba_znn_road_building_radiance
+			}
+		}
+		FROM = {
+			add_government_power = { 
+				mechanic_type = zunist_radiance_mechanic
+				power_type = zunist_radiance
+				value = 0.10
+			}
+		}
+	}
+	if = {
+		limit = {
+			FROM = {
+				has_country_flag = ABA_TCR_temple_buff
+			}
+			religion = ROOT
+		}
+		add_province_modifier = {
+			name = ABA_tcr_temple_expansion
+			duration = -1
+		}
 	}
 }
 
@@ -215,6 +229,20 @@ ab_removing_tax_effect = {
 			has_province_modifier = ABA_tcr_temple_expansion
 		}
 		remove_province_modifier = ABA_tcr_temple_expansion
+	}
+	if = {
+		limit = {
+			FROM = {
+				has_country_flag = aba_znn_road_building_radiance
+			}
+		}
+		FROM = {
+			add_government_power = { 
+				mechanic_type = zunist_radiance_mechanic
+				power_type = zunist_radiance
+				value = -0.10
+			}
+		}
 	}
 }
 

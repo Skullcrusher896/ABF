@@ -12,41 +12,72 @@ country_event = {
 	option = {
 		name = aba_zun_event.1.a
 		custom_tooltip = ABA_ZNN_india_tt
-		set_country_flag = ABA_zun_india_path
+		set_country_flag = aba_znn_india
 		swap_non_generic_missions = yes
-		hidden_effect = {
-			complete_mission = zunp_overpower
-			complete_mission = zunp_zunbils
-			complete_mission = zunp_forward
-			complete_mission = zunp_unite
-			complete_mission = zuni_overpower
-			complete_mission = zuni_zunbils
-			complete_mission = zuni_forward
-			complete_mission = zuni_unite
-		}
 		set_country_flag = ab_unlock_mission_switch
 		custom_tooltip = AB_UNLOCK_MISSION_SWITCH
 		country_event = { id = aba_zun_event.5 } #Trigger color choice event
+		custom_tooltip = AB_EMPTY
+		multan_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+		sindh_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+		northern_sindh_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
 	}
 
 	option = {
 		name = aba_zun_event.1.b
 		custom_tooltip = ABA_ZNN_persia_tt
-		set_country_flag = ABA_zun_persia_path
+		set_country_flag = aba_znn_persia
 		swap_non_generic_missions = yes
-			hidden_effect = {
-			complete_mission = zunp_overpower
-			complete_mission = zunp_zunbils
-			complete_mission = zunp_forward
-			complete_mission = zunp_unite
-			complete_mission = zuni_overpower
-			complete_mission = zuni_zunbils
-			complete_mission = zuni_forward
-			complete_mission = zuni_unite
-		}
 		set_country_flag = ab_unlock_mission_switch
 		custom_tooltip = AB_UNLOCK_MISSION_SWITCH
 		country_event = { id = aba_zun_event.5 } #Trigger color choice event
+		custom_tooltip = AB_EMPTY
+		sistan_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+		birjand_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+		kerman_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+		merv_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
 	}
 }
 
@@ -61,25 +92,14 @@ country_event = {
 
 	option = {
 		name = aba_zun_event.2.a
-		add_country_modifier ={
-			name = aba_ZNN_embrace_india
-			duration = -1
-		}
-		change_technology_group = indian
-		change_unit_type = indian
-		set_country_flag = ABA_ZUN_rajput_integration
-		custom_tooltip = AB_EMPTY
-		custom_tooltip = ABA_ZUN_rajut_intergration_tt
+		custom_tooltip = ABA_ZNN_UNLOCK_INDO_GOVS_TT
+		set_country_flag = ABA_ZNN_UNLOCK_INDIA_GOVERNMENTS_FLAG
 	}
 
 	option = {
 		name = aba_zun_event.2.b
-		add_country_modifier ={
-			name = aba_zun_afghan_indian_reject
-			duration = -1
-		}
-		set_country_flag = ABA_ZUN_unlock_qizilbash
-		custom_tooltip = ABA_ZUN_afghan_indian_reject_warriors_tt
+		custom_tooltip = ABA_ZNN_UNLOCK_PERSIO_GOVS_TT
+		set_country_flag = ABA_ZNN_UNLOCK_PERSIO_AFGHAN_GOVERNMENTS_FLAG
 	}
 }
 
@@ -93,27 +113,25 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = aba_zun_event.3.a
+		name = aba_zun_event.3.a	
 		custom_tooltip = ABA_ZNN_global_purification_tt
 		hidden_effect = {
 			every_country = {
 				limit = {
+					NOT = { tag = ROOT } 
 					NOT = {
 						religion = zunist
 					}
 				}
-				reverse_add_casus_belli = {
-					type = cb_zun_crusade
-					months = 300
-					target = ROOT
+				ROOT = {
+					add_casus_belli = {
+						type = cb_aba_zun_crusade 
+						months = 300                
+						target = PREV              
+					}
 				}
 			}
 		}
-		custom_tooltip = AB_EMPTY
-		add_country_modifier ={
-			name = aba_zun_global_purification
-			duration = -1
-		}	
 	}
 }
 
@@ -128,174 +146,23 @@ country_event = {
 
     immediate = {
         hidden_effect = {
-            clr_country_flag = ABA_zun_persia_path
-            clr_country_flag = ABA_zun_india_path
+            clr_country_flag = aba_znn_persia
+            clr_country_flag = aba_znn_india
         }
     }
 
 	option = {
 		name = aba_zun_event.4.a
-		clr_country_flag = ABA_zun_persia_path
-		set_country_flag = ABA_zun_india_path
+		clr_country_flag = aba_znn_persia
+		set_country_flag = aba_znn_india
 		swap_non_generic_missions = yes
-		complete_mission = zuni_overpower
-		complete_mission = zuni_zunbils
-		complete_mission = zuni_forward
-		complete_mission = zuni_unite
-		if = {
-			limit = {
-				mission_completed = zunp_rebuild
-			}
-			complete_mission = zuni_rebuild
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_court
-			}
-			complete_mission = zuni_court
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_cloth
-			}
-			complete_mission = zuni_cloth
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_caravans
-			}
-			complete_mission = zuni_caravans
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_silk_road
-			}
-			complete_mission = zuni_silk_road
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_industralize
-			}
-			complete_mission = zuni_industralize
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_cities
-			}
-			complete_mission = zuni_cities
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_shrines
-			}
-			complete_mission = zuni_shrines
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_wrath
-			}
-			complete_mission = zuni_wrath
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_sah_bahar
-			}
-			complete_mission = zuni_sah_bahar
-		}
-		if = {
-			limit = {
-				mission_completed = zunp_coast_2
-			}
-			complete_mission = zuni_coast_2
-		}
-		if = {
-			limit = {
-			mission_completed = zunp_forward
-			}
-			complete_mission = zuni_forward
-		}
 	}
 
 	option = { #Persia Path
 		name = aba_zun_event.4.b
-		clr_country_flag = ABA_zun_india_path
-		set_country_flag = ABA_zun_persia_path
+		clr_country_flag = aba_znn_india
+		set_country_flag = aba_znn_persia
 		swap_non_generic_missions = yes
-		complete_mission = zunp_overpower
-		complete_mission = zunp_zunbils
-		complete_mission = zunp_unite
-		if = {
-			limit = {
-				mission_completed = zuni_rebuild
-			}
-			complete_mission = zunp_rebuild
-		}
-		if = {
-			limit = {
-			mission_completed = zuni_forward
-			}
-			complete_mission = zunp_forward
-		}
-		if = {
-			limit = {
-				mission_completed = zuni_court
-			}
-			complete_mission = zunp_court
-		}
-		if = {
-			limit = {
-				mission_completed = zuni_cloth
-			}
-			complete_mission = zunp_cloth
-		}
-		if = {
-			limit = {
-				mission_completed = zuni_caravans
-			}
-			complete_mission = zunp_caravans
-		}
-		if = {
-			limit = {
-				mission_completed = zuni_silk_road
-			}
-			complete_mission = zunp_silk_road
-		}
-		if = {
-			limit = {
-				mission_completed = zuni_industralize
-			}
-			complete_mission = zunp_industralize
-		}
-		if = {
-			limit = {
-				mission_completed = zuni_cities
-			}
-			complete_mission = zunp_cities
-		}
-		if = {
-			limit = {
-				mission_completed = zuni_shrines
-			}
-			complete_mission = zunp_shrines
-		}
-		if = {
-			limit = {
-				mission_completed = zuni_wrath
-			}
-			complete_mission = zunp_wrath
-		}
-		if = {
-			limit = {
-				mission_completed = zuni_sah_bahar
-			}
-			complete_mission = zunp_sah_bahar
-		}
-		if = {
-			limit = {
-				mission_completed = zuni_coast_2
-			}
-			complete_mission = zunp_coast_2
-		}
 	}
 }
 
@@ -318,4 +185,146 @@ country_event = {
 			color = { 255 255 255 }
 		}
 	}
+}
+
+#Jains
+country_event = {
+	id = aba_zun_event.6
+	title = aba_zun_event.6.t
+	desc = aba_zun_event.6.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = { #Integrate the Jains
+		name = aba_zun_event.6.a
+		hidden_effect = {
+			enable_estate_effect = {
+				estate = estate_burghers
+			}
+		}
+		enable_estate_effect = {
+			estate = estate_jains
+		}
+		custom_tooltip = AB_EMPTY
+		set_country_flag = MUG_gujarat_privilege_flag
+		custom_tooltip = MUG_gujarat_privilege
+		custom_tooltip = AB_EMPTY
+		set_country_flag = MUG_unlock_industrial_privilege_flag
+		custom_tooltip = MUG_unlock_industrial_privilege 
+	}
+
+	option = { #Let the traditional arbiters of the Silk Road take contorl
+		name = aba_zun_event.6.b
+		custom_tooltip = ABA_ZNN_BURGHERS_JAINS_PRIVILEGE_TT
+		hidden_effect = {
+			unlock_estate_privilege = {
+				estate_privilege = ABA_ZNN_estate_burghers_jains_special_privilege
+			}
+		}
+	}
+}
+
+#Marathas
+country_event = {
+	id = aba_zun_event.7
+	title = aba_zun_event.7.t
+	desc = aba_zun_event.7.d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+
+	option = { #Integrate the Marathas
+		name = aba_zun_event.7.a
+		custom_tooltip = ABA_ZNN_MARATHAS_PRIVILEGE_TT
+		hidden_effect = {
+			unlock_estate_privilege = {
+				estate_privilege = ABA_ZNN_estate_nobles_maratha_special_privilege
+			}
+		}
+	}
+
+	option = { #Our current class of warrior-nobility is enough
+		name = aba_zun_event.7.b
+		custom_tooltip = AB_SHH_improved_nobles_privilege_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					has_estate_privilege = estate_nobles_command_of_the_military
+				}
+				remove_estate_privilege = estate_nobles_command_of_the_military
+				set_country_flag = AB_SHH_improved_nobles_privilege
+				set_estate_privilege = AB_estate_nobles_command_of_the_military_improved
+			}
+			else = {
+				set_country_flag = AB_improved_command_military_privilege
+			}
+		}
+	}
+}
+
+#Qizilibash
+country_event = {
+	id = aba_zun_event.8
+	title = aba_zun_event.8.t
+	desc = aba_zun_event.8.d
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+
+	option = { #Rise warrios of the desert!
+		name = aba_zun_event.8.a
+		custom_tooltip = ABA_ZNN_QIZILIBASH_SPAWN_TT
+		if = {
+			limit = {
+				num_of_qizilbash = 30
+			}
+			add_country_modifier = {
+				name = ABA_ZNN_qizilbash_integration
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				for = {
+					amount = 3
+					effect = "
+						qizilbash_cavalry = ROOT
+					"
+				}
+			}
+			capital_scope = {
+				for = {
+					amount = 7
+					effect = "
+						qizilbash_infantry = ROOT
+					"
+				}
+			}			
+			country_event = {
+				id = aba_zun_event.8
+				days = 3650
+			}
+		}
+	}	
+}
+
+#Persinate Empire
+country_event = {
+	id = aba_zun_event.9
+	title = aba_zun_event.9.t
+	desc = aba_zun_event.9.d
+	picture = AFRICAN_INDIAN_eventPicture
+	
+	is_triggered_only = yes
+
+	option = { #Rise warrios of the desert!
+		name = aba_zun_event.9.a
+		unlock_government_reform = {
+			government_reform = aba_znn_persinate_radiant_state_reform
+		}
+		hidden_effect = {
+			add_government_reform = aba_znn_persinate_radiant_state_reform
+		}
+	}	
 }

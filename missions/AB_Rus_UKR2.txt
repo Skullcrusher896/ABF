@@ -1,0 +1,2454 @@
+##########################################################################
+# SLOT 1
+##########################################################################
+
+# Shared early missions (always visible, no flag required)
+ab_rus_ukr_slot_1_start = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = east_slavic
+		OR = {
+			tag = SMO
+			tag = CHR
+			tag = TVE
+			tag = RSO
+			tag = NZH
+			tag = MOS
+			tag = YAR
+			tag = WRT
+			tag = KIE
+			tag = OKA
+			tag = RYA
+			tag = VLD
+			tag = VLG
+			tag = PRM
+			tag = BLO
+			tag = PSK
+			tag = PLT
+			tag = PDL
+			tag = VOL
+			AND = {
+				OR = {
+					tag = UKR
+					was_tag = UKR
+				}
+				NOT = { was_tag = NOV }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	ab_russia_consolidate = {
+		icon = mission_early_russian_army
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_novgorod = {
+		icon = mission_conquer_novgorod
+		position = 3
+		required_missions = {
+			ab_russia_game
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Locked placeholder missions for slot 1 - shown ONLY when Tsardom flag is NOT set
+ab_rus_ukr_slot_1_locked_pre_tsardom = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = east_slavic
+		OR = {
+			tag = SMO
+			tag = CHR
+			tag = TVE
+			tag = RSO
+			tag = NZH
+			tag = MOS
+			tag = YAR
+			tag = WRT
+			tag = KIE
+			tag = OKA
+			tag = RYA
+			tag = VLD
+			tag = VLG
+			tag = PRM
+			tag = BLO
+			tag = PSK
+			tag = PLT
+			tag = PDL
+			tag = VOL
+			AND = {
+				OR = {
+					tag = UKR
+					was_tag = UKR
+				}
+				NOT = { was_tag = NOV }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = {
+			has_country_flag = ABA_RUS_TSARDOM
+		}
+	}
+
+	ab_russia_locked_29 = {
+		icon = mission_locked_mission
+		position = 4
+		required_missions = {
+			ab_russia_novgorod
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ABA_RUS_UNLOCKED_PATH
+				has_country_flag = glh_you_wont_complete_this
+			}
+		}
+		effect = { }
+	}
+
+	ab_russia_locked_2 = {
+		icon = mission_locked_mission
+		position = 5
+		required_missions = {
+			ab_russia_locked_29
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_8 = {
+		icon = mission_locked_mission
+		position = 6
+		required_missions = {
+			ab_russia_locked_2
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Tsardom slot 1 missions - shown ONLY when Tsardom flag IS set
+ab_rus_ukr_tsardom_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = east_slavic
+		OR = {
+			tag = SMO
+			tag = CHR
+			tag = TVE
+			tag = RSO
+			tag = NZH
+			tag = MOS
+			tag = YAR
+			tag = WRT
+			tag = KIE
+			tag = OKA
+			tag = RYA
+			tag = VLD
+			tag = VLG
+			tag = PRM
+			tag = BLO
+			tag = PSK
+			tag = PLT
+			tag = PDL
+			tag = VOL
+			AND = {
+				OR = {
+					tag = UKR
+					was_tag = UKR
+				}
+				NOT = { was_tag = NOV }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = ABA_RUS_TSARDOM
+	}
+
+	ab_russia_finland = {
+		icon = mission_conquer_finland
+		position = 4
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_baltic = {
+		icon = mission_conquer_baltic_region
+		position = 5
+		required_missions = {
+			ab_russia_finland
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_malorossian = {
+		icon = mission_russian_navy
+		position = 6
+		required_missions = {
+			ab_russia_baltic
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_poland = {
+		icon = mission_partition_poland
+		position = 8
+		required_missions = {
+			ab_russia_romania
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_wendia = {
+		icon = mission_wendia
+		position = 9
+		required_missions = {
+			ab_russia_poland
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_settle_east = {
+		icon = mission_pol_tend_east
+		position = 14
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_adapt_yam = {
+		icon = mission_pue_chaco_roads
+		position = 15
+		required_missions = {
+			ab_rus_settle_east
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_rostov = {
+		icon = toulon_dockyards
+		position = 16
+		required_missions = {
+			ab_rus_river_settlements
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_kremlins = {
+		icon = mission_take_over_the_kremlin
+		position = 17
+		required_missions = {
+			ab_rus_volgagrad
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_crown_sloboda = {
+		icon = alpine_fortifications
+		position = 18
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	rus_churches_mission = {
+		icon = mission_land_of_churches
+		position = 24
+		required_missions = {
+			ab_russia_autocratic
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_patriarchate_rus = {
+		icon = mission_cathedral_cities
+		position = 26
+		required_missions = {
+			rus_churches_mission ab_russia_empower
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_table_of_ranks = {
+		icon = mission_table_of_ranks
+		position = 30
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Tsardom Modernization slot 1 missions - shown ONLY when TSARDOM_MOD flag IS set
+ab_rus_ukr_tsardom_mod_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = east_slavic
+		OR = {
+			tag = SMO
+			tag = CHR
+			tag = TVE
+			tag = RSO
+			tag = NZH
+			tag = MOS
+			tag = YAR
+			tag = WRT
+			tag = KIE
+			tag = OKA
+			tag = RYA
+			tag = VLD
+			tag = VLG
+			tag = PRM
+			tag = BLO
+			tag = PSK
+			tag = PLT
+			tag = PDL
+			tag = VOL
+			AND = {
+				OR = {
+					tag = UKR
+					was_tag = UKR
+				}
+				NOT = { was_tag = NOV }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = ABA_RUS_TSARDOM_MOD
+	}
+
+	ab_rus_education = {
+		icon = mission_early_modern_university
+		position = 20
+		required_missions = {
+			ab_rus_economic_mod_plan
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Locked placeholder missions for slot 1 - positions 8-9, always visible
+ab_rus_ukr_slot_1_locked_mid = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = east_slavic
+		OR = {
+			tag = SMO
+			tag = CHR
+			tag = TVE
+			tag = RSO
+			tag = NZH
+			tag = MOS
+			tag = YAR
+			tag = WRT
+			tag = KIE
+			tag = OKA
+			tag = RYA
+			tag = VLD
+			tag = VLG
+			tag = PRM
+			tag = BLO
+			tag = PSK
+			tag = PLT
+			tag = PDL
+			tag = VOL
+			AND = {
+				OR = {
+					tag = UKR
+					was_tag = UKR
+				}
+				NOT = { was_tag = NOV }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = {
+			has_country_flag = ABA_RUS_TSARDOM
+		}
+	}
+
+	ab_russia_locked_13 = {
+		icon = mission_locked_mission
+		position = 8
+		required_missions = {
+			ab_russia_locked_31
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_24 = {
+		icon = mission_locked_mission
+		position = 9
+		required_missions = {
+			ab_russia_locked_13
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Locked placeholder missions for slot 1 - lower positions, always visible
+ab_rus_ukr_slot_1_locked_lower = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = east_slavic
+		OR = {
+			tag = SMO
+			tag = CHR
+			tag = TVE
+			tag = RSO
+			tag = NZH
+			tag = MOS
+			tag = YAR
+			tag = WRT
+			tag = KIE
+			tag = OKA
+			tag = RYA
+			tag = VLD
+			tag = VLG
+			tag = PRM
+			tag = BLO
+			tag = PSK
+			tag = PLT
+			tag = PDL
+			tag = VOL
+			AND = {
+				OR = {
+					tag = UKR
+					was_tag = UKR
+				}
+				NOT = { was_tag = NOV }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = {
+				has_country_flag = ABA_RUS_TSARDOM
+			}
+	}
+
+	ab_russia_locked_41 = {
+		icon = mission_locked_mission
+		position = 14
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_42 = {
+		icon = mission_locked_mission
+		position = 15
+		required_missions = {
+			ab_russia_locked_41
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_48 = {
+		icon = mission_locked_mission
+		position = 16
+		required_missions = {
+			ab_russia_locked_43
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_54 = {
+		icon = mission_locked_mission
+		position = 17
+		required_missions = {
+			ab_russia_locked_49
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_63 = {
+		icon = mission_locked_mission
+		position = 18
+		required_missions = {
+			ab_russia_locked_54
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_72 = {
+		icon = mission_locked_mission
+		position = 20
+		required_missions = {
+			ab_russia_locked_64
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_75 = {
+		icon = mission_locked_mission
+		position = 24
+		required_missions = {
+			ab_russia_locked_74
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_77 = {
+		icon = mission_locked_mission
+		position = 26
+		required_missions = {
+			ab_russia_locked_75 ab_russia_locked_76
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_94 = {
+		icon = mission_locked_mission
+		position = 30
+		required_missions = {
+			ab_russia_locked_89
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+##########################################################################
+# SLOT 2
+##########################################################################
+
+# Shared slot 2 early missions
+ab_rus_ukr_slot_2_start = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = east_slavic
+		OR = {
+			tag = SMO
+			tag = CHR
+			tag = TVE
+			tag = RSO
+			tag = NZH
+			tag = MOS
+			tag = YAR
+			tag = WRT
+			tag = KIE
+			tag = OKA
+			tag = RYA
+			tag = VLD
+			tag = VLG
+			tag = PRM
+			tag = BLO
+			tag = PSK
+			tag = PLT
+			tag = PDL
+			tag = VOL
+			AND = {
+				OR = {
+					tag = UKR
+					was_tag = UKR
+				}
+				NOT = { was_tag = NOV }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	ab_russia_game = {
+		icon = mission_conquer_tver
+		position = 2
+		required_missions = {
+			ab_russia_consolidate
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_eastern = {
+		icon = mission_sovereign_principality
+		position = 3
+		required_missions = {
+			ab_russia_game
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_consolidate_princes = {
+		icon = mission_unite_the_princes
+		position = 4
+		required_missions = {
+			ab_russia_dniepr ab_russia_eastern ab_russia_novgorod
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_heirs = {
+		icon = mission_rule_ruthenia
+		position = 5
+		required_missions = {
+			ab_russia_consolidate_princes
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Locked slot 2 pre-tsardom missions
+ab_rus_ukr_slot_2_locked_pre_tsardom = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = east_slavic
+		OR = {
+			tag = SMO
+			tag = CHR
+			tag = TVE
+			tag = RSO
+			tag = NZH
+			tag = MOS
+			tag = YAR
+			tag = WRT
+			tag = KIE
+			tag = OKA
+			tag = RYA
+			tag = VLD
+			tag = VLG
+			tag = PRM
+			tag = BLO
+			tag = PSK
+			tag = PLT
+			tag = PDL
+			tag = VOL
+			AND = {
+				OR = {
+					tag = UKR
+					was_tag = UKR
+				}
+				NOT = { was_tag = NOV }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = {
+			has_country_flag = ABA_RUS_TSARDOM
+		}
+	}
+
+	ab_russia_locked_31 = {
+		icon = mission_locked_mission
+		position = 7
+		required_missions = {
+			ab_russia_place_in_sun
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ABA_RUS_UNLOCKED_PATH
+				has_country_flag = glh_you_wont_complete_this
+			}
+		}
+		effect = { }
+	}
+
+	ab_russia_locked_34 = {
+		icon = mission_locked_mission
+		position = 8
+		required_missions = {
+			ab_russia_locked_31
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_36 = {
+		icon = mission_locked_mission
+		position = 9
+		required_missions = {
+			ab_russia_locked_34
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_37 = {
+		icon = mission_locked_mission
+		position = 10
+		required_missions = {
+			ab_russia_locked_33 ab_russia_locked_36 ab_russia_locked_24
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_22 = {
+		icon = mission_locked_mission
+		position = 12
+		required_missions = {
+			ab_russia_locked_16
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_43 = {
+		icon = mission_locked_mission
+		position = 15
+		required_missions = {
+			ab_russia_locked_41
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_49 = {
+		icon = mission_locked_mission
+		position = 16
+		required_missions = {
+			ab_russia_locked_43
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_59 = {
+		icon = mission_locked_mission
+		position = 17
+		required_missions = {
+			ab_russia_locked_49 ab_russia_locked_44
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_67 = {
+		icon = mission_locked_mission
+		position = 21
+		required_missions = {
+			ab_russia_locked_65
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_78 = {
+		icon = mission_locked_mission
+		position = 24
+		required_missions = {
+			ab_russia_locked_74
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_76 = {
+		icon = mission_locked_mission
+		position = 25
+		required_missions = {
+			ab_russia_locked_75
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_82 = {
+		icon = mission_locked_mission
+		position = 27
+		required_missions = {
+			ab_russia_locked_77 ab_russia_locked_80
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_89 = {
+		icon = mission_locked_mission
+		position = 29
+		required_missions = {
+			ab_russia_locked_88
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_93 = {
+		icon = mission_locked_mission
+		position = 30
+		required_missions = {
+			ab_russia_locked_89
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_95 = {
+		icon = mission_locked_mission
+		position = 31
+		required_missions = {
+			ab_russia_locked_93 ab_russia_locked_94
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Tsardom slot 2 missions
+ab_rus_ukr_tsardom_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = east_slavic
+		OR = {
+			tag = SMO
+			tag = CHR
+			tag = TVE
+			tag = RSO
+			tag = NZH
+			tag = MOS
+			tag = YAR
+			tag = WRT
+			tag = KIE
+			tag = OKA
+			tag = RYA
+			tag = VLD
+			tag = VLG
+			tag = PRM
+			tag = BLO
+			tag = PSK
+			tag = PLT
+			tag = PDL
+			tag = VOL
+			AND = {
+				OR = {
+					tag = UKR
+					was_tag = UKR
+				}
+				NOT = { was_tag = NOV }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = ABA_RUS_TSARDOM
+	}
+
+	ab_russia_romania = {
+		icon = mission_conquer_romania
+		position = 7
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_moravian_legacy = {
+		icon = restore_great_moravia
+		position = 8
+		required_missions = {
+			ab_russia_romania
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_bohemia = {
+		icon = bohemian_commonwealth
+		position = 9
+		required_missions = {
+			ab_russia_moravian_legacy
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_panslavism = {
+		icon = mission_slavic
+		position = 10
+		required_missions = {
+			ab_russia_wendia ab_russia_bohemia ab_russia_bulgaria
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_california = {
+		icon = mission_colonize_california
+		position = 12
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_river_settlements = {
+		icon = mission_se_along_the_river
+		position = 15
+		required_missions = {
+			ab_rus_settle_east
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_volgagrad = {
+		icon = renaissance_city
+		position = 16
+		required_missions = {
+			ab_rus_river_settlements
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_urban_centers = {
+		icon = promote_urbanization
+		position = 17
+		required_missions = {
+			ab_rus_volgagrad
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_boyars = {
+		icon = mission_unite_the_princes
+		position = 24
+		required_missions = {
+			ab_russia_autocratic
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_empower = {
+		icon = mission_russian_patriarchatee
+		position = 25
+		required_missions = {
+			rus_churches_mission
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_church_state = {
+		icon = mission_autocephalous_archbishopric
+		position = 27
+		required_missions = {
+			ab_russia_patriarchate_rus ab_rus_book_of_royal_degrees
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Tsardom Modernization slot 2 missions
+ab_rus_ukr_tsardom_mod_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		culture_group = east_slavic
+		OR = {
+			tag = SMO
+			tag = CHR
+			tag = TVE
+			tag = RSO
+			tag = NZH
+			tag = MOS
+			tag = YAR
+			tag = WRT
+			tag = KIE
+			tag = OKA
+			tag = RYA
+			tag = VLD
+			tag = VLG
+			tag = PRM
+			tag = BLO
+			tag = PSK
+			tag = PLT
+			tag = PDL
+			tag = VOL
+			AND = {
+				OR = {
+					tag = UKR
+					was_tag = UKR
+				}
+				NOT = { was_tag = NOV }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = ABA_RUS_TSARDOM_MOD
+	}
+
+	ab_russia_industrial = {
+		icon = industrialized_rhineland
+		position = 21
+		required_missions = {
+			ab_rus_manufactories
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_modernization_reforms = {
+		icon = mission_late_ottoman_reforms
+		position = 29
+		required_missions = {
+			ab_rus_the_empire_of_russia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_governing_senate = {
+		icon = mission_the_governing_senate
+		position = 30
+		required_missions = {
+			ab_rus_modernization_reforms
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_economic_political_reform = {
+		icon = mission_the_golden_city
+		position = 31
+		required_missions = {
+			ab_rus_governing_senate ab_rus_table_of_ranks
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+##########################################################################
+# SLOT 3
+##########################################################################
+
+# Shared slot 3 early missions
+ab_rus_ukr_slot_3_start = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+	}
+
+	ab_russia_dniepr = {
+		icon = mission_advance_to_the_dnieper
+		position = 3
+		required_missions = {
+			ab_russia_game ab_tatar_yoke
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_kiev = {
+		icon = mission_restore_kiev
+		position = 4
+		required_missions = {
+			ab_russia_dniepr
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_lavra = {
+		icon = mission_develop_kiev
+		position = 5
+		required_missions = {
+			ab_russia_kiev
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_place_in_sun = {
+		icon = mission_the_russian_tsardom
+		position = 6
+		required_missions = {
+			ab_russia_heirs ab_russia_dismantle
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Locked slot 3 pre-tsardom missions
+ab_rus_ukr_slot_3_locked_pre_tsardom = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+		NOT = {
+			has_country_flag = ABA_RUS_TSARDOM
+		}
+	}
+
+	ab_russia_locked_9 = {
+		icon = mission_locked_mission
+		position = 7
+		required_missions = {
+			ab_russia_place_in_sun
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ABA_RUS_UNLOCKED_PATH
+				has_country_flag = glh_you_wont_complete_this
+			}
+		}
+		effect = { }
+	}
+
+	ab_russia_locked_35 = {
+		icon = mission_locked_mission
+		position = 8
+		required_missions = {
+			ab_russia_locked_31
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_33 = {
+		icon = mission_locked_mission
+		position = 9
+		required_missions = {
+			ab_russia_locked_35
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_16 = {
+		icon = mission_locked_mission
+		position = 11
+		required_missions = {
+			ab_russia_locked_15
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_21 = {
+		icon = mission_locked_mission
+		position = 13
+		required_missions = {
+			ab_russia_locked_16
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_50 = {
+		icon = mission_locked_mission
+		position = 14
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_44 = {
+		icon = mission_locked_mission
+		position = 16
+		required_missions = {
+			ab_russia_locked_43 ab_russia_locked_50 ab_russia_locked_51
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_55 = {
+		icon = mission_locked_mission
+		position = 17
+		required_missions = {
+			ab_russia_locked_44
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_57 = {
+		icon = mission_locked_mission
+		position = 18
+		required_missions = {
+			ab_russia_locked_55 ab_russia_locked_59 ab_russia_locked_61
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_64 = {
+		icon = mission_locked_mission
+		position = 19
+		required_missions = {
+			ab_russia_locked_57
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_65 = {
+		icon = mission_locked_mission
+		position = 20
+		required_missions = {
+			ab_russia_locked_64
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_68 = {
+		icon = mission_locked_mission
+		position = 22
+		required_missions = {
+			ab_russia_locked_65
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_74 = {
+		icon = mission_locked_mission
+		position = 23
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_79 = {
+		icon = mission_locked_mission
+		position = 24
+		required_missions = {
+			ab_russia_locked_74
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_81 = {
+		icon = mission_locked_mission
+		position = 25
+		required_missions = {
+			ab_russia_locked_79 ab_russia_locked_86 ab_russia_locked_78
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_80 = {
+		icon = mission_locked_mission
+		position = 26
+		required_missions = {
+			ab_russia_locked_81
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_88 = {
+		icon = mission_locked_mission
+		position = 28
+		required_missions = {
+			ab_russia_locked_87 ab_russia_locked_82
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_92 = {
+		icon = mission_locked_mission
+		position = 30
+		required_missions = {
+			ab_russia_locked_88
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_99 = {
+		icon = mission_locked_mission
+		position = 32
+		required_missions = {
+			ab_russia_locked_95 ab_russia_locked_98 ab_russia_locked_92
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Tsardom slot 3 missions
+ab_rus_ukr_tsardom_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+		has_country_flag = ABA_RUS_TSARDOM
+	}
+
+	ab_rus_beyond_urals = {
+		icon = mission_beyond_the_urals
+		position = 7
+		required_missions = {
+			ab_russia_place_in_sun
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_carpathia = {
+		icon = the_hundred_years_war
+		position = 8
+		required_missions = {
+			ab_russia_romania
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_bulgaria = {
+		icon = push_on_to_bulgaria
+		position = 9
+		required_missions = {
+			ab_russia_carpathia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	rus_alaskan_colony = {
+		icon = mission_colonize_alaska
+		position = 11
+		required_missions = {
+			rus_manchuria_coast
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_canada = {
+		icon = mission_ruler_of_north_america
+		position = 13
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_capitals = {
+		icon = mission_novgorod_the_great
+		position = 14
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_industrial_centers = {
+		icon = mission_industria_sedera
+		position = 16
+		required_missions = {
+			ab_rus_serfs_first ab_rus_river_settlements
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_resources = {
+		icon = mission_rb_prospect_for_coal
+		position = 17
+		required_missions = {
+			ab_rus_industrial_centers
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_war_economy = {
+		icon = mission_russian_revolution
+		position = 18
+		required_missions = {
+			ab_rus_resources ab_rus_metallurgy ab_rus_urban_centers
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_autocratic = {
+		icon = mission_autocratic_rule
+		position = 23
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_enact_the_sudebnik = {
+		icon = mission_the_sudebnik
+		position = 24
+		required_missions = {
+			ab_russia_autocratic
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_the_mestnichestvo = {
+		icon = mission_abolish_mestnichestvo
+		position = 25
+		required_missions = {
+			ab_rus_oprachina ab_rus_enact_the_sudebnik ab_russia_boyars
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_book_of_royal_degrees = {
+		icon = mission_establish_the_prikazy
+		position = 26
+		required_missions = {
+			ab_rus_the_mestnichestvo
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Tsardom Modernization slot 3 missions
+ab_rus_ukr_tsardom_mod_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+		has_country_flag = ABA_RUS_TSARDOM_MOD
+	}
+
+	ab_rus_economic_mod_plan = {
+		icon = mission_state_manufactories
+		position = 19
+		required_missions = {
+			ab_rus_war_economy
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_manufactories = {
+		icon = saxon_manufacturing
+		position = 20
+		required_missions = {
+			ab_rus_economic_mod_plan
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_railroad = {
+		icon = mission_rail
+		position = 22
+		required_missions = {
+			ab_rus_manufactories
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_the_empire_of_russia = {
+		icon = mission_empire_of_russia
+		position = 28
+		required_missions = {
+			ab_rus_increase_absolute_rule ab_russia_church_state
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_most_holy_synod = {
+		icon = mission_most_holy_synod
+		position = 30
+		required_missions = {
+			ab_rus_the_empire_of_russia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_great_power_of_east = {
+		icon = mission_the_third_rome
+		position = 32
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+##########################################################################
+# SLOT 4
+##########################################################################
+
+# Shared slot 4 early missions
+ab_rus_ukr_slot_4_start = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+	}
+
+	ab_tatar_yoke = {
+		icon = mission_dethrone_the_rurikovichs
+		position = 2
+		required_missions = {
+			ab_shade_khan
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_fields = {
+		icon = mission_recruit_the_cossacks
+		position = 3
+		required_missions = {
+			ab_tatar_yoke
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_azov = {
+		icon = mission_non-western_cavalry_raid
+		position = 4
+		required_missions = {
+			ab_russia_fields ab_russia_dniepr
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_dismantle = {
+		icon = mission_ghorde
+		position = 5
+		required_missions = {
+			ab_russia_azov
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Locked slot 4 pre-tsardom missions
+ab_rus_ukr_slot_4_locked_pre_tsardom = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+		NOT = {
+			has_country_flag = ABA_RUS_TSARDOM
+		}
+	}
+
+	ab_russia_locked_7 = {
+		icon = mission_locked_mission
+		position = 7
+		required_missions = {
+			ab_russia_place_in_sun
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ABA_RUS_UNLOCKED_PATH
+				has_country_flag = glh_you_wont_complete_this
+			}
+		}
+		effect = { }
+	}
+
+	tr_russian_colony_in_west_siberia_locked = {
+		icon = mission_locked_mission
+		position = 8
+		required_missions = {
+			ab_russia_locked_9
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_12 = {
+		icon = mission_locked_mission
+		position = 9
+		required_missions = {
+			tr_russian_colony_in_west_siberia_locked
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_15 = {
+		icon = mission_locked_mission
+		position = 10
+		required_missions = {
+			ab_russia_locked_12
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_20 = {
+		icon = mission_locked_mission
+		position = 12
+		required_missions = {
+			ab_russia_locked_16
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_51 = {
+		icon = mission_locked_mission
+		position = 15
+		required_missions = {
+			ab_russia_locked_40
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_45 = {
+		icon = mission_locked_mission
+		position = 16
+		required_missions = {
+			ab_russia_locked_51
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_61 = {
+		icon = mission_locked_mission
+		position = 17
+		required_missions = {
+			ab_russia_locked_45 ab_russia_locked_44
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Tsardom slot 4 missions
+ab_rus_ukr_tsardom_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+		has_country_flag = ABA_RUS_TSARDOM
+	}
+
+	ab_russia_caucasian_border = {
+		icon = mission_the_caucasus_rus
+		position = 7
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	tr_russian_colony_in_west_siberia_new = {
+		icon = mission_colonial
+		position = 8
+		required_missions = {
+			ab_rus_beyond_urals
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	tr_russian_colony_in_east_siberia = {
+		icon = mission_rb_colonise_canada
+		position = 9
+		required_missions = {
+			tr_russian_colony_in_west_siberia_new
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	rus_manchuria_coast = {
+		icon = mission_amur_acquisition
+		position = 10
+		required_missions = {
+			tr_russian_colony_in_east_siberia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_alaska = {
+		icon = mission_colonize_alaska
+		position = 12
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_serfs_first = {
+		icon = mission_serfdom
+		position = 15
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_mines = {
+		icon = mission_iron_and_copper
+		position = 16
+		required_missions = {
+			ab_rus_serfs_first
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_metallurgy = {
+		icon = mission_industrial_forging
+		position = 17
+		required_missions = {
+			ab_rus_industrial_centers ab_russia_locked_45
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_oprachina = {
+		icon = contracts_of_correspondence
+		position = 24
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_western_court = {
+		icon = mission_alliances
+		position = 25
+		required_missions = {
+			ab_russia_streltsy
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_increase_absolute_rule = {
+		icon = misssion_russian_great_power
+		position = 27
+		required_missions = {
+			ab_rus_centralization ab_rus_book_of_royal_degrees
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Tsardom Modernization slot 4 missions
+ab_rus_ukr_tsardom_mod_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+		has_country_flag = ABA_RUS_TSARDOM_MOD
+	}
+
+	ab_rus_control_trade = {
+		icon = mission_seize_north_sea_trade
+		position = 21
+		required_missions = {
+			ab_rus_manufactories
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_dissolve_the_streltsy = {
+		icon = mission_handle_the_streltsy
+		position = 29
+		required_missions = {
+			ab_rus_the_empire_of_russia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_westernise_navy = {
+		icon = mission_expanded_leidang
+		position = 30
+		required_missions = {
+			ab_rus_dissolve_the_streltsy
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_state_arms = {
+		icon = mission_guns_of_urban
+		position = 31
+		required_missions = {
+			ab_rus_westernise_army ab_rus_westernise_navy
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+##########################################################################
+# SLOT 5
+##########################################################################
+
+# Shared slot 5 early missions (always visible)
+ab_rus_ukr_slot_5_start = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+	}
+
+	ab_shade_khan = {
+		icon = mission_noble_council
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_cossacks = {
+		icon = mission_break_the_tatar_yoke
+		position = 2
+		required_missions = {
+			ab_shade_khan
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_crimea = {
+		icon = mission_sca_lit_conquer_crimea
+		position = 3
+		required_missions = {
+			ab_tatar_yoke
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Locked slot 5 pre-tsardom missions
+ab_rus_ukr_slot_5_locked_pre_tsardom = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+		NOT = {
+			has_country_flag = ABA_RUS_TSARDOM
+		}
+	}
+
+	ab_russia_locked_3 = {
+		icon = mission_locked_mission
+		position = 4
+		required_missions = {
+			ab_russia_crimea
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ABA_RUS_UNLOCKED_PATH
+				has_country_flag = glh_you_wont_complete_this
+			}
+		}
+		effect = { }
+	}
+
+	ab_russia_locked_4 = {
+		icon = mission_locked_mission
+		position = 5
+		required_missions = {
+			ab_russia_locked_3
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_5 = {
+		icon = mission_locked_mission
+		position = 6
+		required_missions = {
+			ab_russia_locked_4
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_6 = {
+		icon = mission_locked_mission
+		position = 7
+		required_missions = {
+			ab_russia_locked_5 ab_russia_place_in_sun
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_10 = {
+		icon = mission_locked_mission
+		position = 8
+		required_missions = {
+			ab_russia_locked_6 ab_russia_locked_7
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_14 = {
+		icon = mission_locked_mission
+		position = 9
+		required_missions = {
+			ab_russia_locked_10
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_17 = {
+		icon = mission_locked_mission
+		position = 11
+		required_missions = {
+			ab_russia_locked_15 ab_russia_locked_14
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_18 = {
+		icon = mission_locked_mission
+		position = 13
+		required_missions = {
+			ab_russia_locked_17
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_40 = {
+		icon = mission_locked_mission
+		position = 14
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_46 = {
+		icon = mission_locked_mission
+		position = 15
+		required_missions = {
+			ab_russia_locked_51 ab_russia_locked_40
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_56 = {
+		icon = mission_locked_mission
+		position = 16
+		required_missions = {
+			ab_russia_locked_51
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_58 = {
+		icon = mission_locked_mission
+		position = 17
+		required_missions = {
+			ab_russia_locked_45
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_47 = {
+		icon = mission_locked_mission
+		position = 18
+		required_missions = {
+			ab_russia_locked_58
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_69 = {
+		icon = mission_locked_mission
+		position = 20
+		required_missions = {
+			ab_russia_locked_64
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_83 = {
+		icon = mission_locked_mission
+		position = 24
+		required_missions = {
+			ab_russia_locked_74
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_85 = {
+		icon = mission_locked_mission
+		position = 26
+		required_missions = {
+			ab_russia_locked_83 ab_russia_locked_84
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_locked_97 = {
+		icon = mission_locked_mission
+		position = 30
+		required_missions = {
+			ab_russia_locked_90
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Tsardom slot 5 missions
+ab_rus_ukr_tsardom_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+		has_country_flag = ABA_RUS_TSARDOM
+	}
+
+	ab_rus_black_sea_fleet = {
+		icon = mission_norwegian_ship
+		position = 4
+		required_missions = {
+			ab_russia_crimea
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_sevastopol = {
+		icon = mission_control_the_black_sea
+		position = 5
+		required_missions = {
+			ab_rus_black_sea_fleet
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_tame_steppe = {
+		icon = mission_lit_harness_steppes
+		position = 6
+		required_missions = {
+			ab_rus_sevastopol
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_central_asia = {
+		icon = mission_central_asian_steppes
+		position = 7
+		required_missions = {
+			ab_russia_tame_steppe ab_russia_place_in_sun
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_persian_question = {
+		icon = mam_persia
+		position = 8
+		required_missions = {
+			ab_russia_central_asia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_great_game = {
+		icon = mission_subdue_the_afghans
+		position = 9
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_dragon = {
+		icon = mission_defy_the_dragon
+		position = 11
+		required_missions = {
+			rus_manchuria_coast ab_rus_great_game
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_japan = {
+		icon = mission_japanseal
+		position = 13
+		required_missions = {
+			ab_russia_dragon
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_harness_land = {
+		icon = claim_the_borderlands
+		position = 14
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_lumber = {
+		icon = mission_forest
+		position = 15
+		required_missions = {
+			ab_rus_harness_land
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_breadbasket = {
+		icon = mission_wheat
+		position = 16
+		required_missions = {
+			ab_rus_serfs_first
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_vodka = {
+		icon = mission_vodka_monopoly
+		position = 17
+		required_missions = {
+			ab_rus_breadbasket
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_fur = {
+		icon = mission_control_fur_trade
+		position = 18
+		required_missions = {
+			ab_rus_vodka
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_russia_streltsy = {
+		icon = mission_recruit_streltsy
+		position = 24
+		required_missions = {
+			ab_russia_autocratic
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_centralization = {
+		icon = balance_of_power
+		position = 26
+		required_missions = {
+			ab_rus_western_court ab_russia_streltsy
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}
+
+# Tsardom Modernization slot 5 missions
+ab_rus_ukr_tsardom_mod_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = UKR
+		has_country_flag = ABA_RUS_TSARDOM_MOD
+	}
+
+	ab_rus_fate_of_serfdom = {
+		icon = mission_peasants
+		position = 20
+		required_missions = {
+			ab_rus_economic_mod_plan
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ab_rus_westernise_army = {
+		icon = establish_a_standing_army
+		position = 30
+		required_missions = {
+			ab_rus_dissolve_the_streltsy
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+}

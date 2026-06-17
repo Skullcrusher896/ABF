@@ -490,15 +490,15 @@ ab_shahi_missions_1 = {
 		}
 		provinces_to_highlight = { 
 			OR = {
-			province_id = 504
-			province_id = 517
-			province_id = 2030
-			province_id = 534
-			province_id = 2026
-			province_id = 539
-			province_id = 552
-			province_id = 4477
-			province_id = 564
+				province_id = 504
+				province_id = 517
+				province_id = 2030
+				province_id = 534
+				province_id = 2026
+				province_id = 539
+				province_id = 552
+				province_id = 4477
+				province_id = 564
 			}
 		}
 
@@ -1784,6 +1784,7 @@ ab_shahi_missions_4 = {
 		required_missions = {
 			AB_Shahi_Buildingblocks_Nation AB_Shahi_Commercial_Power
 		}
+
 		provinces_to_highlight = {
 			OR = {
 				province_id = 2226
@@ -1801,6 +1802,7 @@ ab_shahi_missions_4 = {
 			}
 
 		}
+
 		trigger = {
 			2226 = {
 				owned_by = ROOT
@@ -1819,6 +1821,7 @@ ab_shahi_missions_4 = {
 			}
 
 		}
+		
 		effect = {
 			add_country_modifier = {
 				name = AB_SHH_Afghan_Production
@@ -1838,6 +1841,7 @@ ab_shahi_missions_4 = {
 			AB_Shahi_National_Treasure
 		}
 		provinces_to_highlight = { }
+
 		trigger = {
 			has_adm_advisor_2 = yes
 			has_dip_advisor_2 = yes
@@ -1878,7 +1882,6 @@ ab_shahi_missions_4 = {
 					set_country_flag = AB_SHH_extra_dev_click
 				}
 			}
-
 		}
 	}
 
@@ -1994,7 +1997,6 @@ ab_shahi_missions_4 = {
 					}
 				}
 			}
-
 		}
 	}
 

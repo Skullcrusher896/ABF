@@ -833,10 +833,10 @@ ab_persia_tcr_india_1 = {
 		}
 		provinces_to_highlight = { 
 			OR = {
-			province_id = 4457
-			province_id = 517
-			province_id = 529
-			province_id = 2089
+				province_id = 4457
+				province_id = 517
+				province_id = 529
+				province_id = 2089
 			}
 		}
 		trigger = { 
@@ -910,15 +910,18 @@ ab_persia_tcr_india_1 = {
 		required_missions = {
 			tcr_deccan
 		}
+
 		provinces_to_highlight = { 
 			province_id = 542
 		}
+
 		trigger = { 
 			542 = {
 				owned_by = ROOT
 				base_production = 10
 			}
 		}
+
 		effect = { 
 			add_treasury = 500
 			custom_tooltip = AB_EMPTY
@@ -4906,10 +4909,12 @@ ab_persia_tcr_india_3 = {
 		required_missions = {
 			tcr_masters_of_india
 		}
+
 		provinces_to_highlight = { 
 			region = burma_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
+		
 		trigger = { 
 			num_of_owned_provinces_with = {
 				value = 10
@@ -5938,6 +5943,7 @@ ab_persia_tcr_4 = {
 		required_missions = {
 			tcr_unite
 		}
+
 		trigger = {
 		    tibet_region = {
 			    type = all
@@ -6652,6 +6658,7 @@ ab_persia_tcr_india_4 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
+
 		effect = { 
 			add_navy_tradition = 15
 			custom_tooltip = AB_EMPTY
@@ -6854,10 +6861,12 @@ ab_persia_tcr_india_4 = {
 		required_missions = {
 			trc_elephant_warfare
 		}
+
 		provinces_to_highlight = { 
 			area = nepal_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
+
 		trigger = { 
 			nepal_area = {
 				type = all

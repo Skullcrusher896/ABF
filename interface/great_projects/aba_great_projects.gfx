@@ -39,5 +39,10 @@
         name = "GFX_great_project_ABA_nova_sich"    
         texturefile  = "gfx//interface//great_projects//great_project_ABA_nova_sich.dds"
     }
+
+    spriteType = {
+        name = "GFX_great_project_ABA_ZUN_mulasthana"    
+        texturefile  = "gfx//interface//great_projects//great_project_ABA_ZUN_mulasthana.dds"
+    }
 }
 

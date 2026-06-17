@@ -34,10 +34,10 @@ ABA_SHH_indian_syncretism = {
 }
 
 ABA_SHH_great_trunk_road = {
-   allowed_num_of_buildings = 1
-   local_prosperity_growth = 0.10
-   province_trade_power_value = 0.05
-   local_development_cost = -0.15
+   local_prosperity_growth = 0.05
+   province_trade_power_modifier = 0.05
+   local_friendly_movement_speed = 0.25
+   local_development_cost = -0.10
 }
 
 ABA_shh_staple_ports_of_india = {
@@ -678,30 +678,11 @@ aba_htm_military_housing = {
 
 ####### Zun #######
 
-aba_ZNN_war_elephants = {
-    cavalry_shock = 0.5
-}
-
-aba_ZNN_mysore_rockets = {
-    artillery_fire = 0.25
-	shock_damage = 0.10
-    artillery_cost = -0.10
-    
-}
-
 aba_znn_golconda = {
     local_production_efficiency = 0.10
     local_development_cost = -0.1
     trade_goods_size = 0.5
 }
-
-aba_zun_global_purification = {
-	global_missionary_strength = 0.01  
-    missionaries = 1
-    yearly_government_power = 0.05
-    religious_unity = 0.25
-}
-
 
 aba_zun_great_conversion = {
     global_missionary_strength = 0.01  
@@ -724,9 +705,7 @@ aba_zun_sunset_india = {
 
 aba_zun_damascus_steel = {
     army_tradition_decay = -0.01
-    morale_damage_received = -0.025
-    morale_damage = 0.025
-
+    fire_damage_received = -0.05
 }
 
 aba_ZNN_embrace_india = {
@@ -740,9 +719,9 @@ aba_ZNN_embrace_india = {
 }
 
 aba_zun_tattagird = {
-    allowed_num_of_buildings = 1
-    allowed_num_of_manufactories = 1
-    local_development_cost = -0.25
+    local_sailors_modifier = 0.25
+    local_ship_cost = -0.25
+    local_ship_repair = -0.25
     local_governing_cost = -0.10
 }
 
@@ -781,13 +760,103 @@ ABA_ZNN_qizilbash_cap_expansion = {
 }
 
 ABA_ZNN_rajput_cap_expansion = {
-    allowed_rajput_fraction = 0.15
+    allowed_rajput_fraction = 0.10
 }
 
 ABA_ZNN_rajput_integration = {
     is_rajput_modifier = yes
     infantry_power = 0.025
     discipline = 0.025
+}
+
+#### ZNN NEW MODIFIERS ####
+aba_znn_reunited_turk_shahi = {
+    global_autonomy = -0.05
+    num_accepted_cultures = 2
+}
+
+aba_znn_riches_of_indus = {
+    trade_goods_size_modifier = 0.10
+    local_prosperity_growth = 0.1
+    allowed_num_of_buildings = 1
+    local_governing_cost = -0.10
+}
+
+aba_znn_city_of_gold = {
+    allowed_num_of_manufactories = 1
+    local_tax_modifier = 0.15
+    trade_goods_size = 0.5
+}
+
+aba_znn_fury_of_zun = {
+    warscore_cost_vs_other_religion = -0.10
+    unjustified_demands = -0.10
+}
+
+aba_znn_greater_gandhara = {
+    local_institution_spread = 0.10
+    province_trade_power_modifier = 0.10
+    local_prosperity_growth = 0.1
+}
+
+aba_znn_nepal_war_machine = {
+    max_hostile_attrition = 1
+    local_hostile_attrition = 1
+    local_manpower_modifier = 0.15
+}
+
+aba_znn_steel_city = {
+    trade_goods_size = 1.0
+}
+
+aba_znn_rajput_governors_mod = {
+    min_local_autonomy = 10
+    local_governing_cost = -0.25
+    local_manpower_modifier = 0.10
+}
+
+aba_znn_tribes_bengal_mod = {
+    local_autonomy = -0.10
+    local_core_creation = -0.10
+    local_missionary_strength = 0.02
+}
+
+aba_znn_zamindawar = {
+    allowed_num_of_buildings = 1
+    trade_goods_size = 0.5
+    supply_limit_modifier = 0.10
+    local_prosperity_growth = 0.10
+}
+
+aba_znn_bactrian_script = {
+    same_religion_advisor_cost = -0.25
+    same_culture_advisor_cost = -0.25
+}
+
+aba_ZNN_war_elephants = {
+    cavalry_shock = 0.5
+}
+
+aba_ZNN_mysore_rockets = {
+    artillery_fire = 0.10
+	artillery_shock = 0.10
+    artillery_power = 0.10
+}
+
+aba_znn_india_merchant_guilds_mod = {
+    local_development_cost_modifier = -0.10
+    trade_goods_size_modifier = 0.15
+}
+
+aba_znn_persia_merchant_guilds_mod = {
+    local_development_cost_modifier = -0.10
+    province_trade_power_modifier = 0.15
+}
+
+aba_znn_shining_age_mod = {
+    global_prosperity_growth = 0.15
+    development_cost = -0.15
+    global_unrest = -1
 }
 
 ###### Bulgaria #######
@@ -917,9 +986,9 @@ aba_tcr_chinese_sec = {
 
 #province modifier 
 aba_tcr_purushapura = {
-    allowed_num_of_manufactories = 2
+    allowed_num_of_manufactories = 1
     development_cost = -0.10
-    allowed_num_of_buildings = 2
+    allowed_num_of_buildings = 1
     local_prosperity_growth = 0.25
 }
 
