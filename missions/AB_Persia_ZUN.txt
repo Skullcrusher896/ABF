@@ -5607,10 +5607,12 @@ ab_persia_zun_4 = {
 		trigger = { 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 8
-				area = armenia_area
-				area = imereti_area
-				area = kartli_kakheti_area
-				area = samtskhe_area
+				OR = {
+						area = armenia_area
+					area = imereti_area
+					area = kartli_kakheti_area
+					area = samtskhe_area
+				}
 			}
 		}
 
