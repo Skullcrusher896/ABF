@@ -425,6 +425,7 @@ ab_india_zun_1 = {
 				province_id = 534
 			}
 		}
+
 		trigger = { 
 			4457 = {
 				owned_by = ROOT
@@ -462,6 +463,7 @@ ab_india_zun_1 = {
 				development = 15
 			}
 		}
+
 		effect = { 
 			custom_tooltip = ABA_POLAND_DOMESTIC_ARMS_TT
 			tooltip = {
@@ -531,10 +533,6 @@ ab_india_zun_1 = {
 					effect = "add_dip_power = 25"
 				}
 			}
-		}
-
-		effect = { 
-
 		}
 	}
 
@@ -630,6 +628,7 @@ ab_persia_zun_1 = {
 		required_missions = {
 			zun_secure_coast
 		}
+		
 		trigger = {
 			basra_area = {
 				type = all
@@ -2085,6 +2084,7 @@ ab_persia_zun_2 = {
 		required_missions = {
 			zun_forward zun_fleet
 		}
+
 		trigger = {
 			persian_gulf_coast = {
 				type = all
@@ -2438,6 +2438,7 @@ ab_persia_zun_2 = {
 		required_missions = {
 			zun_global_purification
 		}
+
 		trigger = { 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 25
@@ -5522,6 +5523,7 @@ ab_persia_zun_4 = {
 				duration = 9125
 			}
 			custom_tooltip = ABA_ZNN_UNIFY_PERSIA_CB
+			set_country_flag = aba_zun_unify_persia_cb
 			hidden_effect = {
 				every_country = {
 					limit = {
@@ -5608,7 +5610,7 @@ ab_persia_zun_4 = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 8
 				OR = {
-						area = armenia_area
+					area = armenia_area
 					area = imereti_area
 					area = kartli_kakheti_area
 					area = samtskhe_area
