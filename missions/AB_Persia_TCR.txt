@@ -5646,7 +5646,7 @@ ab_persia_tcr_slot_3_base = {
 		icon = mission_a_great_mandala
 		position = 3
 		required_missions = {
-			tcr_war tcr_irrigation tcr_desert_training
+			tcr_war 
 		}
 
 		provinces_to_highlight = { 
