@@ -5,7 +5,9 @@ cb_persian_unification = {
 	prerequisites_self = {
 		is_free_or_tributary_trigger = yes
 		OR = {
-			has_country_flag = aba_zun_unify_persia_cb
+			### ABF - add availability for Persian focused Zun [[[
+			has_country_flag = abf_zun_unify_persia_cb
+			### ]]]
 			has_reform = persianprince
 			has_reform = persianprincet
 			tag = ZKD

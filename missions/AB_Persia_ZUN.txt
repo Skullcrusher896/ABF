@@ -84,7 +84,7 @@ ab_zun_1_start = {
 				cost_multiplier = 0.25
 			}
 			custom_tooltip = AB_EMPTY
-			custom_tooltip = ABA_ZNN_GAIN_3_SHIPYARD
+			custom_tooltip = ABF_ZNN_GAIN_3_SHIPYARD_TT
 			hidden_effect = {
 				 for = {
                     amount = 3
@@ -114,8 +114,8 @@ ab_zun_lock_1 = {
 		}
 		NOT = {
 			OR = {
-				has_country_flag = aba_znn_india
-				has_country_flag = aba_znn_persia
+				has_country_flag = abf_znn_india_path
+				has_country_flag = abf_znn_persia_path
 			}
 		}
 	}
@@ -198,9 +198,9 @@ ab_india_zun_1 = {
 			was_tag = ROB
 		}
 		AND = {
-			has_country_flag = aba_znn_india
+			has_country_flag = abf_znn_india_path
 			NOT = {
-				has_country_flag = aba_znn_persia
+				has_country_flag = abf_znn_persia_path
 			}
 		}
 	}
@@ -236,13 +236,10 @@ ab_india_zun_1 = {
 		effect = { 
 			504 = {
 				add_province_modifier = {
-					name = aba_zun_tattagird
+					name = abf_zun_tattagird
 					duration = -1
 				}
 				center_of_trade = 2
-				add_or_upgrade_trade_building = yes
-				add_or_upgrade_tax_building = yes
-				add_or_upgrade_production_building = yes
 			}
 			custom_tooltip = AB_EMPTY
 			set_country_flag = scaling_trader_shh
@@ -307,17 +304,15 @@ ab_india_zun_1 = {
 				cost_multiplier = 0.67
 			}
 			custom_tooltip = AB_EMPTY
-			set_country_flag = aba_znn_pilgrims_privilege
-			custom_tooltip = ABA_ZNN_PIGRLIMS_PRIVILEGE_TT
+			set_country_flag = abf_znn_tax_building_radiance
+			custom_tooltip = ABF_ZNN_TAX_RADIANCE_TT
+			custom_tooltip = AB_EMPTY
+			custom_tooltip = ABF_ZNN_UNLOCK_PIGRLIMS_PRIVILEGE_TT
 			hidden_effect = {
 				unlock_estate_privilege = {
-					estate_privilege = ABA_znn_estate_church_sun_pilgrims
+					estate_privilege = estate_church_abf_znn_sun_pilgrims
 				}
 			}
-			custom_tooltip = AB_EMPTY
-			set_country_flag = aba_znn_tax_building_radiance
-			custom_tooltip = ABA_ZNN_tax_RADIANCE_TT
-
 		}
 	}
 
@@ -340,12 +335,6 @@ ab_india_zun_1 = {
 		}
 		
 		effect = { 
-			define_advisor = {
-				type = natural_scientist
-				skill = 3
-				cost_multiplier = 0.33
-			}
-			custom_tooltip = AB_EMPTY
 			add_years_of_owned_provinces_production_income = {
 				years = 1
 				trigger = {
@@ -354,14 +343,19 @@ ab_india_zun_1 = {
 				custom_tooltip = MONOPOLY_INCOME_GEMS_DESC
 			}
 			custom_tooltip = AB_EMPTY
+			define_advisor = {
+				type = natural_scientist
+				skill = 3
+				cost_multiplier = 0.33
+			}
+			custom_tooltip = AB_EMPTY
 			542 = {
 				add_province_modifier = {
-					name = "aba_znn_golconda"
+					name = "abf_znn_golconda"
 					duration = -1
 				}
 				add_or_upgrade_production_building = yes
 				add_or_upgrade_trade_building = yes
-				add_or_upgrade_tax_building = yes
 			}
 		}
 	}
@@ -402,8 +396,8 @@ ab_india_zun_1 = {
 				cost_multiplier = 0.5
 			}
 			custom_tooltip = AB_EMPTY
-			set_country_flag = aba_znn_great_project_india_buff 
-			custom_tooltip = ABA_ZNN_GREAT_INDIA_BUFF_TT
+			set_country_flag = abf_znn_great_project_india_buff 
+			custom_tooltip = ABF_ZNN_GREAT_INDIA_BUFF_TT
 		}
 	}
 
@@ -465,10 +459,10 @@ ab_india_zun_1 = {
 		}
 
 		effect = { 
-			custom_tooltip = ABA_POLAND_DOMESTIC_ARMS_TT
+			custom_tooltip = ABF_POLAND_DOMESTIC_ARMS_TT
 			tooltip = {
 				add_province_modifier = {
-						name = aba_tcr_west_indian_ports
+						name = abf_tcr_west_indian_ports
 						duration = -1
 					}
 				add_center_of_trade_level = 1
@@ -476,49 +470,49 @@ ab_india_zun_1 = {
 			hidden_effect = {
 				4457 = {
 					add_province_modifier = {
-						name = aba_tcr_west_indian_ports
+						name = abf_tcr_west_indian_ports
 						duration = -1
 					}
 					add_center_of_trade_level = 1
 				}
 				517 = {
 					add_province_modifier = {
-						name = aba_tcr_west_indian_ports
+						name = abf_tcr_west_indian_ports
 						duration = -1
 					}
 					add_center_of_trade_level = 1
 				}
 				529 = {
 					add_province_modifier = {
-						name = aba_tcr_west_indian_ports
+						name = abf_tcr_west_indian_ports
 						duration = -1
 					}
 					add_center_of_trade_level = 1
 				}
 				2089 = {
 					add_province_modifier = {
-						name = aba_tcr_west_indian_ports
+						name = abf_tcr_west_indian_ports
 						duration = -1
 					}
 					add_center_of_trade_level = 1
 				}
 				2030 = {
 					add_province_modifier = {
-						name = aba_tcr_west_indian_ports
+						name = abf_tcr_west_indian_ports
 						duration = -1
 					}
 					add_center_of_trade_level = 1
 				}
 				531 = {
 					add_province_modifier = {
-						name = aba_tcr_west_indian_ports
+						name = abf_tcr_west_indian_ports
 						duration = -1
 					}
 					add_center_of_trade_level = 1
 				}
 				534 = {
 					add_province_modifier = {
-						name = aba_tcr_west_indian_ports
+						name = abf_tcr_west_indian_ports
 						duration = -1
 					}
 					add_center_of_trade_level = 1
@@ -557,6 +551,7 @@ ab_india_zun_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			596 = {
+				country_or_non_sovereign_subject_holds = ROOT
 				province_has_center_of_trade_of_level = 2
 				has_trade_building_trigger = yes
 				development = 25
@@ -569,18 +564,9 @@ ab_india_zun_1 = {
 			}
 			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
-				name = aba_zun_malacca
+				name = abf_zun_malacca
 				duration = -1
 			}
-			596 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 35
-					key = "Hegemony Over The Strait"
-				}
-			}
-			custom_tooltip = AB_EMPTY
 			custom_tooltip = NAZ_EVERY_TRADE_COMPANY_PROV
 			tooltip = {
 				add_province_modifier = {
@@ -600,6 +586,14 @@ ab_india_zun_1 = {
 					}
 				}
 			}
+			596 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 35
+					key = "Hegemony Over The Strait"
+				}
+			}
 		}
 	}
 }
@@ -615,9 +609,9 @@ ab_persia_zun_1 = {
 			was_tag = ROB
 		}
 		AND = {
-			has_country_flag = aba_znn_persia
+			has_country_flag = abf_znn_persia_path
 			NOT = {
-				has_country_flag = aba_znn_india
+				has_country_flag = abf_znn_india_path
 			}
 		}
 	}
@@ -699,7 +693,7 @@ ab_persia_zun_1 = {
 						has_production_building_trigger = yes
 					}
 				}
-				custom_tooltip = ABA_ZNN_SUGAR_YES
+				custom_tooltip = ABF_ZNN_SUGAR_YES
 				tooltip = {
 					add_province_modifier = {
 						name = jlr_sugar_fields
@@ -743,7 +737,7 @@ ab_persia_zun_1 = {
 				}
 			}
 			else = {
-				custom_tooltip = ABA_ZNN_SUGAR_NO
+				custom_tooltip = ABF_ZNN_SUGAR_NO
 				tooltip = {
 					add_province_modifier = {
 						name = jlr_sugar_fields
@@ -915,6 +909,12 @@ ab_persia_zun_1 = {
 				name = per_trade_op
 				duration = -1
 			}
+			custom_tooltip = PER_COT
+			set_country_flag = enable_upgrading_centers_of_trade_dev
+			custom_tooltip = AB_EMPTY
+			set_country_flag = ned_buffed_free_enterprises
+			custom_tooltip = NED_MODIFY_FREE_ENTERPRISES_PRIVILEGE
+			custom_tooltip = AB_EMPTY
 			431 = {
 				add_trade_modifier = {
 					who = ROOT
@@ -923,12 +923,6 @@ ab_persia_zun_1 = {
 					key = "Grip Over The Gulf"
 				}
 			}
-			custom_tooltip = AB_EMPTY
-			custom_tooltip = PER_COT
-			set_country_flag = enable_upgrading_centers_of_trade_dev
-			custom_tooltip = AB_EMPTY
-			set_country_flag = ned_buffed_free_enterprises
-			custom_tooltip = NED_MODIFY_FREE_ENTERPRISES_PRIVILEGE
 		}
 	}
 
@@ -953,18 +947,18 @@ ab_persia_zun_1 = {
 		}
 		
 		effect = {
-			define_advisor = {
-				type = planner
-				skill = 3
-				cost_multiplier = 0.5
-			}
-			custom_tooltip = AB_EMPTY
 			add_years_of_owned_provinces_production_income = {
 				years = 1
 				trigger = {
 					has_production_building_trigger = yes
 				}
 				custom_tooltip = INCOME_FROM_WORKSHOPS_DESC
+			}
+			custom_tooltip = AB_EMPTY
+			define_advisor = {
+				type = planner
+				skill = 3
+				cost_multiplier = 0.5
 			}
 			custom_tooltip = AB_EMPTY
 			iraq_arabi_area = {
@@ -1034,7 +1028,7 @@ ab_persia_zun_1 = {
 				}
 				custom_tooltip = YUA_INWARD_PRODUCTION_2_YES
 				add_country_modifier = {
-					name = aba_zun_damascus_steel
+					name = abf_zun_damascus_steel
 					duration = -1
 				}
 			}
@@ -1042,7 +1036,7 @@ ab_persia_zun_1 = {
 				custom_tooltip = YUA_INWARD_PRODUCTION_2_NO
 				tooltip = {
 					add_country_modifier = {
-						name = aba_zun_damascus_steel
+						name = abf_zun_damascus_steel
 						duration = -1
 					}
 				}
@@ -1080,11 +1074,6 @@ ab_persia_zun_1 = {
 		}
 
 		effect = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 20
-			}
-			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
 				name = per_control_silk
 				duration = 18250
@@ -1096,7 +1085,7 @@ ab_persia_zun_1 = {
 					who = ROOT
 					duration = -1
 					power = 20
-					key = aba_zun_terminus
+					key = abf_zun_terminus
 				}
 			}
 		}
@@ -1318,11 +1307,11 @@ ab_zun_1_cont_below = {
 
 		effect = { 
 			unlock_government_reform = {
-				government_reform = aba_znn_tribal_loyalties_reform
+				government_reform = abf_znn_tribal_loyalties_reform
 			}
 			custom_tooltip = AB_EMPTY
-			custom_tooltip = ABF_POL_RECRUIT_TRIBAL_LEADERS
-			set_country_flag = abf_pol_tribal_leaders_loyalty
+			set_country_flag = abf_recruiting_generals_grant_noble_loyalty_flag
+			custom_tooltip = ABF_GENERALS_GIVE_LOYALTY_TT
 		}
 	}
 
@@ -1354,7 +1343,7 @@ ab_zun_1_cont_below = {
 
 		effect = {
 			add_country_modifier = {
-				name = aba_znn_bactrian_script
+				name = abf_znn_bactrian_script
 				duration = -1
 			}
 			add_country_modifier = {
@@ -1362,14 +1351,6 @@ ab_zun_1_cont_below = {
 				duration = 3650
 			}
 			custom_tooltip = AB_CENTRALIZE_RANDOM_DEV
-			custom_tooltip = AB_EMPTY
-			custom_tooltip = add_5_crown_land_share
-			hidden_effect = {
-				change_estate_land_share = {
-					estate = all
-					share = -5
-				}
-			}
 		}
 	}
 
@@ -1409,13 +1390,9 @@ ab_zun_1_cont_below = {
 			}
 			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
-				name = aba_ZNN_mysore_rockets
+				name = abf_ZNN_mysore_rockets
 				duration = -1
 			}	
-			533 = {
-				add_or_upgrade_production_building = yes
-			}
-			custom_tooltip = AB_EMPTY
 			custom_tooltip = STY_GER_EASTERN_SPEAR_BATTLE
 			set_country_flag = sty_winning_battle_grant_morale
 		}
@@ -1495,9 +1472,9 @@ ab_zun_start_2 = {
 						}
 					}
 				}
-				custom_tooltip = ABA_ZNN_SHH_NOT_EXISTS_YES
+				custom_tooltip = ABF_ZNN_SHH_NOT_EXISTS_YES
 				add_country_modifier = {
-					name = aba_znn_reunited_turk_shahi
+					name = abf_znn_reunited_turk_shahi
 					duration = -1
 				}
 				kabulistan_area = {
@@ -1513,10 +1490,10 @@ ab_zun_start_2 = {
 				}
 			}
 			else = {
-				custom_tooltip = ABA_ZNN_SHH_NOT_EXISTS_NO
+				custom_tooltip = ABF_ZNN_SHH_NOT_EXISTS_NO
 				tooltip = {
 					add_country_modifier = {
-						name = aba_znn_reunited_turk_shahi
+						name = abf_znn_reunited_turk_shahi
 						duration = -1
 					}
 					kabulistan_area = {
@@ -1540,8 +1517,8 @@ ab_zun_lock_2 = {
 		}
 		NOT = {
 			OR = {
-				has_country_flag = aba_znn_india
-				has_country_flag = aba_znn_persia
+				has_country_flag = abf_znn_india_path
+				has_country_flag = abf_znn_persia_path
 			}
 		}
 	}
@@ -1555,7 +1532,7 @@ ab_zun_lock_2 = {
 		provinces_to_highlight = { }
 		trigger = { 
 			custom_trigger_tooltip = {
-				tooltip = ABA_ZUN_UNLOCKED_PATH
+				tooltip = ABF_ZUN_UNLOCKED_PATH_TT
 				has_country_flag = glh_you_wont_complete_this
 			}
 		}
@@ -1640,9 +1617,9 @@ ab_india_zun_2 = {
 			was_tag = ROB
 		}
 		AND = {
-			has_country_flag = aba_znn_india
+			has_country_flag = abf_znn_india_path
 			NOT = {
-				has_country_flag = aba_znn_persia
+				has_country_flag = abf_znn_persia_path
 			}
 		}
 	}
@@ -1690,6 +1667,14 @@ ab_india_zun_2 = {
 				name = per_supply
 				duration = 7300
 			}
+			west_india_region  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = AB_EMPTY
 			504 = {
 				add_trade_modifier = {
 					who = root
@@ -1697,14 +1682,6 @@ ab_india_zun_2 = {
 					power = 35
 					key = mer_sindh_conquest
 				}
-			}
-			custom_tooltip = AB_EMPTY
-			west_india_region  = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1747,10 +1724,8 @@ ab_india_zun_2 = {
 
 		effect = { 
 			country_event = {
-				id =  aba_zun_event.6
+				id =  abf_zun_event.6
 			}
-			custom_tooltip = AB_EMPTY
-			add_sailors = 500
 			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
 				name = "zun_trade_fleet"
@@ -1808,14 +1783,14 @@ ab_india_zun_2 = {
 
 		effect = { 
 			country_event = {
-				id = aba_zun_event.7
+				id = abf_zun_event.7
 			}
 			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
 				name = zun_lands
 				duration = 5475
 			}
-			custom_tooltip = ABA_ZNN_DECCAN_TRADITION
+			custom_tooltip = ABF_ZNN_DECCAN_TRADITION_TT
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -1868,10 +1843,6 @@ ab_india_zun_2 = {
 		}
 
 		effect = { 
-			add_country_modifier = {
-				name = "spoils_of_vijayanagar"
-				duration = 7300
-			}
 			if = {
 				limit = {
 					NOT = { capital = 541 }
@@ -1886,11 +1857,16 @@ ab_india_zun_2 = {
 			custom_tooltip = AB_EMPTY
 			541 = {
 				add_province_modifier = {
-					name = aba_znn_steel_city
+					name = abf_znn_steel_city
 					duration = -1
 				}
 				change_trade_goods = iron
 				add_base_production = 2
+			}
+			custom_tooltip = AB_EMPTY
+			add_country_modifier = {
+				name = "spoils_of_vijayanagar"
+				duration = 7300
 			}
 		}
 	}
@@ -1926,7 +1902,7 @@ ab_india_zun_2 = {
 			add_navy_tradition = 15
 			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
-				name = aba_tcr_coromandel_trade
+				name = abf_tcr_coromandel_trade
 				duration = 5475
 			}
 			set_country_flag = cro_private_trade_fleet
@@ -1983,7 +1959,7 @@ ab_india_zun_2 = {
 					}
 				}
 			}
-			custom_tooltip = ABA_POLAND_DOMESTIC_ARMS_TT
+			custom_tooltip = ABF_POLAND_DOMESTIC_ARMS_TT
 			tooltip = {
 				add_local_autonomy = -25
 			}
@@ -1996,8 +1972,8 @@ ab_india_zun_2 = {
 				}	
 			}
 			custom_tooltip = AB_EMPTY
-			set_country_flag = aba_znn_burmese_integration
-			custom_tooltip = ABA_ZUN_BURMA_INTEGRATION_TT
+			set_country_flag = abf_znn_burmese_integration
+			custom_tooltip = ABF_ZUN_BURMA_INTEGRATION_TT
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -2007,7 +1983,7 @@ ab_india_zun_2 = {
 						}
 					}
 					add_province_modifier = {
-						name = aba_pol_culture_modifier
+						name = abf_pol_culture_modifier
 						duration = -1
 					}
 				}
@@ -2071,9 +2047,9 @@ ab_persia_zun_2 = {
 			was_tag = ROB
 		}
 		AND = {
-			has_country_flag = aba_znn_persia
+			has_country_flag = abf_znn_persia_path
 			NOT = {
-				has_country_flag = aba_znn_india
+				has_country_flag = abf_znn_india_path
 			}
 		}
 	}
@@ -2168,7 +2144,7 @@ ab_persia_zun_2 = {
 						religion_group = muslim
 					}
 				}
-				custom_tooltip = ABA_ZNN_CONVERT_PERSIAN_COAST_YES
+				custom_tooltip = ABF_ZNN_CONVERT_PERSIAN_COAST_YES
 				hidden_effect = {
 					every_owned_province = {
 						limit = {
@@ -2186,7 +2162,7 @@ ab_persia_zun_2 = {
 				}
 			}
 			else = {
-				custom_tooltip = ABA_ZNN_CONVERT_PERSIAN_COAST_NO
+				custom_tooltip = ABF_ZNN_CONVERT_PERSIAN_COAST_NO
 			}
 		}
 	}
@@ -2227,12 +2203,11 @@ ab_persia_zun_2 = {
 				add_prosperity = 100
 			}
 			custom_tooltip = AB_EMPTY
-			custom_tooltip = LIT_NEGATE_DEV
-			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
 				name = lit_draining
 				duration = 5475
 			}
+			custom_tooltip = LIT_NEGATE_DEV
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -2280,6 +2255,7 @@ ab_persia_zun_2 = {
 			410 = {
 				change_province_name = "Ctesiphon"
 				rename_capital = "Ctesiphon"
+				custom_tooltip = AB_EMPTY
 				add_province_modifier = {
 					name = per_ctesiphon
 					duration = -1
@@ -2817,7 +2793,7 @@ ab_zun_2_cont_bottom = {
 			add_army_professionalism = 0.05
 			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
-				name = aba_ZNN_war_elephants
+				name = abf_ZNN_war_elephants
 				duration = -1
 			}
 			if = {
@@ -2855,13 +2831,14 @@ ab_zun_2_cont_bottom = {
 			army_tradition = 80
 			OR = {
 				has_idea_group = offensive_ideas
+				has_idea_group = quality_ideas
 				has_idea_group = quantity_ideas
 			}
 		}
 
 		effect = { 
 			country_event = {
-				id = aba_zun_event.8
+				id = abf_zun_event.10
 			}
 		}
 	}
@@ -3006,7 +2983,7 @@ ab_zun_3_start = {
 
 		effect = { 
 			country_event = {
-				id = aba_zun_event.1
+				id = abf_zun_event.1
 		 	}
 		}
 	}
@@ -3050,11 +3027,11 @@ ab_zun_3_start = {
 				name = grg_conversion
 				duration = 3650
 			}
+			set_country_flag = abf_znn_radiance_missionary_buff
+			custom_tooltip = ABF_ZNN_RADIANCE_MISSIONARY_BUFF_TT
+			custom_tooltip = AB_EMPTY
 			set_country_flag = bra_expansionist_zealotry_buff
 			custom_tooltip = SWA_HOLY_WAR_ESTATE_BUFF
-			custom_tooltip = AB_EMPTY
-			set_country_flag = aba_znn_radiance_missionary_buff
-			custom_tooltip = ABA_ZNN_RADIANCE_MISSIONARY_BUFF_TT
 		}
 	}
 }
@@ -3071,8 +3048,8 @@ ab_zun_lock_3 = {
 		}
 		NOT = {
 			OR = {
-				has_country_flag = aba_znn_india
-				has_country_flag = aba_znn_persia
+				has_country_flag = abf_znn_india_path
+				has_country_flag = abf_znn_persia_path
 			}
 		}
 	}
@@ -3155,9 +3132,9 @@ ab_india_zun_3 = {
 			was_tag = ROB
 		}
 		AND = {
-			has_country_flag = aba_znn_india
+			has_country_flag = abf_znn_india_path
 			NOT = {
-				has_country_flag = aba_znn_persia
+				has_country_flag = abf_znn_persia_path
 			}
 		}
 	}
@@ -3200,15 +3177,6 @@ ab_india_zun_3 = {
 				name = zun_wealth_indus
 				duration = 7300
 			}
-			504 = {
-				add_trade_modifier = {
-					who = root
-					duration = -1
-					power = 20
-					key = zun_indus
-				}
-			}
-			custom_tooltip = AB_EMPTY
 			custom_tooltip = PER_AE
 			hidden_effect = {
 				every_country = {
@@ -3231,6 +3199,15 @@ ab_india_zun_3 = {
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
+			}
+			custom_tooltip = AB_EMPTY
+			504 = {
+				add_trade_modifier = {
+					who = root
+					duration = -1
+					power = 20
+					key = zun_indus
+				}
 			}
 		}
 	}
@@ -3255,11 +3232,7 @@ ab_india_zun_3 = {
 					base_production = 5
 				}
 			}
-
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 
 		trigger = { 
@@ -3301,59 +3274,56 @@ ab_india_zun_3 = {
 			506 = {
 				change_province_name = "Mulasthan"
 				rename_capital = "Mulasthan"
+				custom_tooltip = AB_EMPTY
 				add_province_modifier = {
-					name = aba_znn_city_of_gold
+					name = abf_znn_city_of_gold
 					duration = -1
 				}
-				add_or_upgrade_tax_building = yes
-				add_or_upgrade_trade_building = yes
-				add_or_upgrade_production_building = yes
 			}
-			custom_tooltip = AB_EMPTY
-			custom_tooltip = ABA_POLAND_DOMESTIC_ARMS_TT
+			custom_tooltip = ABF_POLAND_DOMESTIC_ARMS_TT
 			tooltip = {
 				add_province_modifier = {
-					name = aba_znn_riches_of_indus
+					name = abf_znn_riches_of_indus
 					duration = -1
 				}
 			}
 			hidden_effect = {
 				lahore_area = {
 					add_province_modifier = {
-						name = aba_znn_riches_of_indus
+						name = abf_znn_riches_of_indus
 						duration = -1
 					}
 				}
 				multan_area = {
 					add_province_modifier = {
-						name = aba_znn_riches_of_indus
+						name = abf_znn_riches_of_indus
 						duration = -1
 					}
 				}
 				sindh_area = {
 					add_province_modifier = {
-						name = aba_znn_riches_of_indus
+						name = abf_znn_riches_of_indus
 						duration = -1
 					}
 				}
 				sind_sagar_area = {
 					add_province_modifier = {
-						name = aba_znn_riches_of_indus
+						name = abf_znn_riches_of_indus
 						duration = -1
 					}
 				}
 				northern_sindh_area = {
 					add_province_modifier = {
-						name = aba_znn_riches_of_indus
+						name = abf_znn_riches_of_indus
 						duration = -1
 					}
 				}
 			}
-			set_country_flag = aba_znn_gold_city_monument_flag
-			custom_tooltip = ABA_ZNN_CITY_OF_GOLD_MONUMENT
+			set_country_flag = abf_znn_gold_city_monument_flag
+			custom_tooltip = ABF_ZNN_UNLOCK_CITY_OF_GOLD_MONUMENT_TT
 			hidden_effect = {
 				506 = {
-					set_province_flag = aba_znn_destroyed_shah
+					set_province_flag = abf_znn_destroyed_shah
 					destroy_great_project = {
 						type = shah_rukn_e_alam_tomb
 					}
@@ -3504,8 +3474,9 @@ ab_india_zun_3 = {
 			unlock_estate_privilege = {
 				estate_privilege = estate_nobles_hindu_integration
 			}
-			custom_tooltip = GHU_REFORMSHH
 			set_country_flag = unlocked_shhdharmic
+			custom_tooltip = GHU_REFORMSHH
+			custom_tooltip = AB_EMPTY
 			india_superregion = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -3615,6 +3586,7 @@ ab_india_zun_3 = {
 						type = mission_rewards_power_projection
 						amount = 25
 					}
+					custom_tooltip = AB_EMPTY
 					add_country_modifier = {
 						name = per_jade_dragon
 						duration = 7300
@@ -3639,6 +3611,7 @@ ab_india_zun_3 = {
 							type = mission_rewards_power_projection
 							amount = 25
 						}
+						custom_tooltip = AB_EMPTY
 						add_country_modifier = {
 							name = per_jade_dragon
 							duration = 7300
@@ -3656,11 +3629,11 @@ ab_india_zun_3 = {
 						}
 					}
 					custom_tooltip = PER_BEFRIEND_CHINA
-					custom_tooltip = PER_CHINA_PERMA_TP
 					add_country_modifier = {
 						name = per_jade_dragon_friend
 						duration = 7300
 					}
+					custom_tooltip = PER_CHINA_PERMA_TP
 					hidden_effect = {
 						667 = {
 							add_trade_modifier = {
@@ -3691,11 +3664,11 @@ ab_india_zun_3 = {
 				else = {
 					custom_tooltip = PER_BEFRIEND_CHINA_NO
 					tooltip = {
-						custom_tooltip = PER_CHINA_PERMA_TP
 						add_country_modifier = {
 							name = per_jade_dragon_friend
 							duration = 7300
 						}
+						custom_tooltip = PER_CHINA_PERMA_TP
 					}
 				}
 			}
@@ -3731,9 +3704,9 @@ ab_persia_zun_3 = {
 			was_tag = ROB
 		}
 		AND = {
-			has_country_flag = aba_znn_persia
+			has_country_flag = abf_znn_persia_path
 			NOT = {
-				has_country_flag = aba_znn_india
+				has_country_flag = abf_znn_india_path
 			}
 		}
 	}
@@ -3775,10 +3748,19 @@ ab_persia_zun_3 = {
 
 		effect = {
 			add_army_professionalism = 0.05
-			add_yearly_manpower = 1.5
 			custom_tooltip = AB_EMPTY
 			country_event = {
 				id = ab_persia.4
+			}
+			custom_tooltip = AB_EMPTY
+			custom_tooltip = GRG_ILKHANID_CORES
+			hidden_effect = {
+				every_province = {
+					limit = {
+						is_core = ILK
+					}
+					remove_core = ILK
+				}
 			}
 			custom_tooltip = AB_EMPTY
 			iraq_arabi_area = { 
@@ -3823,16 +3805,6 @@ ab_persia_zun_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			custom_tooltip = AB_EMPTY
-			custom_tooltip = GRG_ILKHANID_CORES
-			hidden_effect = {
-				every_province = {
-					limit = {
-						is_core = ILK
-					}
-					remove_core = ILK
-				}
-			}
 		}
 	}
 
@@ -3857,17 +3829,15 @@ ab_persia_zun_3 = {
 		}
 
 		effect = {
-			change_innovativeness = 3
-			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
 				name = ilk_observatory
 				duration = -1
 			}
-			custom_tooltip = ILK_COMET
-			set_country_flag = no_more_comet_sighted_event
+			set_country_flag = abf_znn_radiance_innovatiness_gain_flag
+			custom_tooltip = ABF_ZNN_RADIANCE_INNOVATINESS_BUFF_TT
 			custom_tooltip = AB_EMPTY
-			set_country_flag = aba_znn_radiance_innovatiness_gain_flag
-			custom_tooltip = ABA_ZNN_RADIANCE_INNOVATINESS_BUFF_TT
+			set_country_flag = no_more_comet_sighted_event
+			custom_tooltip = ILK_COMET
 		}
 	}
 
@@ -3899,8 +3869,6 @@ ab_persia_zun_3 = {
 		
 		effect = {
 			country_event = { id = ab_zun.2 }
-			custom_tooltip = AB_EMPTY
-			custom_tooltip = ZUN_CRUSADE
 			if = { 
 				limit = {
 					tag = ZNN
@@ -3918,6 +3886,8 @@ ab_persia_zun_3 = {
 					swap_free_idea_group = yes
 				}
 			}
+			custom_tooltip = AB_EMPTY
+			custom_tooltip = ZUN_CRUSADE
 		}
 	}
 
@@ -3944,7 +3914,7 @@ ab_persia_zun_3 = {
 				id = ab_persia.7
 			}
 			custom_tooltip = AB_EMPTY
-			custom_tooltip = ABA_ZNN_PURIFYING_LIGHT_ASPECT_UNLOCK
+			custom_tooltip = ABF_ZNN_PURIFYING_LIGHT_ASPECT_UNLOCK_TT
 		}
 	}
 
@@ -3970,9 +3940,9 @@ ab_persia_zun_3 = {
 		}
 
 		effect = { 
-			set_country_flag = ABA_ZNN_GLOBAL_PURIFICATION_CB
+			set_country_flag = ABF_ZNN_GLOBAL_PURIFICATION_CB
 			country_event = {
-				id = aba_zun_event.3
+				id = abf_zun_event.3
 			}
 		}
 	}
@@ -3995,7 +3965,7 @@ ab_persia_zun_3 = {
 
 		effect = {
 			add_country_modifier = {
-				name = aba_znn_shining_age_mod
+				name = abf_znn_shining_age_mod
 				duration = 12775
 			}
 			set_country_flag = ab_tus_university_bonus
@@ -4060,16 +4030,14 @@ ab_zun_3_cont_bottom = {
 		effect = {
 			448 = {
 				move_capital_effect = yes
-			}
-			448 = {
-				change_trade_goods = cloth
-			}
-			448 = {
+				custom_tooltip = AB_EMPTY
 				add_province_modifier = {
 					name = "zun_ghazni"
 					duration = -1
 				}
+				change_trade_goods = cloth
 			}
+			custom_tooltip = AB_EMPTY
 			448 = {
 				if = {
 					limit = {
@@ -4112,13 +4080,11 @@ ab_zun_3_cont_bottom = {
 			2229 = {
 				change_province_name = "Zamindawar"
 				rename_capital = "Zamin-i-Datbar"
+				custom_tooltip = AB_EMPTY
 				add_province_modifier = {
-					name = "aba_znn_zamindawar"
+					name = "abf_znn_zamindawar"
 					duration = -1
 				}
-				add_base_manpower = 2
-				add_base_production = 2
-				add_base_tax = 2
 				add_manufactory = yes
 				add_or_upgrade_production_building = yes
 			}
@@ -4170,12 +4136,13 @@ ab_zun_3_cont_bottom = {
 		}
 		
 		effect = {
+			country_event = {
+				id = AB_Shahi_Event.4
+			}
+			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
 				name = AB_SHH_Afghan_Production
 				duration = 18250
-			}
-			country_event = {
-				id = AB_Shahi_Event.4
 			}
 		}
 	}
@@ -4254,7 +4221,7 @@ ab_zun_3_cont_bottom = {
 						}
 					}
 				}
-				custom_tooltip = ABA_ZNN_MERCHANT_GUILDS_INDIA_YES
+				custom_tooltip = ABF_ZNN_MERCHANT_GUILDS_INDIA_YES
 				every_owned_province = {
 					limit = {
 						superregion = india_superregion
@@ -4266,21 +4233,20 @@ ab_zun_3_cont_bottom = {
 						}
 					}
 					add_province_modifier = {
-						name = aba_znn_india_merchant_guilds_mod
+						name = abf_znn_india_merchant_guilds_mod
 						duration = -1
 					}
 				}
 			}
 			else = {
-				custom_tooltip = ABA_ZNN_MERCHANT_GUILDS_INDIA_NO
+				custom_tooltip = ABF_ZNN_MERCHANT_GUILDS_INDIA_NO
 				tooltip = {
 					add_province_modifier = {
-						name = aba_znn_india_merchant_guilds_mod
+						name = abf_znn_india_merchant_guilds_mod
 						duration = -1
 					}
 				}
 			}
-			custom_tooltip = AB_EMPTY
 			if = {
 				limit = {
 					any_owned_province = {
@@ -4296,7 +4262,7 @@ ab_zun_3_cont_bottom = {
 						}
 					}
 				}
-				custom_tooltip = ABA_ZNN_MERCHANT_GUILDS_PERSIA_YES
+				custom_tooltip = ABF_ZNN_MERCHANT_GUILDS_PERSIA_YES
 				every_owned_province = {
 					limit = {
 						OR = {
@@ -4311,16 +4277,16 @@ ab_zun_3_cont_bottom = {
 						}
 					}
 					add_province_modifier = {
-						name = aba_znn_persia_merchant_guilds_mod
+						name = abf_znn_persia_merchant_guilds_mod
 						duration = -1
 					}
 				}
 			}
 			else = {
-				custom_tooltip = ABA_ZNN_MERCHANT_GUILDS_PERSIA_NO
+				custom_tooltip = ABF_ZNN_MERCHANT_GUILDS_PERSIA_NO
 				tooltip = {
 					add_province_modifier = {
-						name = aba_znn_persia_merchant_guilds_mod
+						name = abf_znn_persia_merchant_guilds_mod
 						duration = -1
 					}
 				}
@@ -4400,7 +4366,27 @@ ab_zun_3_cont_bottom = {
 				cost_multiplier = 0.5
 			}
 			custom_tooltip = AB_EMPTY
-			custom_tooltip = ABA_ZNN_reward_coal_tt
+			custom_tooltip = AB_SHH_gain_25_per_workshop_50_per_manufactory_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_production_building_trigger = yes
+					}
+					ROOT = {
+						add_treasury = 25
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_manufactory_trigger = yes
+					}
+					ROOT = {
+						add_treasury = 50
+					}
+				}
+			}
+			custom_tooltip = AB_EMPTY
+			custom_tooltip = ABF_ZNN_COAL_REWARD_TT
 			hidden_effect = {
 				random_owned_province = {
 					limit = {
@@ -4427,26 +4413,6 @@ ab_zun_3_cont_bottom = {
 						}
 					}
 					change_trade_goods = coal
-				}
-			}
-			custom_tooltip = AB_EMPTY
-			custom_tooltip = AB_SHH_gain_25_per_workshop_50_per_manufactory_tt
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						has_production_building_trigger = yes
-					}
-					ROOT = {
-						add_treasury = 25
-					}
-				}
-				every_owned_province = {
-					limit = {
-						has_manufactory_trigger = yes
-					}
-					ROOT = {
-						add_treasury = 50
-					}
 				}
 			}
 		}
@@ -4507,11 +4473,6 @@ ab_zun_3_cont_bottom = {
 		}
 		
 		effect = {
-			change_monarch_points_or_power = {
-				points = 1
-				power = dip
-			}
-			custom_tooltip = AB_EMPTY
 			define_advisor = {
 				type = in_advisor
 				skill = 3
@@ -4564,8 +4525,8 @@ ab_zun_3_cont_bottom = {
 				name = per_modern_government
 				duration = -1
 			}
-			set_country_flag = aba_htm_goverment_reform
-			custom_tooltip = ABA_HTM_GOVERMENT_REFORM_TT
+			set_country_flag = abf_htm_goverment_reform
+			custom_tooltip = ABF_HTM_GOVERMENT_REFORM_TT
 		}
 	}
 
@@ -4593,18 +4554,18 @@ ab_zun_3_cont_bottom = {
 		effect = { 
         	add_treasury = -2500
 			add_adm_power = -200
-			set_country_flag = ABA_ZUN_sahar_bahar_allowed
-			custom_tooltip = ABA_ZUN_sahar_bahar_tt
+			set_country_flag = ABF_ZUN_sahar_bahar_allowed
+			custom_tooltip = ABF_ZUN_UNLOCK_SAHAR_BAHAR_TT
 			hidden_effect = {
 				448 = {
 					add_great_project = {
-						type = ABA_ZUN_sahar_bahar
+						type = ABF_ZUN_sahar_bahar
 						instant = yes
 					}
 				}
 				448 = {
 					add_great_project_tier = {
-						type = ABA_ZUN_sahar_bahar
+						type = ABF_ZUN_sahar_bahar
 						tier = 1
 					}
 				}
@@ -4626,8 +4587,6 @@ ab_zun_3_cont_bottom = {
 		}
 
 		effect = { 
-			add_yearly_manpower = 0.5
-			custom_tooltip = AB_EMPTY
 			create_general_with_pips = {
 				tradition = 40
 				add_shock = 2
@@ -4769,6 +4728,7 @@ ab_zun_3_cont_bottom = {
 				}
 				custom_tooltip = PER_MIL_TECH
 				create_general = { tradition = 100 }
+				custom_tooltip = AB_EMPTY
 				add_country_modifier = {
 					name = per_future_warfare
 					duration = 7300
@@ -4778,15 +4738,11 @@ ab_zun_3_cont_bottom = {
 				custom_tooltip = PER_MIL_TECH_NO
 				tooltip = {
 					create_general = { tradition = 100 }
+					custom_tooltip = AB_EMPTY
 					add_country_modifier = {
 						name = per_future_warfare
 						duration = 7300
 					}
-				}
-			}
-			hidden_effect = {
-				country_event = {
-					id = ab_pachiev.12
 				}
 			}
 		}
@@ -4829,16 +4785,17 @@ ab_zun_4_start = {
 		effect = {
 			create_general = { tradition = 40 }
 			custom_tooltip = AB_EMPTY
-			add_country_modifier = {
-				name = "zun_exploit"
-				duration = 5475
-			}
 			define_advisor = {
 				type = inquisitor
 				skill = 3
 				religion = ROOT
 				culture = ROOT
 				cost_multiplier = 0.5
+			}
+			custom_tooltip = AB_EMPTY
+			add_country_modifier = {
+				name = "zun_exploit"
+				duration = 5475
 			}
 		}
 	}
@@ -4856,8 +4813,8 @@ ab_zun_lock_4 = {
 		}
 		NOT = {
 			OR = {
-				has_country_flag = aba_znn_india
-				has_country_flag = aba_znn_persia
+				has_country_flag = abf_znn_india_path
+				has_country_flag = abf_znn_persia_path
 			}
 		}
 	}
@@ -4871,7 +4828,7 @@ ab_zun_lock_4 = {
 		provinces_to_highlight = { }
 		trigger = { 
 			custom_trigger_tooltip = {
-				tooltip = ABA_ZUN_UNLOCKED_PATH
+				tooltip = ABF_ZUN_UNLOCKED_PATH_TT
 				has_country_flag = glh_you_wont_complete_this
 			}
 		}
@@ -4956,9 +4913,9 @@ ab_india_zun_4 = {
 			was_tag = ROB
 		}
 		AND = {
-			has_country_flag = aba_znn_india
+			has_country_flag = abf_znn_india_path
 			NOT = {
-				has_country_flag = aba_znn_persia
+				has_country_flag = abf_znn_persia_path
 			}
 		}
 	}
@@ -4995,19 +4952,21 @@ ab_india_zun_4 = {
 				duration = 7300
 			}
 			kashmir_area = {
-				add_local_autonomy = -50
 				add_province_modifier = {
 					name = per_integrating_kushan
 					duration = 5475
 				}
+				add_local_autonomy = -50
 			}
+			custom_tooltip = AB_EMPTY
 			sind_sagar_area = {
-				add_local_autonomy = -50
 				add_province_modifier = {
 					name = per_integrating_kushan
 					duration = 5475
 				}
+				add_local_autonomy = -50
 			}
+			custom_tooltip = AB_EMPTY
 			lahore_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -5138,16 +5097,16 @@ ab_india_zun_4 = {
 		}
 
 		effect = { 
+			add_country_modifier = {
+				name = abf_znn_fury_of_zun
+				duration = 9125
+			}
+			custom_tooltip = ABF_ZNN_FURY_OF_ZUN_TT
+			custom_tooltip = AB_EMPTY
 			custom_tooltip = AB_SHH_CB_tt
 			hidden_effect = { 
 				set_country_flag = AB_SHH_activate_CB 
 	   		}
-			custom_tooltip = AB_EMPTY
-			add_country_modifier = {
-				name = aba_znn_fury_of_zun
-				duration = 9125
-			}
-			custom_tooltip = ABA_ZNN_FURY_OF_ZUN_TT
 			custom_tooltip = AB_EMPTY
 			bengal_region = {
 				limit = {
@@ -5235,14 +5194,14 @@ ab_india_zun_4 = {
 
 		effect = { 
 			add_country_modifier = {
-				name = ABA_ZNN_rajput_cap_expansion
+				name = ABF_ZNN_rajput_cap_expansion
 				duration = -1
 			}
-			set_country_flag = aba_znn_rajput_land_rights_buff
-			custom_tooltip = ABA_ZNN_LAND_RIGHTS_BUFF_TT
+			set_country_flag = abf_znn_rajput_development_bonus_flag
+			custom_tooltip = ABF_ZNN_DEVELOPING_RAJPUT_TT
 			custom_tooltip = AB_EMPTY
-			set_country_flag = ABA_ZUN_rajput_accomodated
-			custom_tooltip = AB_ZNN_DEVELOPING_RAJPUT_TT
+			set_country_flag = abf_znn_rajput_land_rights_buff
+			custom_tooltip = ABF_ZNN_LAND_RIGHTS_BUFF_TT
 		}
 	}
 
@@ -5278,23 +5237,19 @@ ab_india_zun_4 = {
 					name = "capital_of_rajputana"
 					duration = -1
 				}
-				add_or_upgrade_production_building = yes
-				add_or_upgrade_tax_building = yes
-				add_or_upgrade_trade_building = yes
-				ab_add_or_upgrade_road_building = yes
 				add_base_production = 2
 				add_base_manpower = 2
 			}
 			custom_tooltip = AB_EMPTY
 			add_estate_loyalty_modifier = {
 				estate = estate_rajput
-				desc = ABA_ZNN_REBUILD_UJJAIN
+				desc = ABF_ZNN_REBUILD_UJJAIN_TT
 				loyalty = 5
 				duration = -1
 			}
 			add_estate_influence_modifier = {
 				estate = estate_rajput
-				desc = ABA_ZNN_REBUILD_UJJAIN
+				desc = ABF_ZNN_REBUILD_UJJAIN_TT
 				influence = 5
 				duration = -1
 			}
@@ -5467,9 +5422,9 @@ ab_persia_zun_4 = {
 			was_tag = ROB
 		}
 		AND = {
-			has_country_flag = aba_znn_persia
+			has_country_flag = abf_znn_persia_path
 			NOT = {
-				has_country_flag = aba_znn_india
+				has_country_flag = abf_znn_india_path
 			}
 		}
 	}
@@ -5522,8 +5477,8 @@ ab_persia_zun_4 = {
 				name = zun_persian_conquest
 				duration = 9125
 			}
-			custom_tooltip = ABA_ZNN_UNIFY_PERSIA_CB
-			set_country_flag = aba_zun_unify_persia_cb
+			set_country_flag = abf_zun_unify_persia_cb
+			custom_tooltip = ABF_ZNN_UNIFY_PERSIA_CB_TT
 			hidden_effect = {
 				every_country = {
 					limit = {
@@ -5569,14 +5524,14 @@ ab_persia_zun_4 = {
 						accepted_culture = khorasani
 					}
 				}
-				custom_tooltip = ABA_ZNN_PERKHOR_ACCEPTED_YES
+				custom_tooltip = ABF_ZNN_PERKHOR_ACCEPTED_YES
 				add_country_modifier = {
 					name = ilk_persian_rec
 					duration = 9125
 				}
 			}
 			else = {
-				custom_tooltip =  ABA_ZNN_PERKHOR_ACCEPTED_NO
+				custom_tooltip =  ABF_ZNN_PERKHOR_ACCEPTED_NO
 				tooltip = {
 					add_country_modifier = {
 						name = ilk_persian_rec
@@ -5629,7 +5584,7 @@ ab_persia_zun_4 = {
 				name = per_looting
 				duration = 7300
 			}
-			custom_tooltip = ABA_tcr_CAUCASIAN_FORTS_tt
+			custom_tooltip = ABF_CAUCASIAN_FORTS_TT
 			tooltip = {
 				add_province_modifier = {
 					name = rus_mountain_fort
@@ -5695,7 +5650,7 @@ ab_persia_zun_4 = {
 				name = per_seljuk_betrayal
 				duration = 7300
 			}
-			custom_tooltip = ABA_ZNN_JANISSARY_TT
+			custom_tooltip = ABF_ZNN_JANISSARY_TT
 			hidden_effect = {
 				capital_scope = {
 					janissary_infantry = ROOT
@@ -5896,13 +5851,6 @@ ab_persia_zun_4 = {
 		}
 
 		effect = { 
-			change_price = {
-				trade_goods = silk
-				key = steal_greek_silk
-				value = 0.15
-				duration = -1
-			}
-			custom_tooltip = AB_EMPTY
 			random_owned_province = {
 				limit = {
 					OR = {
@@ -5943,6 +5891,13 @@ ab_persia_zun_4 = {
                         }
                     "
                 }
+			}
+			custom_tooltip = AB_EMPTY
+			change_price = {
+				trade_goods = silk
+				key = steal_greek_silk
+				value = 0.15
+				duration = -1
 			}
 		}
 	}
@@ -6031,8 +5986,8 @@ ab_zun_4_cont_below = {
 				name = "ghu_building"
 				duration = 5475
 			}
-			custom_tooltip = LOT_TRIPLE_CHANCE
 			set_country_flag = ab_industrious_trait_triple
+			custom_tooltip = LOT_TRIPLE_CHANCE
 			custom_tooltip = AB_EMPTY
 			set_country_flag = pap_courthouse_bonus
 			custom_tooltip = PAP_COURTHOUSE_BONUS
@@ -6055,17 +6010,17 @@ ab_zun_4_cont_below = {
 			monthly_dip = 10
 			monthly_mil = 10
 			OR = {
-			estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 60
-			}
-			estate_loyalty = {
-				estate = estate_jains
-				loyalty = 60
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+				estate_loyalty = {
+					estate = estate_jains
+					loyalty = 60
+				}
 			}
 		}
-
-		}
+		
 		effect = {
 			unlock_estate_privilege = {
 				estate_privilege = AB_estate_burghers_urbanization
@@ -6183,8 +6138,8 @@ ab_zun_4_cont_below = {
 		effect = { 
 			custom_tooltip = ZUN_UNLOCK
 			custom_tooltip = AB_EMPTY
-			set_country_flag = aba_znn_radiance_manpower_buff
-			custom_tooltip = ABA_ZNN_RADIANCE_MANPOWER_BUFF_TT
+			set_country_flag = abf_znn_radiance_manpower_buff
+			custom_tooltip = ABF_ZNN_RADIANCE_MANPOWER_BUFF_TT
 			if = {
 				limit = {
 					calc_true_if = {
@@ -6400,6 +6355,7 @@ ab_zun_5_start = {
 		
 		effect = {
 			add_army_professionalism = 0.05
+			custom_tooltip = AB_EMPTY
 			custom_tooltip = ZUN_GRAVEYARD
 			tooltip = {
 				add_province_modifier = {
@@ -6438,8 +6394,8 @@ ab_zun_lock_5 = {
 		}
 		NOT = {
 			OR = {
-				has_country_flag = aba_znn_india
-				has_country_flag = aba_znn_persia
+				has_country_flag = abf_znn_india_path
+				has_country_flag = abf_znn_persia_path
 			}
 		}
 	}
@@ -6453,7 +6409,7 @@ ab_zun_lock_5 = {
 		provinces_to_highlight = { }
 		trigger = { 
 			custom_trigger_tooltip = {
-				tooltip = ABA_ZUN_UNLOCKED_PATH
+				tooltip = ABF_ZUN_UNLOCKED_PATH_TT
 				has_country_flag = glh_you_wont_complete_this
 			}
 		}
@@ -6549,9 +6505,9 @@ ab_india_zun_5 = {
 			was_tag = ROB
 		}
 		AND = {
-			has_country_flag = aba_znn_india
+			has_country_flag = abf_znn_india_path
 			NOT = {
-				has_country_flag = aba_znn_persia
+				has_country_flag = abf_znn_persia_path
 			}
 		}
 	}
@@ -6597,8 +6553,9 @@ ab_india_zun_5 = {
 			578 = {
 				change_province_name = "Gandhara"
 				rename_capital = "Purushapura"
+				custom_tooltip = AB_EMPTY
 				add_province_modifier = {
-					name = aba_tcr_purushapura
+					name = abf_tcr_purushapura
 					duration = -1
 				}
 				add_base_manpower = 2
@@ -6608,7 +6565,7 @@ ab_india_zun_5 = {
 			custom_tooltip = AB_EMPTY
 			sind_sagar_area = {
 				add_province_modifier = {
-					name = aba_znn_greater_gandhara
+					name = abf_znn_greater_gandhara
 					duration = -1
 				}
 			}
@@ -6673,7 +6630,7 @@ ab_india_zun_5 = {
 
 		effect = { 
 			country_event = {
-				id = aba_zun_event.2
+				id = abf_zun_event.2
 			}
 		}
 	}
@@ -6784,9 +6741,9 @@ ab_india_zun_5 = {
 		}
 		effect = { 
 			tooltip = {
-				custom_tooltip = ABA_SHH_great_trunk_road_tt
+				custom_tooltip = ABF_ZNN_GREAT_TRUNK_ROAD_TT
 				add_province_modifier = {
-					name = ABA_SHH_great_trunk_road
+					name = abf_great_trunk_road_mod
 					duration = -1
 				}
 			}
@@ -6805,13 +6762,13 @@ ab_india_zun_5 = {
 						}
 					}
 					add_province_modifier = {
-						name = "ABA_SHH_great_trunk_road"
+						name = "abf_great_trunk_road_mod"
 						duration = -1
 					}
 				}
 			}
-			set_country_flag = aba_znn_great_trunk_road_privilege_flag
-			custom_tooltip = ABA_ZNN_CITY_EXPANSION_PRIVILEGE_BUFF_TT
+			set_country_flag = abf_znn_great_trunk_road_privilege_flag
+			custom_tooltip = ABF_ZNN_CITY_EXPANSION_PRIVILEGE_BUFF_TT
 		}
 	}
 
@@ -6850,21 +6807,21 @@ ab_india_zun_5 = {
 				cost_multiplier = 0.5
 			}
 			custom_tooltip = AB_EMPTY
-			custom_tooltip = ABA_POLAND_DOMESTIC_ARMS_TT
+			custom_tooltip = ABF_POLAND_DOMESTIC_ARMS_TT
 			tooltip = {
 				add_province_modifier = {
-					name = aba_znn_nepal_war_machine
+					name = abf_znn_nepal_war_machine
 					duration = -1
 				}
 			}
-			set_country_flag = ABA_tcr_gorkhas_unlocked
-			custom_tooltip = ABA_tcr_gorkhas_tt
+			set_country_flag = abf_merc_gorhkas_unlocked_flag
+			custom_tooltip = ABF_MERC_GORKHAS_UNLOCK_TT
 			hidden_effect = {
 				unlock_merc_company = {
-					merc_company = ABA_tcr_gorkhas_merc_1
+					merc_company = abf_merc_gorhkas_1
 				}
 				unlock_merc_company = {
-					merc_company = ABA_tcr_gorkhas_merc_2
+					merc_company = abf_merc_gorhkas_2
 				}
 			}
 		}
@@ -6912,10 +6869,10 @@ ab_india_zun_5 = {
 		effect = { 
 			add_yearly_manpower = 1.0
 			custom_tooltip = AB_EMPTY
-			custom_tooltip = ABA_POLAND_DOMESTIC_ARMS_TT
+			custom_tooltip = ABF_POLAND_DOMESTIC_ARMS_TT
 			tooltip = {
 				add_province_modifier = {
-					name = aba_znn_tribes_bengal_mod
+					name = abf_znn_tribes_bengal_mod
 					duration = 9125
 				}
 			}
@@ -6925,7 +6882,7 @@ ab_india_zun_5 = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 					add_province_modifier = {
-						name = aba_znn_tribes_bengal_mod
+						name = abf_znn_tribes_bengal_mod
 						duration = 9125
 					}
 				}
@@ -6934,7 +6891,7 @@ ab_india_zun_5 = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 					add_province_modifier = {
-						name = aba_znn_tribes_bengal_mod
+						name = abf_znn_tribes_bengal_mod
 						duration = 9125
 					}
 				}
@@ -6943,7 +6900,7 @@ ab_india_zun_5 = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 					add_province_modifier = {
-						name = aba_znn_tribes_bengal_mod
+						name = abf_znn_tribes_bengal_mod
 						duration = 9125
 					}
 				}
@@ -6952,7 +6909,7 @@ ab_india_zun_5 = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 					add_province_modifier = {
-						name = aba_znn_tribes_bengal_mod
+						name = abf_znn_tribes_bengal_mod
 						duration = 9125
 					}
 				}
@@ -6999,7 +6956,7 @@ ab_india_zun_5 = {
 			}
 			custom_tooltip = AB_EMPTY
 			unlock_government_reform = {
-				government_reform = aba_znn_governmental_indo_afghan_rajputs
+				government_reform = abf_znn_governmental_indo_afghan_rajputs
 			}
 		}
 	}
@@ -7034,17 +6991,13 @@ ab_india_zun_5 = {
 					name = "kannauj_restored_modifier"
 					duration = -1
 				}
-				add_or_upgrade_production_building = yes
-				add_or_upgrade_tax_building = yes
-				add_or_upgrade_trade_building = yes
-				ab_add_or_upgrade_road_building = yes
 				add_base_production = 3
 				add_base_manpower = 3
 				add_base_tax = 3
 			}
 			custom_tooltip = AB_EMPTY
-			set_country_flag = aba_znn_rajput_expansion_rights_buff
-			custom_tooltip = ABA_ZNN_RAJPUT_EXPANSION_RIGHTS_BUFF_TT
+			set_country_flag = abf_znn_rajput_expansion_rights_buff
+			custom_tooltip = ABF_ZNN_RAJPUT_EXPANSION_RIGHTS_BUFF_TT
 		}
 	}
 
@@ -7089,8 +7042,8 @@ ab_india_zun_5 = {
 					duration = -1
 				}
 			}
-			custom_tooltip = PER_TRADER_SCALING
 			set_country_flag = ab_trader_advisor_gives_trade_steering
+			custom_tooltip = PER_TRADER_SCALING
 			hidden_effect = {
 				kashgaria_area = {
 					add_base_production = 1
@@ -7135,9 +7088,9 @@ ab_persia_zun_5 = {
 			was_tag = ROB
 		}
 		AND = {
-			has_country_flag = aba_znn_persia
+			has_country_flag = abf_znn_persia_path
 			NOT = {
-				has_country_flag = aba_znn_india
+				has_country_flag = abf_znn_india_path
 			}
 		}
 	}
@@ -7288,9 +7241,6 @@ ab_persia_zun_5 = {
 				name = per_turkic_mercenaries
 				duration = 5475
 			}
-			set_country_flag = ab_free_mercs
-			custom_tooltip = PER_FREE_MERCS
-			custom_tooltip = AB_EMPTY
 			central_asia_region = {
 				limit = {
 					owned_by = ROOT
@@ -7309,6 +7259,9 @@ ab_persia_zun_5 = {
 					add_local_autonomy = -25
 				}
 			}
+			custom_tooltip = AB_EMPTY
+			set_country_flag = ab_free_mercs
+			custom_tooltip = PER_FREE_MERCS
 			custom_tooltip = AB_EMPTY
 			central_asia_region = {
 				limit = {
@@ -7339,20 +7292,20 @@ ab_persia_zun_5 = {
 		}
 
 		effect = { 
-			define_advisor = {
-				type = inquisitor
-				skill = 3
-				cost_multiplier = 0.67
-			}
-			custom_tooltip = AB_EMPTY
 			add_government_power = { 
 				mechanic_type = zunist_radiance_mechanic
 				power_type = zunist_radiance
 				value = 10
 			}
 			custom_tooltip = AB_EMPTY
-			set_country_flag = aba_znn_baku_sun_temple_reward
-			custom_tooltip = ABA_ZNN_BAKU_SUN_TEMPLE_TT
+			define_advisor = {
+				type = inquisitor
+				skill = 3
+				cost_multiplier = 0.67
+			}
+			custom_tooltip = AB_EMPTY
+			set_country_flag = abf_znn_baku_sun_temple_reward
+			custom_tooltip = ABF_ZNN_UNLOCK_BAKU_SUN_TEMPLE_TT
 		}
 	}
 
@@ -7395,17 +7348,16 @@ ab_persia_zun_5 = {
 
 		effect = {
 			country_event = {
-				id = aba_zun_event.9
-			}
-			custom_tooltip = AB_EMPTY
-			custom_tooltip = PER_PERSIANIZATION
-			hidden_effect = {
-				move_turkish_into_iranian_group = yes
+				id = abf_zun_event.9
 			}
 			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
 				name = per_turks
 				duration = 9125
+			}
+			custom_tooltip = PER_PERSIANIZATION
+			hidden_effect = {
+				move_turkish_into_iranian_group = yes
 			}
 		}
 	}
@@ -7430,8 +7382,8 @@ ab_persia_zun_5 = {
 				id = ab_persia.6
 			}
 			custom_tooltip = AB_EMPTY
-			set_country_flag = aba_znn_scorch_earth_ex
-			custom_tooltip = ABA_ZNN_SCORCH_EARTH_EX_DEBUFF
+			set_country_flag = abf_znn_scorch_earth_ex
+			custom_tooltip = ABF_ZNN_SCORCH_EARTH_EX_DEBUFF_TT
 			custom_tooltip = AB_EMPTY
 			custom_tooltip = NCI_REMOVE_BYZ_CORES
 			hidden_effect = {
@@ -7480,11 +7432,11 @@ ab_persia_zun_5 = {
 			}
 			custom_tooltip = AB_EMPTY
 			add_country_modifier = {
-				name = aba_tcr_desert_training
+				name = abf_tcr_desert_training
 				duration = -1
 			} 
-			custom_tooltip = ARB_unlock_oasis_development
 			set_country_flag = ARB_unlock_oasis_development_flag
+			custom_tooltip = ARB_unlock_oasis_development
 		}
 	}
 }
@@ -7581,14 +7533,23 @@ ab_zun_5_cont_below = {
 				cost_multiplier = 0.67
 			}
 			custom_tooltip = AB_EMPTY
-			set_country_flag = koj_advisor_scaling
-			custom_tooltip = KOJ_SCALING
-			custom_tooltip = AB_EMPTY
 			set_country_flag = xbh_religious_state_buff2
 			custom_tooltip = XBH_RELIGIOUS_STATE_PRIVILEGE2
 			custom_tooltip = AB_EMPTY
-			set_country_flag = ABA_TCR_temple_buff
-			custom_tooltip = ABA_TCR_TEMPLE_UNREST_BUFF
+			set_country_flag = abf_temple_unrest_buff_flag
+			custom_tooltip = ABF_TCR_TEMPLE_UNREST_BUFF_TT
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_tax_building_trigger = yes
+					}
+					add_province_modifier = {
+						name = ABF_tcr_temple_unrest_mod
+						duration = -1
+					}
+				}
+			}
+			
 		}
 	}
 
@@ -7714,7 +7675,7 @@ ab_zun_5_cont_below = {
 
 		effect = {
 			unlock_government_reform = {
-				government_reform = aba_znn_religious_syncretism_reform
+				government_reform = abf_znn_religious_syncretism_reform
 			}
 		}
 	}

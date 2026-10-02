@@ -23,12 +23,30 @@ estate_rajput_land_rights = {
 		}
 	}
 
-	conditional_modifier = {
+	#### ABF Conditional Mod [[[
+	conditional_modifier = { #ZNN
 		trigger = {
-			has_country_flag = aba_znn_rajput_land_rights_buff
+			has_country_flag = abf_znn_rajput_land_rights_buff
 		}
 		modifier = {
 			max_absolutism = 5
+		}
+	}
+	#### ]]]
+
+	#### ABF Conditional ZNN Effect [[[
+	on_granted = {
+		if = {
+			limit = {
+				has_country_flag = abf_znn_rajput_land_rights_buff
+			}
+			custom_tooltip = estate_rajput_abf_land_rights_buff_grant_tooltip
+			tooltip = {
+				add_province_modifier = {
+					name = abf_znn_rajput_governors_mod
+					duration = -1
+				}
+			}
 		}
 	}
 
@@ -36,44 +54,55 @@ estate_rajput_land_rights = {
 		if = {
 			limit = {
 				owner = {
-					has_country_flag = aba_znn_rajput_land_rights_buff
+					has_country_flag = abf_znn_rajput_land_rights_buff
 				}
 				culture = rajput
 			}
 			add_province_modifier = {
-				name = aba_znn_rajput_governors_mod
+				name = abf_znn_rajput_governors_mod
 				duration = -1
 			}
 		}
 		else_if = {
 			limit = {
-				has_province_modifier = aba_znn_rajput_governors_mod
+				has_province_modifier = abf_znn_rajput_governors_mod
 			}
-			remove_province_modifier = aba_znn_rajput_governors_mod
+			remove_province_modifier = abf_znn_rajput_governors_mod
 		}
 	}
 	on_revoked = {
-		custom_tooltip = estate_rajput_land_rights_buff_revoke_tooltip
+		if = {
+			limit = {
+				has_country_flag = abf_znn_rajput_land_rights_buff	
+			}
+			custom_tooltip = estate_rajput_abf_land_rights_buff_revoke_tooltip
+		}
 	}
 	on_revoked_province = {
 		if = {
 			limit = {
-				has_province_modifier = aba_znn_rajput_governors_mod
+				has_province_modifier = abf_znn_rajput_governors_mod
 			}
-			remove_province_modifier = aba_znn_rajput_governors_mod
+			remove_province_modifier = abf_znn_rajput_governors_mod
 		}
 	}
 	on_invalid = {
-		custom_tooltip = estate_rajput_land_rights_buff_revoke_tooltip
+		if = {
+			limit = {
+				has_country_flag = abf_znn_rajput_land_rights_buff
+			}
+			custom_tooltip = estate_rajput_abf_land_rights_buff_revoke_tooltip
+		}
 	}
 	on_invalid_province = {
 		if = {
 			limit = {
-				has_province_modifier = aba_znn_rajput_governors_mod
+				has_province_modifier = abf_znn_rajput_governors_mod
 			}
-			remove_province_modifier = aba_znn_rajput_governors_mod
+			remove_province_modifier = abf_znn_rajput_governors_mod
 		}
 	}
+	#### ]]]
 
 	ai_will_do = {
 		factor = 5
@@ -307,6 +336,20 @@ estate_rajput_military = {
 	benefits = {
 		country_military_power = 1
 	}
+
+	### ABF Conditional Mod - TCR/ZNN [[[
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = MUG_rajputana_mission_flag
+		}
+		modifier = {
+			yearly_army_professionalism = 0.01
+			allowed_rajput_fraction = 0.05
+			army_tradition_from_battle = 0.25
+		}
+	}
+	### ]]]
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
@@ -439,7 +482,9 @@ estate_rajput_look_up_purbias = {
 			limit = { 
 				OR = {
 					has_reform = governmental_purbias_register_reform
-					has_reform = aba_znn_governmental_indo_afghan_rajputs
+					#### ABF Additional Trigger [[[
+					has_reform = abf_znn_governmental_indo_afghan_rajputs
+					#### ]]]
 				}
 			}
 			add_country_modifier = {
@@ -980,30 +1025,35 @@ estate_rajput_development_of_rajput_lands = {
 		has_dlc = "Domination"
 	}
 
-	conditional_modifier = {
+	#### ABF Conditional Mod [[[
+	conditional_modifier = { #ZNN
 		trigger = {
-			has_country_flag = aba_znn_rajput_expansion_rights_buff
+			has_country_flag = abf_znn_rajput_expansion_rights_buff
 		}
 		modifier = {
 			max_absolutism = 5
 			allowed_rajput_fraction = 0.05
 		}
 	}
+	#### ]]]
 
 	can_select = {
-		any_owned_province = {
-			OR = {
-				culture = rajput
-				culture = malvi
-				AND = {
-					culture_group = eastern_aryan
-					NOT = { culture = sinhala }
+		OR = {
+			any_owned_province = {
+				OR = {
+					culture = rajput
+					culture = malvi
+					AND = {
+						culture_group = eastern_aryan
+						NOT = { culture = sinhala }
+					}
+					culture_group = hindusthani
+					culture_group = central_indic
 				}
-				culture_group = hindusthani
-				culture_group = central_indic
 			}
 		}
 	}
+
 	on_granted = {
 		custom_tooltip = estate_rajput_development_of_rajput_lands_gt
 		tooltip = {

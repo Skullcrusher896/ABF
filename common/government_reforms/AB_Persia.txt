@@ -211,8 +211,10 @@ perasawaran = {
 			ab_is_persia_trigger = yes
 			has_reform = persianprince
 			has_reform = persianprincet
-			has_country_flag = ABA_TCR_Persia
-			has_country_flag = ABA_ZNN_UNLOCK_PERSIO_AFGHAN_GOVERNMENTS_FLAG
+			### ABF [[[ Modified Potential 
+			has_country_flag = abf_tcr_persia_path
+			has_country_flag = abf_unlock_persio_afghan_gov_reforms_flag
+			### ]]]
 		}
 	}
 	modifiers = {
@@ -233,7 +235,10 @@ perexpandimmortals = {
 			has_reform = persianprince
 			has_reform = persianprincet
 			has_country_modifier = per_unlocked_immortals
-			has_country_flag = ABA_TCR_Persia
+			### ABF [[[ Modified Potential 
+			has_country_flag = abf_tcr_persia_path
+			has_country_flag = abf_unlock_persio_afghan_gov_reforms_flag
+			### ]]]
 		}
 	}
 	modifiers = {
@@ -280,8 +285,10 @@ perplacate = {
 			ab_is_persia_trigger = yes
 			has_reform = persianprince
 			has_reform = persianprincet
-			has_country_flag = ABA_TCR_Persia
-			has_country_flag = ABA_ZNN_UNLOCK_PERSIO_AFGHAN_GOVERNMENTS_FLAG 
+			### ABF [[[ Modified Potential 
+			has_country_flag = abf_tcr_persia_path
+			has_country_flag = abf_unlock_persio_afghan_gov_reforms_flag
+			### ]]]
 		}
 	}
 	modifiers = {
@@ -302,8 +309,10 @@ perrecentralize = {
 			ab_is_persia_trigger = yes
 			has_reform = persianprince
 			has_reform = persianprincet
-			has_country_flag = ABA_TCR_Persia
-			has_country_flag = ABA_ZNN_UNLOCK_PERSIO_AFGHAN_GOVERNMENTS_FLAG
+			### ABF [[[ Modified Potential 
+			has_country_flag = abf_tcr_persia_path
+			has_country_flag = abf_unlock_persio_afghan_gov_reforms_flag
+			### ]]]
 		}
 	}
 	modifiers = {
@@ -518,8 +527,10 @@ perachaemenid = {
 			ab_is_persia_trigger = yes
 			has_reform = persianprince
 			has_reform = persianprincet
-			has_country_flag = ABA_TCR_Persia
-			has_country_flag = ABA_ZNN_UNLOCK_PERSIO_AFGHAN_GOVERNMENTS_FLAG
+			### ABF [[[ Modified Potential 
+			has_country_flag = abf_tcr_persia_path
+			has_country_flag = abf_unlock_persio_afghan_gov_reforms_flag
+			### ]]]
 		}
 	}
 	modifiers = {
@@ -536,8 +547,10 @@ persassanid = {
 			ab_is_persia_trigger = yes
 			has_reform = persianprince
 			has_reform = persianprincet
-			has_country_flag = ABA_TCR_Persia
-			has_country_flag = ABA_ZNN_UNLOCK_PERSIO_AFGHAN_GOVERNMENTS_FLAG
+			### ABF [[[ Modified Potential 
+			has_country_flag = abf_tcr_persia_path
+			has_country_flag = abf_unlock_persio_afghan_gov_reforms_flag
+			### ]]]
 		}
 	}
 	modifiers = {
@@ -554,8 +567,10 @@ persatraps = {
 			ab_is_persia_trigger = yes
 			has_reform = persianprince
 			has_reform = persianprincet
-			has_country_flag = ABA_TCR_Persia
-			has_country_flag = ABA_ZNN_UNLOCK_PERSIO_AFGHAN_GOVERNMENTS_FLAG
+			### ABF [[[ Modified Potential 
+			has_country_flag = abf_tcr_persia_path
+			has_country_flag = abf_unlock_persio_afghan_gov_reforms_flag
+			### ]]]
 		}
 	}
 	modifiers = {
@@ -573,8 +588,10 @@ perwurzug = {
 			ab_is_persia_trigger = yes
 			has_reform = persianprince
 			has_reform = persianprincet
-			has_country_flag = ABA_TCR_Persia
-			has_country_flag = ABA_ZNN_UNLOCK_PERSIO_AFGHAN_GOVERNMENTS_FLAG
+			### ABF [[[ Modified Potential 
+			has_country_flag = abf_tcr_persia_path
+			has_country_flag = abf_unlock_persio_afghan_gov_reforms_flag
+			### ]]]
 		}
 	}
 	modifiers = {
@@ -591,8 +608,10 @@ pershahanshah = {
 			ab_is_persia_trigger = yes
 			has_reform = persianprince
 			has_reform = persianprincet
-			has_country_flag = ABA_TCR_Persia
-			has_country_flag = ABA_ZNN_UNLOCK_PERSIO_AFGHAN_GOVERNMENTS_FLAG
+			### ABF [[[ Modified Potential 
+			has_country_flag = abf_tcr_persia_path
+			has_country_flag = abf_unlock_persio_afghan_gov_reforms_flag
+			### ]]]
 		}
 	}
 	modifiers = {

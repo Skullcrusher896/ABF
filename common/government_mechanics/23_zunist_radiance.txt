@@ -17,9 +17,10 @@ zunist_radiance_mechanic = {
 					same_religion_advisor_cost = -0.1
 				}
 			}
+			#### ABF Scaled Mods [[[
 			scaled_modifier = {
 				trigger = {
-					has_country_flag = aba_znn_radiance_missionary_buff
+					has_country_flag = abf_znn_radiance_missionary_buff
 				}
 				modifier = {
 					missionaries = 1
@@ -29,7 +30,7 @@ zunist_radiance_mechanic = {
 			}
 			scaled_modifier = {
 				trigger = {
-					has_country_flag = aba_znn_radiance_manpower_buff
+					has_country_flag = abf_znn_radiance_manpower_buff
 				}
 				modifier = {
 					manpower_in_true_faith_provinces = 0.10
@@ -37,12 +38,13 @@ zunist_radiance_mechanic = {
 			}
 			scaled_modifier = {
 				trigger = {
-					has_country_flag = aba_znn_radiance_innovatiness_gain_flag
+					has_country_flag = abf_znn_radiance_innovatiness_gain_flag
 				}
 				modifier = {
 					yearly_innovativeness = 0.25
 				}
 			}
+			#### ]]]
 			is_good = yes
 			on_max_reached = {
 				hidden_effect = {
