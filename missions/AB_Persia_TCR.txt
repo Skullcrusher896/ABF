@@ -5805,12 +5805,15 @@ ab_persia_tcr_india_slot_3_base = {
 
 		trigger = { 
 			ghor_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			kabulistan_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			balkh_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -5916,9 +5919,11 @@ ab_persia_tcr_india_slot_3_base = {
 
 		trigger = { 
 			kashmir_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			sind_sagar_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			
@@ -6420,12 +6425,15 @@ ab_persia_tcr_persia_slot_3_start = {
 
 		trigger = { 
 			ghor_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			kabulistan_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			balkh_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}

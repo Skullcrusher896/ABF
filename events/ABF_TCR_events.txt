@@ -34,8 +34,10 @@ country_event = {
 		enable_estate_effect = {
 			estate = estate_jains
 		}
-		enable_estate_effect = {
-			estate = estate_maratha
+		hidden_effect = {
+			enable_estate_effect = {
+				estate = estate_burghers
+			}
 		}
 		custom_tooltip = AB_EMPTY
 		hidden_effect = {

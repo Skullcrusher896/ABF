@@ -1,0 +1,296 @@
+Even though I have been revamping content and attempting to standardize ABF, this update is complete rebuild of the mod from the ground up, from localization to the backend code. I felt it would be easier this way to create a sense of unity in style and consistency of quality when it comes content among many other things across the board. Sadly previous save games will most likely not be compatible, but now the mod itself will generally have less bugs, find itself more compatible/easier to patch with other submods, and more performance efficient. In addition to that I've added lots of new content and redunancies for existing content, to allow for a variety of playstyles and further replayability. 
+
+###### ---ABF Missions/Country/Culture Updates--- ######
+
+ - ### ----- Eastern Europe ----- ###
+
+    - # ---Catholic Poland/Polans ---#
+        # ---General/Reworks--- #
+          - Reworked all triggers for gov reforms, events, etc. to be more performance forgiving 
+          - Reformatted display of Mission and Event Rewards 
+          - Nerfed, Buffed, or modified some mission rewards 
+          - Added redundancies to multiple missions in case of upgrades, etc.
+          - Added access to the Move Capital event for Catholic Poland by completing the splendor of the capital
+        # ---Bug Fixes--- #
+          - Fixed broken reward for "Modern Conscription" Mission 
+          - Fixed broken on_action for Husaria winning battles modifier mechanic
+    - # ------------------------- #
+
+    - # ---Orthodox Poland (LUD/LCT) ---#
+        # ---General/Reworks--- #
+          - Reworked "New Capital" Decision 
+          - Reworked all triggers and tooltips for gov reforms, events, etc. to be more performance forgiving 
+          - Reformatted display of Mission and Event Rewards 
+          - Nerfed, Buffed, or modified some mission rewards
+          - Polish estate names preserved if choosing to take on Mantle of Rus  
+            - * Spread culture spreads across multiple missions if choosing the Slavic Path 
+        # ---Bug Fixes--- #
+          - Fixed broken trigger for "Harness Industry" mission 
+          - Westernization now preserves Cossack Estate
+          - Fixed misplaced and unsued mission reward code for gaining CB/Claims on Wallachia/Moldavia 
+    - # ------------------------- #
+
+    - # ---Hetmanate/ZAZ--- #
+        # ---General/Reworks--- #
+          - Reworked all triggers and tooltips for gov reforms, events, etc. to be more performance forgiving 
+          - Reformatted display of Mission and Event Rewards 
+          - Nerfed, Buffed, or modified some mission rewards 
+         # ---Bug Fixes--- #
+          - Fixed buffed building modifiers upgrades not being applied to previously existing buildings upon mission completion
+          - Fixed buffed reward modiifers for military buildings not being removed after they are destroyed 
+    - # ------------------------- #
+
+    - # ---General--- #
+        # ---Polish Nations--- #
+          - Reworked unique Polish general spawn events to be more performance efficient when spawning Hussars and Cossacks as event rewards (PLN/LUD/POL/LCT/PLC)
+    - # ------------------------- #
+
+- ### -------------------------- ###
+
+- ### ---Persia Region--- ###
+
+    - # ---Tocharia/SHL/KUC, etc. ---#
+      - Massive mission tree remake/expansion, unique economic, military, political, and expansion paths for all
+        - Unified start of all branches (economic, conquest, military) into three base paths with unlockable unique missions based off branch selected to preserve unity of tree and gameplay
+        - Many new missions, none removed except if they were redunant, too similar to other missions, or could be consolidated 
+      - Additional rewards added to all paths 
+        - * On action, estate privileges, modifiers, events, cultures, government reforms, new great projects, Unlockable Great Project Buff Rewards,  etc.
+        - * Structure of conquest across Branches goes 
+          - * [1.] Conquer Region and Continue 
+              - [1A.] invest in development (political/culture/economic of region) 
+          - * [2.] Lite post-regional conquest mission to grant claims on regions that such an empire would claim or lay claim to in their 
+          wildest dreams (I.E give player more areas to conquer/interact with after finishing tree)
+        - * Each branch gains access to a singular special unit instead of multiple, none at all, or one-time grants 
+        - Choosing a Legacy now adapts estate names to chosen culture/civilization 
+        
+        # ---Indian/Kushan Path Highlights---#
+          - Highlights
+            - * Greater use and new privileges for Indian Estates
+          - Rebalancing
+            - * Reworked modifiers for Kushan Confederarcy gov reform 
+                - Heathen Royal marriages and access to Indian Great Projects via reforms without Brahmin adminstration gov reform or estate privilege 
+          - Multiple Bug Fixes
+            - * Fixed bugged Conditional Reward for the "Modern Conscription" mission
+            - * Fixed improper reward for "Legacy of the Kushans" mission
+            - * Indian Estates active upon forming the Kushan Federation 
+
+        # ---Persian/Bactrian Path---#
+          - Highlights
+            - * Many new gov reforms, on_actions, etc.
+            - * Great project upgrades and development after conquest focus
+            - * Estate names now become Persian upon chosing Path
+          - Rebalancing
+            - * Reworked modifiers and custom attributes for Persianate Empire Gov Reform 
+          - Multiple Bug Fixes 
+
+        # ---Chinese/Yuezhi Path---#
+          - New Yuezhi Crisis Event Chain 
+            - * Allows Player to combat a much more powerful Yuan/Emperor of Chain despite their size or condition via set requirements to start crisis as well as claim victory in war (Akin to France v. Empire or Golden Horde v. Rebellious Khans)
+          - Highlights
+              - * Recreate/Rebalanced Celestial Empire and Warlord state gov reforms for Yuezhi
+                - Warlord State gov reform includes "Chinese Assimilation Mechanic", until culture shifting, all provinces of the Chinese culture group have their unaccepted culture malus negated 
+                - Celestial Empire uses Meritocracy 
+              - * New Unique Military Reform
+                - Allows use of Banners with unique buffs to them 
+          - Rebalance
+             - * Choosing Yuezhi now turns you into a TRIBUTARY of the EOC upon chosen the path, in an effort to aid conquest/expansion towards emperor without incurring its Imperial fury 
+             - * Made the change into a proper Chinese Dynasty occur much earlier, as well as Sinicization 
+          - Multiple Bug Fixes
+             - * Added Chinese localized province names for culture flip after Sinicization 
+        # ---Other/General---#
+          - Reworked all triggers for gov reforms, events, etc. to be more performance forgiving 
+            - * Corrected multiple incorrect provinces to highlight blocks 
+          - Rewrote all Tooltips to match AB's and ABF's style 
+    - # ------------------------- #
+
+    - # ------Zun/Rob-------- #
+        # ---General--- #
+          - Removed ability to utilize Qizilibash special unit and disabled estate, replaced with choice between Mass and Elite force of Rajputs
+        # ---Other/General--- #
+          - Reworked all triggers for gov reforms, events, etc. to be more performance forgiving 
+          - After unlocking the listed reward, fixed bug where building tax buildings did not grant radiance
+            - * Same with unrest modifier upon building taxation buildings  
+          - Reformatted display of Mission and Event Rewards 
+          - Nerfed, Buffed, or modified some mission rewards 
+        # ---Bug Fixes--- #
+          - Fixed buffed building modifiers upgrades not being applied to previously existing buildings upon mission completion
+            - * I.E Radiance gain and lower unrest from taxation buildings    
+    - # ------------------------- #
+
+- ### -------------------------- ###
+    
+- ### ---Baltic Region--- ###
+
+  - # ------Livonia-------- #
+      # ---General/Reworks--- #
+        - Complete rebuild/rework of the Livonia tree
+          - * Combined religious and economic trees into one
+            - * Mass expansion of conquest tree, including political and economic missions as extra missions to expand reasons/rewards for conquest 
+          - 4 new spawnable cultures
+      # ---Other--- #
+        - Reworked all triggers for gov reforms, events, etc. to be more performance forgiving  
+        - Reformatted display of Mission and Event Rewards 
+        - Nerfed, Buffed, or modified some mission rewards 
+    - # ------------------------- #
+
+- ### -------------------------- ###
+
+##### -------------------------------- #####
+
+##### ---Culture Spread/Mini-Content Updates--- #####
+
+- ### Celtic Culture Group (Brittany/Gallia, Wales, etc.) ###
+   # ---Gallia/Brittany--- #
+      - Reworked Brittonic culture spread for Gallia to work like other natural spreads in the mod
+        * Culture spread mechanic now unlocked directly via mission 
+      - Reworked Gaelic Faith event- you MUST be Gallia to trigger this event. Now the event triggers either when: 
+        * A: Another nation spawns the Gaelic Faith 
+        * B: A random amount of time passes during the Age of Reformation if the Gaelic faith does not currently exist
+      - Reworked "Release Celtica" decision, now allowing you to create a junior partner in the British isles with naturally spreading Brittonic culture 
+   # ---Wales/Prydain--- #
+      - Can now access Gallic culture via conditional mission reward if they have completed the "Brittonic Revival" mission 
+   # ---Gaeldom/Goidelia--- #
+      - Can now access Gallic culture via conditional mission reward for conquering Francia if they have complete as Goidelia
+   # ---Other/General--- #
+
+- ### -------------------------- ###
+      
+ - ### East Slavic Culture Group (Ruthenia, Russia, etc.) ###
+    # ---Ruthenia/Russia--- #
+      - "Sack of Sarai" event will now change the culture to Povolzyhe if your primary culture is East Slavic, for all other nations it will change it to your ROOT culture
+    # ---Other/General--- #
+      - East Slavic settler cultures/Ruthenian claimant cultures now available for all nations whose primary culture lies within the East Slavic Group
+         * - Novgorod: Culture spreads expanded and now split between multiple missions
+         * - All other Ruthenian nations: Culture spreads now split between multiple missions, more accessible upon forming Rus/Ruthenia
+         * - Litvinia/Catholic Lithuania: now has access to additional East Slavic cultures as conditional rewards if the player has completed the "Cultural Assimilation" mission, thus joining the East Slavic Culture Group
+  - ### -------------------------- ###
+
+  - ### West Slavic Culture Group (Poland, Moravia, etc.) ###
+    # ---Other/General--- #
+      - Modified Litvin spread to be more dynamic, combining it into one event that detects whether your primary culture is West or East Slavic and then changes province culture based off that
+      - Some West Slavic Nations now can access additional West Slavic cultures as a mission rewards, conditional or otherwise 
+        * - Great Moravia
+        * - Wendia 
+        * - Czechia/Commonwealth
+   - ### -------------------------- ###
+
+  - ### Nordic Culture Group (Norway, Sweden, etc.) ###
+    # ---Denmark/Norway--- #
+      - Naturally spreading cultures can be accessed regardless of chosen faith
+        * - Changed what missions grant new cultures as rewards for Denmark and Norway
+    # ---Sweden--- #
+      - Sweden can now properly complete the Hakkapeliitta mission, gaining access to the Mercenary Company 
+    # ---Other/General--- #
+      - Expanded Varangian culture spread to the entire Russia and Ruthenia regions
+        * - Varangian culture spread can now be accessed by all Nordic nations 
+      - Modified some mission rewards across all Nordic nations to make completing them more rewarding and fix formatting
+  - ### -------------------------- ###
+
+  - ### East Germanic Culture Group (Germany) ###
+    # ---Other/General--- #
+      - Revised natural culture spread tooltips to clearly communicate what cultures spread where, rather the vague and generalized tooltips that previously existed that described "New Germanic Cultures" 
+        * - Modified Germanic settler culture spreads for many nations within the East Germanic culture group as possible when their mission trees provide the right context/narrative and or direction for the birth of new cultures to make sense such as 
+          * - Prussia/Nordmark/Brandenburg
+          * - Styria/Austria
+          * - Bavaria
+          * - Unified Germany (Has access to all ABF Germanic settler cultures, including ones no other German precursor has)
+  - ### -------------------------- ###
+
+  - ### West Germanic Culture Group (England, Netherlands, etc.) ###
+    # ---Scotland/Albion/Great Britain--- #
+      - Removed Alban culture as an event reward and made it a conditional mission reward further down the tree for forming Albion 
+     # ---Netherlands--- #
+      - Reworked Olender culture spread, preserving its natural spread, but also adapting the previously existing mission reward from Vanilla AB to this new settler culture added by ABF 
+  - ### -------------------------- ###
+       
+ - ### Chinese Culture Group (Yuan, Chinese Warlords, etc.) ###
+    # ---Warring States/Chinese Dynasties/Japanese Sinification--- #
+      - New mission reward to shift Mongol culture to the Chinese group 
+      - Added redundancies for harmonized religions if Confucian for culture spreading, and clearing of flags to prevent conflicts if some rewards are earned before sinification 
+    # ---Other/General--- #
+      - Sinicized cultures will now spread in provinces with a harmonized religion if the owner is Confucian 
+      - Sinicized nations can now access Japanese Great Projects after meeting certain requirements 
+  - ### -------------------------- ###
+
+ - ### Japanese Culture Group (Shogunate, Japanese Empire, etc.) ###
+    # ---Sinification--- #
+      - All previously added cultures unique to ABF, whether they be Sinified or Japanese colonial, now granted through conditional checks to see whether you've embraced Chinese influence or preserved Japanese heritage 
+  - ### -------------------------- ###
+
+  - ### General/Other ###
+    # ---General/Reworks--- #
+       - All new culture types will keep or be assigned unique ruler/country government rank titles if not already associated with one
+       - If a new ABF culture becomes your primary culture, cultural estate names will be brought alone with it 
+       - Unique/New cultures no longer spread if you have formed Rome or the Roman Republic 
+    # ---Great Projects--- #
+       - Kizil Caves Great Project now useable by all nations of the Hindu Faith or in the Eastern Religion Group, or as a reward for some nations 
+       - Added "tooltip_potential" blocks to all conditional rewards to display only after they are unlocked
+          * - Ex. Upgradable Baku Fire Temple Zun reward now only shows after you complete the mission, same with buffed Indian Great Projects for Zun
+       - Replaced tooltip for potential for the Cossack Sich Great Project to simply displayed a combined tooltip for the two versions of the Hetmanate Gov type, rather than displaying the "Cossack Hetmanate" gov reform as a requirement  twice
+       - Replaced Lavra accessibility trigger for Poland with country flag and custom tooltip so it may be shared with other nations in future updates to Eastern Europe   
+       - Redone triggers/tooltips for all ABF custom Great Projects 
+          * - If built by AI or other players, ABF Great Projects will now available to all naitons to use if earned as a reward or as makes sense in the lore/AB history's.
+       - Redone GFX assets for all ABF custom Great Projects 
+    # ---Mercenary Companies--- #
+      - ABF unlockable mercenary companies now with changed trigger requirements so they may be shared between nations via rewards
+  - ### -------------------------- ### 
+
+##### ---------------------------------------------------- #####
+
+##### ---Organization/Standardization--- #####
+
+- ### Formatting/Restructuring ###
+  - Reformatting of all files for max compatibility
+      * - removed the dual use of "ABA" and "ABF", unified into ABF for all new files as a prefix for what was added (ABA stems from the original name of the mod, which in hand was changed due to the confusion it caused)
+  - Clear labeling of content added by ABF in mod files
+      * - all files now labeled with details about what additions/changes were made, gov reforms reorganized by tiers, etc.
+  - Standardization of tooltips to closely match Vanilla AB, as well as proper/better formatting to reduce the "wall of text" look for much of the older content  
+- ### -------------------------- ###
+
+- ### Streamlining Code ###
+  - Cleaned all files of unused code/left over code that was irrelevant for their potential, trigger, effects, modifier, etc. blocks.
+    * - also fixed code to be cleanly blocked with properly ability to close areas of code with modified placement of brackets 
+  - Reworked culture spread events to be more performance efficient and available to your chosen nation regardless of religion
+    * Multiple bug fixes and redundancies added for culture spread events in the event of changing paths/primary cultures, unifying cultures, etc.
+    * - New culture spreads DISABLED if primary culture is Roman or if tag is ROM/RMR
+    * - Availability of new culture spreads typically related to lore reasons or connected to claims granted via mission rewards if no mission relating to conquering a to be settled region is present
+  - ### -------------------------- ###
+  
+##### ----------------------------------- #####
+
+#### ---REMOVED/RETIRED CONTENT--- ####
+# ---Bulgaria--- #
+  - Removed all content relating to Bulgaria, as it is recieving a new mini-update in Vanilla/Main AB in the coming months
+    * - Depending on the content available within the new mini-update, some content may be restored to Bulgaria, such as new cultures, but its mission tree will not be 
+# ---Afghan Nations--- #
+  - Retired extra content that was added for Shahi and Ghurids except for government reforms and rajput estate access (both unlocked via event)
+    * - These nations will receive a proper update in the future, scope of which currently unknown 
+    * - Optimized unlock potential trigger and removed effects that were rendered useless by the implementation of the Assimilation Mechanic for both nations 
+    * - Reformatted events to display rewards more cleanly 
+# ---East Germanic Culture Group--- #
+ - Removed Germanic culture spreads for these German nations until they unify Germany, base game AB culture spreads left intact in their trees:
+    * - Rhineland precursors
+    * - Saxony
+ # ---Tatar Culture Group--- #
+ - Removed Golden Tsardom government reform in lieu of major Tataria update for ABF coming soon 
+# ---Chinese Culture Group--- #
+ - Removed redundant Sino-Korean spread, as sincization is unlockable via decision for that culture 
+# ---Other/General--- #
+  - Removed Danubian Federation Gov Reform for Hungary 
+    * - Hungary will receive a proper and full-fledged update in the future 
+  - Removed Brittonic Revolution event chain for Gallia
+    * - Replaced by uniform style natural spread found throughout ABF
+
+##### ------------ #####
+
+
+#### TODO ####
+- give jains state estate privilege buffs for shared privileges (may have to do for all Indian estates)
+- Leave Kush in the Iranian tech group
+  - * don't give them marthas, add estates to religious choice event not main event 
+
+
+
+#### Hotfix ####
+- Fixed all nobles appearing as Boyars 
+- Removed Marathas from Kushans 
