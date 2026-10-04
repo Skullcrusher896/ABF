@@ -156,7 +156,6 @@ ab_persia_tcr_shared_slot_1_base = {
 			if = {
 				limit = {
 					2121 = {
-						has_production_building_trigger = yes
 						base_production = 10
 					}
 				}
@@ -10485,7 +10484,11 @@ ab_persia_tcr_slot_4_poli = {
 
 		provinces_to_highlight = { 
 			AND = {
-				trade_goods = gold
+				OR = {
+					trade_goods = gold
+					trade_goods = iron
+					trade_goods = copper
+				}
 				NOT = {
 					base_production = 8
 				}
@@ -10498,8 +10501,12 @@ ab_persia_tcr_slot_4_poli = {
 			monthly_income = 50
 			is_in_deficit = no
 			num_of_owned_provinces_with = {
-				value = 1
-				trade_goods = gold
+				value = 2
+				OR = {
+					trade_goods = gold
+					trade_goods = iron
+					trade_goods = copper
+				}
 				base_production = 4
 				has_production_building_trigger = yes
 			}

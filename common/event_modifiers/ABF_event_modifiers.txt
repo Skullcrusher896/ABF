@@ -1136,7 +1136,7 @@
 		#----Shared Missions ---#
 
 		abf_tcr_road_dev_cost_mod = {
-			development_cost_modifier = -0.05
+			local_development_cost_modifier = -0.05
 		}
 
 		abf_tcr_2121_gold_mod = {

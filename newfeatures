@@ -291,6 +291,11 @@ Even though I have been revamping content and attempting to standardize ABF, thi
 
 
 
-#### Hotfix ####
+#### Hotfix # 1 ####
 - Fixed all nobles appearing as Boyars 
 - Removed Marathas from Kushans 
+
+#### Hotfix # 2 ####
+- Fixed road buff granting global dev cost modifier
+- Added A.I weight to Yuezhi crisis, less likely to surrender based on strength
+- Removed production building requirement from gold related missions/triggers

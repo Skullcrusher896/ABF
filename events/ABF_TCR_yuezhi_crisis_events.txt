@@ -90,6 +90,31 @@ country_event = {
 	#Surrender Northern China
 	option = {
 		name = abf_tcr_yuezhi_crisis.2.a
+
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 0
+				NOT = { 
+					event_target:abf_tcr_yuezhi_crisis_invader = {
+						military_strength = {
+							who = event_target:abf_tcr_yuezhi_crisis_target
+							value = 1.5
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 50
+				event_target:abf_tcr_yuezhi_crisis_invader = {
+					military_strength = {
+						who = event_target:abf_tcr_yuezhi_crisis_target
+						value = 1.5
+					}
+				}
+			}
+		}
+
 		# Add prestige and a modifier to the emperor
 		add_stability = -3
 		add_prestige = -50
@@ -180,6 +205,31 @@ country_event = {
 	#Don't surrender
 	option = {
 		name = abf_tcr_yuezhi_crisis.2.b
+
+		ai_chance = { 
+			factor = 80
+			modifier = {
+				factor = 90
+				NOT = { 
+					event_target:abf_tcr_yuezhi_crisis_invader = {
+						military_strength = {
+							who = event_target:abf_tcr_yuezhi_crisis_target
+							value = 1.5
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 50
+				event_target:abf_tcr_yuezhi_crisis_invader = {
+					military_strength = {
+						who = event_target:abf_tcr_yuezhi_crisis_target
+						value = 1.5
+					}
+				}
+			}
+		}
+
 		add_stability = -1
 		custom_tooltip = AB_EMPTY
 		custom_tooltip = ABF_YUEZHI_CRISIS_TARGET_DEFEND_TT
