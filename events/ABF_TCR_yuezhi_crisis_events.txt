@@ -114,7 +114,6 @@ country_event = {
 				}
 			}
 		}
-
 		# Add prestige and a modifier to the emperor
 		add_stability = -3
 		add_prestige = -50
