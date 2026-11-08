@@ -1,0 +1,291 @@
+# Jewish #
+jewish_community_small = {
+	province_trade_power_modifier = 0.1
+	local_development_cost = -0.05
+	local_prosperity_growth = 0.25
+}
+
+jewish_community_med = {
+	province_trade_power_modifier = 0.15
+	local_development_cost = -0.1
+	local_prosperity_growth = 0.5
+	allowed_num_of_buildings = 1
+}
+
+jewish_community_large = {
+	province_trade_power_modifier = 0.25
+	local_development_cost = -0.25
+	local_prosperity_growth = 1
+	allowed_num_of_buildings = 2
+	allowed_num_of_manufactories = 2
+}
+
+jewish_community_hub = {
+	trade_efficiency = 0.025
+	trade_goods_size_modifier = 0.15
+}
+
+jewish_community_banished = {
+	trade_efficiency = -0.025
+	trade_goods_size_modifier = -0.25
+}
+
+jewish_community_banish_timer = {
+}
+
+jewish_community_diaspora = {
+	local_missionary_strength = -1
+	local_religious_unity_contribution = -1
+	min_local_autonomy = 25
+	min_autonomy = 5
+}
+
+jewish_loan_timer = {
+}
+
+# Sol Invictus #
+rom_sol_festival_timer = {
+}
+
+rom_sol_festival_legacy = {
+	build_cost = -0.1
+	build_time = -0.1
+}
+
+rom_sol_festival_trade = {
+	trade_efficiency = 0.15
+	merchants = 1
+}
+
+rom_sol_festival_might = {
+	land_morale = 0.1
+	naval_morale = 0.1
+}
+
+rom_sol_codex_timer = {
+}
+
+rom_sol_codex_embrace = {
+	technology_cost = -0.05
+	idea_cost = -0.1
+}
+
+rom_sol_codex_reject = {
+	administrative_efficiency = 0.05
+}
+
+rom_sol_blessing_adm = {
+	country_admin_power = 2
+	yearly_patriarch_authority = -0.05
+}
+
+rom_sol_blessing_dip = {
+	country_diplomatic_power = 2
+	yearly_patriarch_authority = -0.05
+}
+
+rom_sol_blessing_mil = {
+	country_military_power = 2
+	yearly_patriarch_authority = -0.05
+}
+
+rom_sol_eclipse_timer = {
+}
+
+rom_sol_eclipse_fight = {
+	stability_cost_modifier = 1
+	legitimacy = -2
+	prestige_decay = 0.02
+	army_tradition_decay = 0.01
+	navy_tradition_decay = 0.01
+}
+
+rom_sol_eclipse_accept = {
+	stability_cost_modifier = 0.5
+	legitimacy = -1
+	prestige_decay = 0.01
+	army_tradition_decay = 0.005
+	navy_tradition_decay = 0.005
+}
+
+rom_sol_aurelian = {
+	core_creation = -0.1
+	war_exhaustion = -0.1
+}
+
+rom_sol_christmas_timer = {
+}
+
+rom_sol_christmas_adm = {
+	global_unrest = -2
+	years_of_nationalism = -5
+}
+
+rom_sol_christmas_dip = {
+	development_cost = -0.05
+	production_efficiency = 0.1
+}
+
+rom_sol_christmas_mil = {
+	discipline = 0.025
+	military_tactics = 0.15
+}
+
+rom_sol_christmas_all = {
+	global_tax_modifier = 0.33
+	build_cost = -0.1
+}
+
+rom_sol_halo_timer = {
+}
+
+rom_sol_halo_country = {
+	advisor_cost = -0.1
+	global_missionary_strength = 0.01
+}
+
+rom_sol_halo_prov = {
+	trade_goods_size_modifier = 0.05
+	local_tax_modifier = 0.15
+	local_development_cost = -0.1
+}
+
+rom_sol_altar_buff = {
+	local_tax_modifier = 0.25
+	local_production_efficiency = 0.25
+	local_manpower_modifier = 0.25
+	global_trade_power = 0.05
+}
+
+rom_sol_standard_timer = {
+}
+
+rom_sol_standard_buff = {
+	infantry_fire = 0.25
+	cavalry_shock = 0.15
+	artillery_fire = 0.25
+}
+
+rom_sol_standard_weak = {
+	infantry_fire = 0.1
+	cavalry_shock = 0.05
+	artillery_fire = 0.1
+}
+
+rom_sol_holy_site = {
+	fort_level = 2
+	local_tax_modifier = 0.5
+	local_manpower_modifier = 0.5
+	allowed_num_of_buildings = 2
+	allowed_num_of_manufactories = 2
+	local_missionary_strength = -1
+	global_heretic_missionary_strength = 0.003
+	global_heathen_missionary_strength = 0.002
+}
+
+# Rome #
+rom_foederati_subject_modifier = {
+	global_manpower_modifier = -0.35
+	global_sailors_modifier = -0.35
+	land_forcelimit_modifier = -0.35
+	naval_forcelimit_modifier = -0.35
+}
+
+rom_center_of_empire = {
+	local_tax_modifier = 0.25
+	trade_goods_size_modifier = 0.15
+	local_manpower_modifier = 0.25
+	local_development_cost_modifier = -0.25
+	local_governing_cost = -0.25
+}
+
+rom_colonial_growth = {
+	colonists = 1
+	colonist_placement_chance = 0.1
+}
+
+# Visigoths #
+rome_formedbyvisigoths = {
+	has_tercio = yes
+	allowed_tercio_fraction = 0.2
+	province_warscore_cost = -0.1
+	governing_capacity_modifier = 0.15
+	picture = "years_of_nationalism"
+}
+
+vsg_defeat_of_valencia = {
+	land_morale = -0.1
+	military_tactics = -0.15
+}
+
+vsg_choose_catholic = {
+	papal_influence = 3
+	adm_tech_cost_modifier = -0.1
+}
+
+vsg_convert_the_berbers = {
+	local_missionary_strength = 0.03
+}
+
+vsg_vandalic_elites = {
+	shock_damage = 0.05
+	cavalry_flanking = 0.25
+}
+
+vsg_balearic_naval_base = {
+	ship_recruit_speed = -0.5
+	naval_maintenance_modifier = -0.05
+}
+
+vsg_rising_naval_power = {
+	global_ship_recruit_speed = -0.25
+	global_ship_cost = -0.1
+}
+
+vsg_campaign_in_gaul = {
+	discipline = 0.025
+	movement_speed = 0.1
+}
+
+vsg_barrack_mod = {
+	regiment_recruit_speed = -0.15
+}
+
+vsg_visigothic_vanguards = {
+	morale_damage_received = -0.1
+	recover_army_morale_speed = 0.1
+	is_tercio_modifier = yes
+}
+
+vsg_visigothic_tercios = {
+	infantry_power = 0.05
+	allowed_tercio_fraction = 0.2
+}
+
+vsg_winning_battle = {
+	movement_speed = 0.1
+}
+
+vsg_ostrogothic_italy = {
+	papal_influence = 2
+	curia_powers_cost = -0.15
+}
+
+vsg_conquest_of_britain = {
+	all_power_cost = -0.025
+	years_of_nationalism = -5
+}
+
+vsg_iberia_industry = {
+	trade_goods_size_modifier = 0.2
+}
+
+vsg_restore_west_empire = {
+	years_of_nationalism = -5
+	governing_cost = -0.05
+}
+
+vsg_the_grand_armada = {
+	max_flagships = 2
+	leader_naval_manuever = 2
+}

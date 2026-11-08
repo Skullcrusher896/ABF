@@ -7,7 +7,7 @@ custom_button = {
     trigger = {
     }
     effect = {
-		 if = {
+		if = {
 			limit = {
 				OR = {
 					tag = ROB
@@ -16,6 +16,17 @@ custom_button = {
 			}
 			country_event = {
 				id = abf_zun_event.4
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = VSG
+					was_tag = VSG
+				}
+			}
+			country_event = {
+				id = tlw_rome.3
 			}
 		}
     }

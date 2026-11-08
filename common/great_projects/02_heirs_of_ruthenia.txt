@@ -1711,16 +1711,16 @@ preslav_literary_school = {
 
 	#can we build it?
 	build_trigger = {
+		hidden_trigger = {
+			is_great_project_destroyed = no
+		}
 		owner = {
 			OR = {
 				AND = {
 					culture_group = south_slavic
 					religion = orthodox
 				}
-				custom_trigger_tooltip = {
-					tooltip = enable_korean_palace_tt
-					has_country_flag = mva_unlocked_preslav_project
-				}
+				can_use_bulgarian_great_projects = yes
 			}
 		}
 	}
@@ -1735,48 +1735,48 @@ preslav_literary_school = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		hidden_trigger = {
+			is_great_project_destroyed = no
+		}
 		owner = {
 			OR = {
 				AND = {
 					culture_group = south_slavic
 					religion = orthodox
 				}
-				custom_trigger_tooltip = {
-					tooltip = enable_korean_palace_tt
-					has_country_flag = mva_unlocked_preslav_project
-				}
+				can_use_bulgarian_great_projects = yes
 			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		hidden_trigger = {
+			is_great_project_destroyed = no
+		}
 		owner = {
 			OR = {
 				AND = {
 					culture_group = south_slavic
 					religion = orthodox
 				}
-				custom_trigger_tooltip = {
-					tooltip = enable_korean_palace_tt
-					has_country_flag = mva_unlocked_preslav_project
-				}
+				can_use_bulgarian_great_projects = yes
 			}
 		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+		hidden_trigger = {
+			is_great_project_destroyed = no
+		}
 		owner = {
 			OR = {
 				AND = {
 					culture_group = south_slavic
 					religion = orthodox
 				}
-				custom_trigger_tooltip = {
-					tooltip = enable_korean_palace_tt
-					has_country_flag = mva_unlocked_preslav_project
-				}
+				can_use_bulgarian_great_projects = yes
 			}
 		}
 	}

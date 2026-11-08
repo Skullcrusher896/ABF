@@ -2,13 +2,44 @@ estate_nobles_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	# ]]]
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
 		not = { has_estate_privilege = estate_ghulams_land_rights }
 		not = { has_estate_privilege = estate_qizilbash_land_rights }
 	}
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	on_granted = {
 	}
 	penalties = {
@@ -186,7 +217,27 @@ estate_nobles_nobility_primacy = {
 	icon = privilege_military_power
 	land_share = 10
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	# ]]]
 	loyalty = -0.05
 	can_select = {
 		can_select_monarch_power_privilege = {
@@ -194,6 +245,17 @@ estate_nobles_nobility_primacy = {
 			type = mil
 		}
 	}
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	on_granted = {
 	}
 	penalties = {
@@ -219,6 +281,18 @@ estate_nobles_nobility_primacy = {
 			max_absolutism = 5
 			max_absolutism_effect = 0.10
 			nobles_loyalty_modifier = 0.05
+		}
+	}
+	# ]]]
+	# TLW [[[
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = aldiraq_primacy_privilege_buff
+		}
+		modifier = {
+			max_absolutism = 5
+			discipline = 0.05
+			core_creation = -0.1
 		}
 	}
 	# ]]]
@@ -260,11 +334,42 @@ estate_nobles_nobility_primacy = {
 estate_nobles_officer_corp = {
 	icon = privilege_promote_purbias
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	# ]]]
 	influence = 0.05
 	is_valid = {
 		NOT = { has_estate = estate_qizilbash }
 	}
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	can_select = {
 		army_tradition = 30
 	}
@@ -284,6 +389,17 @@ estate_nobles_officer_corp = {
 		modifier = {
 			max_absolutism = 5
 			land_morale = 0.1
+		}
+	}
+	# ]]]
+	# TLW [[[
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = che_officer_corp_buff
+		}
+		modifier = {
+			leader_siege = 2
+			max_absolutism = 5
 		}
 	}
 	# ]]]
@@ -309,13 +425,36 @@ estate_nobles_officer_corp = {
 estate_nobles_levies = {
 	icon = privilege_demand_more_troops
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes NOT = { has_government_attribute = free_noble_levies } } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	# ]]]
 	influence = 0.1
 	loyalty = 0.1
 	is_valid = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 		NOT = { has_estate = estate_ghulams }
 	}
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	can_select = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 		if = {
@@ -329,9 +468,20 @@ estate_nobles_levies = {
 	on_granted = {
 	} 
 	modifier_by_land_ownership = {
-		global_tax_modifier = -0.10
+		global_tax_modifier = -0.1
 		global_manpower_modifier = 0.5
 	}
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_wallachia_compromised_with_the_boieri = yes
+			has_reform = maintain_nobles_status_quo_reform
+		}
+		modifier = {
+			global_regiment_cost = -0.1
+		}
+	}
+	# ]]]
 	penalties = {
 	}
 	mechanics = {
@@ -339,7 +489,12 @@ estate_nobles_levies = {
 	}
 	conditional_modifier = {
 		trigger = {
-			has_government_attribute = free_noble_levies
+			OR = {
+				# ABMP [[[
+				has_government_attribute = no_absolutism_from_boier_privileges
+				# ]]]
+				has_government_attribute = free_noble_levies
+			}
 		}
 		modifier = {
 			max_absolutism = 5
@@ -421,9 +576,32 @@ estate_nobles_levies = {
 estate_nobles_advisors = {
 	icon = privilege_recruit_minister
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	# ]]]
 	influence = 0.05
 	loyalty = 0.05
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	penalties = {
 		stability_cost_modifier = 0.1
 	}
@@ -434,6 +612,32 @@ estate_nobles_advisors = {
 	benefits = {
 		mil_advisor_cost = -0.15
 	}
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_wallachia_compromised_with_the_boieri = yes
+			has_reform = maintain_nobles_status_quo_reform
+		}
+		modifier = {
+			stability_cost_modifier = -0.1
+			nobles_influence_modifier = -0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+				AND = {
+					has_wallachia_compromised_with_the_boieri = yes
+					has_reform = maintain_nobles_status_quo_reform
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	# ]]]
 	ai_will_do = {
 		factor = 9
 		modifier = {
@@ -450,9 +654,40 @@ estate_nobles_advisors = {
 estate_nobles_right_of_counsel = {
 	icon = privilege_royal_authority
 	max_absolutism = -10
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 2
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 10
+		}
+	}
+	# ]]]
 	loyalty = 0.1
 	influence = 0.1
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	penalties = {
 	}
 	benefits = {
@@ -470,13 +705,44 @@ estate_nobles_right_of_counsel = {
 estate_nobles_supremacy_over_crown = {
 	icon = privilege_empty_throne
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	# ]]]
 	influence = 0.0
 	loyalty = 0.0
 	is_valid = {
 		has_dlc = "Emperor"
 		NOT = { has_government_attribute = blocked_call_diet }
 	}
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	can_select = { 
 		NOT = { has_estate_privilege = estate_eunuchs_supremacy_over_crown_privilege }
 	}
@@ -508,8 +774,39 @@ estate_nobles_supremacy_over_crown = {
 estate_nobles_monopoly_of_metals = {
 	icon = privilege_monopoly_of_goods_iron
 	max_absolutism = -10
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 2
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 10
+		}
+	}
+	# ]]]
 	loyalty = 0.05
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	is_valid = {
 		any_owned_province = {
 			OR = {
@@ -611,13 +908,44 @@ estate_nobles_monopoly_of_metals = {
 estate_nobles_monopoly_of_livestock = {
 	icon = privilege_monopoly_of_goods_livestock
 	max_absolutism = -10
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 2
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 10
+		}
+	}
+	# ]]]
 	loyalty = 0.05
 	is_valid = {
 		any_owned_province = {
 			trade_goods = livestock
 		}
 	}
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
@@ -708,13 +1036,44 @@ estate_nobles_monopoly_of_livestock = {
 estate_nobles_monopoly_of_gems = {
 	icon = privilege_monopoly_of_goods_gems
 	max_absolutism = -10
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 2
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 10
+		}
+	}
+	# ]]]
 	loyalty = 0.05
 	is_valid = {
 		any_owned_province = {
 			trade_goods = gems
 		}
 	}
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
@@ -917,11 +1276,42 @@ estate_nobles_veto_heir_apparent = {
 estate_nobles_statutory_rights = {
 	icon = privilege_grant_autonomy
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	# ]]]
 	influence = 0.1
 	is_valid = {
 		has_estate_privilege = estate_nobles_statutory_rights
 	}
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	on_granted = {
 		change_estate_land_share = {
 			estate = all
@@ -943,7 +1333,27 @@ estate_nobles_statutory_rights = {
 estate_nobles_better_integration = {
 	icon = privilege_better_integration
 	max_absolutism = -10
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 2
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 10
+		}
+	}
+	# ]]]
 	influence = 0.05
 	loyalty = 0
 	check_valid_when_tag_switching = no
@@ -958,6 +1368,17 @@ estate_nobles_better_integration = {
 			}
 		}
 	}
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	can_select = {
 	}
 	on_granted = {
@@ -1552,10 +1973,41 @@ estate_nobles_development_of_castles = {
 	loyalty = 0.1
 	influence = 0.05
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	# ]]]
 	is_valid = {
 		has_dlc = "Domination"
 	}
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	on_granted = {
 		custom_tooltip = estate_nobles_development_of_castles_gt
 		tooltip = {
@@ -1641,7 +2093,36 @@ estate_nobles_statesman_servitude = {
 	loyalty = 0.0
 	influence = 0.05
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	# ]]]
 	is_valid = {
 		has_dlc = "Domination"
 	}
@@ -1680,7 +2161,36 @@ estate_nobles_royal_court_tasks = {
 	loyalty = 0.0
 	influence = 0.05
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	is_valid = {
 		has_dlc = "Domination"
 	}
@@ -1745,6 +2255,17 @@ estate_nobles_royal_court_tasks = {
 			prestige_decay = -0.01
 		}
 	}
+	# TLW [[[
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = pol_grant_court_positions_buff
+		}
+		modifier = {
+			max_absolutism = 5
+			administrative_efficiency = 0.05
+		}
+	}
+	# ]]]
 	ai_will_do = {
 		factor = 0
 	}
@@ -1754,7 +2275,36 @@ estate_nobles_diet_right = {
 	loyalty = 0.0
 	influence = 0.05
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	is_valid = {
 		has_dlc = "Domination"
 	}
@@ -1788,7 +2338,36 @@ estate_nobles_force_conscription = {
 	loyalty = 0
 	influence = 0.05
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	is_valid = {
 		has_dlc = "Domination"
 	}
@@ -1816,7 +2395,36 @@ estate_nobles_noble_officer_right = {
 	loyalty = 0.0
 	influence = 0.1
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	is_valid = {
 		has_dlc = "Domination"
 	}
@@ -1854,7 +2462,36 @@ estate_nobles_expedition_rights = {
 	loyalty = 0.0
 	influence = 0.05
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	# ABMP [[[
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = {
+				has_government_attribute = no_absolutism_from_boier_privileges
+			}
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = no_absolutism_from_boier_privileges
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	can_revoke = {
+		if = {
+			limit = {
+				is_or_was_wallachia = yes
+				has_wallachia_purged_the_estates = no
+			}
+			has_wallachia_not_compromised_with_the_boieri = yes
+		}
+	}
+	# ]]]
 	is_valid = {
 		has_dlc = "Domination"
 		has_any_exploration_idea = yes

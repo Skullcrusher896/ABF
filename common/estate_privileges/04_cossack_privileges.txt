@@ -26,11 +26,11 @@ estate_cossacks_land_rights = {
 		governing_capacity = 100
 	}
 	conditional_modifier = {
-		trigger = { has_country_flag = ned_land_rights_buff_flag }
-		modifier = {
-			governing_capacity = 20
-		}
-	}
+        trigger = { has_country_flag = ned_land_rights_buff_flag }
+        modifier = {
+            governing_capacity = 50
+        }
+    }
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
@@ -320,6 +320,17 @@ estate_cossacks_exploration_expedition = {
 		trigger = { has_country_flag = hun_upgrade_cossack_priv }
 		modifier = { max_absolutism = 5 }
 	}
+	# TLW [[[
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = rus_cossack_expeditions_buff
+		}
+		modifier = {
+			global_colonial_growth = 25
+			max_absolutism = 5
+		}
+	}
+	# ]]]
 	#### ABF Conditional Mod [[[
 	conditional_modifier = {
 		trigger = { has_country_flag = abf_htm_exploration_expeditions_upgrade } #HTM/ZAZ
@@ -602,6 +613,17 @@ estate_cossacks_recruit_cossack_generals = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
+	# TLW [[[
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = rus_cossack_leaders_buff
+		}
+		modifier = {
+			cavalry_cost = -0.25
+			max_absolutism = 5
+		}
+	}
+	# ]]]
 	ai_will_do = {
 		factor = 10
 		modifier = {
