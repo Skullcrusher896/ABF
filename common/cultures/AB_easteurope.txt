@@ -1214,9 +1214,9 @@ romanian_culture_group = {
 		primary = WAL
 		dynasty_names = {
 			"Basarab" "Danesti" "Draculesti"
-			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza 
-			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti Hâjdau
-			Kogalniceanu Movilesti
+			Callimachi Ghica Brancoveanu Cantacuzino Cantemiresti Racovita Caradja Sturdza 
+			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti Bibescu Hajdau
+			Kogalniceanu Movilesti Racovita
 		}
 		male_names = {
 			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia 
@@ -1353,6 +1353,237 @@ romanian_culture_group = {
 			Tereza Teresa Vasilica Violeta Yolanda Voica Zina
 		}
 	}
+
+	# ABMP [[[
+	panonic = {
+		primary = HUN
+		dynasty_names = {
+			"Basarab" "Bathory" "Bibescu" "Callimachi" "Cantacuzino" "Craiovesti" "Danesti" 
+			"Draculesti" "Esterhazy" "Ghica" "Hunyadi" "Karolyi" "Mavrocordatos" "Movilesti" 
+			"Racovita" "Sturdza" "Szilagyi" "Teleki" "Thurzo" "Vacarescu" "Zrinyi"
+		}
+		male_names = {
+			Alexandru Andras Andrei Attila Barbat Bela Benedek Bogdan Constantin Corneliu 
+			Costin Dan Denes Dragos Dumitru Elek Endre Erno Farkas Ferenc Florin Gabriel 
+			Gabor Gaspar Geza Gheorghe George Grigore Gyorgy Iancu Ieremia Imre Ioan Istvan 
+			Janos Jozsef Karoly Kristof Lajos Laszlo Laurentiu Lorinc Lucian Marius Marton 
+			Matyas Mihai Mihaly Miklos Mircea Moise Neagoe Nicolae Octavian Pal Peter Petru 
+			Radu Sandor Serban Sergiu Simion Stefan Tamas Teodor Tibor Tudor Valentin 
+			Vasile Victor Vlad Zoltan Zsolt
+		}
+
+		female_names = {
+			Adelina Adriana Agnes Agota Ana Anastasia Angela Anna Borbala Cristina Dana 
+			Dorottya Ecaterina Edina Edit Elena Elisabeta Emese Emilia Erika Erzsebet 
+			Eszter Eva Felicia Floarea Gabriela Gizella Ibolya Ildiko Ilona Ioana Irina 
+			Iulia Judit Julianna Katalin Kinga Klara Margit Maria Monica Natalia Orsolya 
+			Piroska Reka Roxana Ruxandra Sarolta Sofia Stana Stefana Szilvia Teodora Tunde 
+			Valentina Vasilica Violeta Voica Zsofia Zsuzsanna
+		}
+	}
+	morlaci = {
+		primary = ILR
+		dynasty_names = {
+			"Basarab" "Brankovic" "Cantacuzino" "Dragovic" "Frankopan" "Ghica" 
+			"Hrvatinic" "Kotromanic" "Kosača" "Movilesti" "Nemanjic" "Radulovic" 
+			"Sturdza" "Vladislavic" "Zrinski"
+		}
+		male_names = {
+			Andrei Andrija Ante Bogdan Boris Branimir Constantin Damir Dejan Dragan 
+			Dragos Dusan Filip Florin Goran Gheorghe Ioan Ivan Jovan Lazar Luka 
+			Marin Marko Mihai Milan Milos Mircea Mladen Nicolae Petar Radu Ratko 
+			Slobodan Stanko Stefan Stjepan Tomislav Vasile Vlad Vladimir Vlado 
+			Vuk Zoran
+		}
+		female_names = {
+			Ana Anca Biljana Branka Cristina Danica Doina Dragana Dubravka Elena 
+			Florica Gordana Ioana Ivana Jelena Katarina Ljiljana Ljubica Maria 
+			Milena Milica Mirjana Nada Nataša Nevenka Olga Ruxandra Slavica 
+			Sofia Stana Svetlana Tatjana Teodora Vesna Zora
+		}
+	}
+	adriaticii = {
+		primary = VEN
+		dynasty_names = {
+			"Basarab" "Bibescu" "Brancoveanu" "Cantacuzino" "Contarini" "Dandolo" 
+			"Draculesti" "Ghica" "Giustiniani" "Loredan" "Mocenigo" "Morosini" 
+			"Movilesti" "Racovita" "Sturdza" "Zorzi"
+		}
+		male_names = {
+			Alvise Andrei Bogdan Constantin Cornel Cosimo Daniele Dragan Dragos 
+			Florin Francesco Gheorghe Giacomo Giovanni Ioan Jacopo Lorenzo Luca 
+			Marco Marin Matteo Mihai Mircea Nicolae Paolo Petru Pietro Radu 
+			Stefan Teodor Vasile Vincenzo Vlad
+		}
+		female_names = {
+			Adriana Alba Ana Anca Andreea Beatrice Bianca Camilla Caterina Chiara 
+			Cristina Elena Elisabetta Fiorenza Florica Francesca Giulia Ioana 
+			Isabella Laura Lucia Lucrezia Margherita Maria Marta Nicoletta Paola 
+			Ruxandra Sofia Teodora Valentina Veronica Vittoria
+		}
+	
+	}
+	amiaza = {
+		primary = TRC
+		dynasty_names = {
+			"Altavilla" "Basarab" "Bibescu" "Brancoveanu" "Cantacuzino" "Caracciolo" 
+			"Chiaramonte" "Draculesti" "Ghica" "Moncada" "Movilesti" "Racovita" 
+			"Ruffo" "Sanseverino" "Sturdza"
+		}
+		male_names = {
+			Alvise Andrei Bogdan Calogero Constantin Cornel Cosimo Daniele Dragan 
+			Dragos Florin Francesco Gennaro Gheorghe Giacomo Giovanni Guglielmo 
+			Ioan Jacopo Lorenzo Luca Marco Marin Matteo Mihai Mircea Nicolae 
+			Paolo Petru Pietro Radu Ruggero Salvatore Stefan Tancredi Teodor 
+			Vasile Vincenzo Vlad
+		}
+		female_names = {
+			Adriana Agata Alba Ana Anca Andreea Beatrice Bianca Camilla Caterina 
+			Chiara Concetta Costanza Cristina Elena Elisabetta Fiorenza Florica 
+			Francesca Giulia Ioana Isabella Laura Lucia Lucrezia Margherita Maria 
+			Marta Nicoletta Paola Rosalia Ruxandra Sofia Teodora Valentina 
+			Veronica Vittoria
+		}
+	}
+	cisalpini = {
+		primary = ITA
+		dynasty_names = {
+			"Basarab" "Bibescu" "Brancoveanu" "Cantacuzino" "d'Este" "della Scala" 
+			"Doria" "Draculesti" "Ghica" "Gonzaga" "Grimaldi" "Movilesti" 
+			"Racovita" "Savoia" "Sforza" "Sturdza" "Visconti"
+		}
+		male_names = {
+			Adalberto Alessandro Amedeo Andrea Andrei Bogdan Carlo Constantin 
+			Cornel Dragan Dragos Enrico Federico Filippo Florin Galeazzo 
+			Gheorghe Giovanni Giuseppe Guglielmo Ioan Ludovico Marco Mihai 
+			Mircea Nicolae Oddone Petru Pietro Radu Stefan Teodor Ugo 
+			Umberto Vasile Vlad
+		}
+		female_names = {
+			Adelaide Adelheid Ana Anca Andreea Beatrice Bianca Bianca-Maria 
+			Caterina Chiara Cristina Elena Florica Francesca Gisela Giulia 
+			Ioana Irmengard Isabella Laura Lucia Margherita Maria Matilde 
+			Ruxandra Sofia Teodora Valentina
+		}
+	}
+	latini = {
+		primary = ITA
+		dynasty_names = {
+			"Basarab" "Bibescu" "Borgia" "Brancoveanu" "Cantacuzino" "Colonna" 
+			"Draculesti" "Ghica" "Malatesta" "Medici" "Montefeltro" "Movilesti" 
+			"Orsini" "Pazzi" "Racovita" "Strozzi" "Sturdza"
+		}
+		male_names = {
+			Alessandro Andrea Andrei Augusto Bogdan Cesare Constantin Cornel 
+			Cosimo Dragan Dragos Fabio Flavio Florin Francesco Gheorghe 
+			Giuliano Giulio Ioan Lorenzo Lucio Marco Mihai Mircea Nicolae 
+			Paolo Petru Piero Pietro Radu Stefan Teodor Vasile Vlad
+		}
+		female_names = {
+			Ana Anca Andreea Aurelia Bianca Camilla Caterina Cecilia Chiara 
+			Clarice Cristina Elena Flavia Florica Francesca Giulia Ioana 
+			Isabella Laura Livia Lucrezia Margherita Maria Ottavia Ruxandra 
+			Sofia Teodora Valentina
+		}
+	}
+	provinciali = {
+		primary = AQA
+		dynasty_names = {
+			"Alaman" "Aubert" "Basarab" "Belmont" "Bertran" "Brancoveanu" 
+			"Cantacuzino" "Castel" "Coman" "Draculesti" "Fabron" "Garin" 
+			"Ghica" "Iancu" "Laur" "Marin" "Montfort" "Moraru" "Pons" 
+			"Racovita" "Raimond" "Roux" "Sabin" "Tudor" "Vidal"
+		}
+		male_names = {
+			Adelin Alin Armand Augustin Aurel Bernard Cezar Constantin 
+			Cornel Denis Dragos Emil Florin Gaston Gilbert Guilhem 
+			Honoré Ioan Laurentiu Loic Lucian Marius Mihai Mircea 
+			Olivier Pascal Petru Radu Raimond Remus Sabin Stefan 
+			Teodor Tristan Valentin Victor Vlad
+		}
+		female_names = {
+			Adela Adeline Amandine Ana Andreea Aurelia Beatrice Bianca 
+			Camille Caterina Cecilia Corina Cristina Eleonore Elena 
+			Esclarmonde Felicia Florica Ioana Isabelle Josiane Laura 
+			Livia Magdalena Margaux Maria Mirela Nicoleta Ruxandra 
+			Sabina Silvia Sofia Teodora Valentina
+		}
+	}
+	galici = {
+		primary = FRA
+		dynasty_names = {
+			"Basarab" "Brancoveanu" "Bourbon" "Cantacuzino" "Draculesti" "Ghica" 
+			"de Guise" "de Lorraine" "Montmorency" "Movilesti" "Racovita" "de Rohan" 
+			"Sturdza" "Valois" "d'Anjou" "de Foix"
+		}
+		male_names = {
+			Andrei Antoine Bogdan Charles Constantin Dragos François Gheorghe 
+			Guillaume Henri Jean Louis Mihai Mircea Nicolae Olivier 
+			Philippe Pierre Radu Stefan Vasile Vlad
+		}
+		female_names = {
+			Ana Anca Anne Blanche Catherine Charlotte Elena Eleonore 
+			Florica Genevieve Ioana Isabelle Jeanne Marguerite Maria Ruxandra 
+			Sophie Teodora
+		}
+		province = {
+			local_has_musketeers = yes
+		}
+		country = {
+			has_musketeer = yes
+		}
+	}
+	lusitanii = {
+		primary = POR
+		
+		dynasty_names = {
+			"Almeida" "Avis" "Basarab" "Bibescu" "Braganca" "Brancoveanu" 
+			"Cantacuzino" "Castro" "Cunha" "Draculesti" "Ghica" "Melo" 
+			"Movilesti" "Noronha" "Pereira" "Racovita" "Sousa" "Sturdza"
+			"Martins"
+		}
+		male_names = {
+			Afonso Andrei António Bogdan Constantin Diogo Dragos Duarte 
+			Fernando Francisco Gheorghe Goncalo Henrique Ion Joao Jorge 
+			Manuel Mihai Mircea Nicolae Pedro Petru Radu Stefan Vasco 
+			Vasile Vlad
+		}
+		female_names = {
+			Ana Anca Beatriz Branca Catarina Cristina Elena Filipa 
+			Florica Guiomar Ines Ioana Isabel Joana Leonor Maria 
+			Ruxandra Teodora Teresa
+		}
+		province = {
+			local_has_caravel = yes
+		}
+		country = {
+			has_caravel = yes
+		}
+	}
+	hispani = {
+		primary = ASU
+		dynasty_names = {
+			"Alvarez" "Basarab" "Brancoveanu" "Cantacuzino" "de la Cerda" "Draculesti" 
+			"Enriquez" "Ghica" "Guzman" "Mendoza" "Movilesti" "Pimentel" 
+			"Racovita" "Sturdza" "Trastamara" "Velasco"
+		}
+		male_names = {
+			Alfonso Andrei Bogdan Carlos Constantin Diego Dragos Enrique 
+			Felipe Fernando Francisco Gheorghe Gonzalo Juan Mihai Mircea 
+			Nicolae Pedro Radu Rodrigo Stefan Vasile Vlad
+		}
+		female_names = {
+			Ana Anca Catalina Constanza Cristina Elena Florica Ioana 
+			Isabel Juana Leonor Lucia Maria Ruxandra Teodora Teresa
+		}
+		province = {
+			local_has_tercio = yes
+		}
+		country = {
+			has_tercio = yes
+		}
+	}
+	# ]]]
 }
 
 carpathian = {	
@@ -2782,37 +3013,52 @@ byzantine = {
 	goths = {
 		primary = FEO
 		dynasty_names = { 
-			"of Gothia"
+			"of Gothia" "Amaling" "Aþawulfing" "Balþing" "Ansiling" "Gainobalþing" "Winiþaring" "Adalgaring"
+			"Badwiling" "Aiwareiking" "Þiudawulfing" "Airmanareiking" "Randobalþing" "Wultulfing" "Þiudabalþing" "Þrafstiling" "Þrasamunding" "Þrasareiking" 
+			"Dagamersing" "Agiling" "Airmanagilding" "Alafunsing" "Alareiking" "Witjareiking" "Albireþing" "Friþureiking" "Swartsing" "Liuvageising" "Gutawinsing"
+			"Hunireiking" "Swinþiling" "Anagasting" "Gaujareiking" "Sigireiking" "Audamunding" "Austrowulfing" "Dagalaifing" "Konigasting" "Þiudareiking" "Hrabning"
+			"Gaisareiking"
+			# Gothicized Greek names
+			"Kaumnenus" "Angilus" "Keilikus" "Þaiaudaurokanus"
+			# some Gothicized Turkic names
+			"Saruxaning" "Karamaning" "Zanging"
 		}
 		male_names = {
-			Alexios Ioannes Manuel David Basileios Skantarios Andronikos Michael Georgios Aineias 
-			Aristoteles Bartholomaios Chrysanthos Diogenes Dionysos Eirenaios Elpidios Gregorios Hektor 
-			Iason Iosephos Kastor Kreon Matthaios Nestor Nikolaos Nikomedes Orestes Palaemon Pavlos 
-			Pelagios Alexandros
-			Philemon Philippos Prokopios Stefanos Theodoros Timotheos Ambrosios Petros Herakles Hermes 
-			Hippolytos Hypatios Iakobos Jacob Ignatios Ignatius Innokentios Ioannes John Ioannikios 
-			Iordanes Ioseph Joseph Isaakios Isaias Isidoros Ioulianos Julian Ioustinianos Justinian 
-			Ioustinos Justin Kaisarios Caesar
-			Kallinikos Kallistos Komitas Konstantinos Constantine Konstantios Constantius Konstas Constans 
-			Kosmas Cosmas Kyriakos Kyrillos Cyril Kyros Laurentios Laurence Lazaros Leon Leo Leontios 
-			Leontius Loukas Makarios Manuel Markos Marcus
-			Matthaios Matthew Maurikios Maximos Maximus Megistos Magnus Meletios Methodios Michael Michael 
-			Narses Neophytos Nikephoros Niketas Nikodemos Nikolaos Nicholas Niphon Orestes Pamphilios 
-			Pankratios Pantoleon Paschalis
-			Pavlos Paul Pelagios Pelagius Petros Peter Philaretos Philippos Philip Philotheos Phokas 
-			Photios Polykarpos Porphyrios Prokopios Procopius Pyrros Raphail Romanos Roman Sabas Samuel 
-			Samuel Serapion Sebastianos Sebastian Sergios Sergius Stephanos Stephen
-			Staurakios Symeon Simon Symmachos Symmachus Theocharistos Theodoros Theodore Theodosios 
-			Theodosios Theodotos Theodat Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas 
-			Thomas Tiberios Tiberius Traianos Trajan
-			Timotheos Tryphon Valerios Valerius Zacharias Zenobios Zenon
+			Agibrands Agila Agilmunþs Agiwulfs Agiþius Airmanagild Airmanareiks Airþaweihs Aiwareiks AiwþareiksAizagais Aizamereis Aizareiks Aizawulfs Aiþika Aiþiwulfs Alagais 
+			Alagild Alamanna Alareiks Alaweis Alaþius Albeis Albila Albireiks Albireþs Amalareiks Anagasts Ansibairhts Ansihilms Ansila Ansireþs Ansiwalds Ansiwins Arbogasts 
+			Argimunþs Arugands Arugeisls Arumers Aruswinþs Askalks Audagais Audamunds Audawakrs Audawins Audawulfs Audaþius Austrowulfs Aþalabairhts Aþalabalþs Aþalabrands 
+			Aþalafriþus Aþalagais Aþalagar AþalahardusAþalaharjis Aþalahilms Aþalamanna Aþalamers Aþalawins Aþalawulfs Aþanagild Aþanareiks Aþawulfs Baduharjis Badwila 
+			Bairahardus Bairamoþs Bairaþius Bairhtafriþus Bairika Bairnuhardus Balþabairhts Balþamers  Balþareiks Balþareþs Batwins Berimunþs Brandawulfs Dagabairhts 
+			Dagaharjis Dagalaifs Dagamers Dagawalds Dagila Dagisþius Egika Egilmers Fafila Frauja Fraujila Friþugairns Friþureiks Froia Frumagild Frumareiks Frumareþs
+			Fulkabairhts Gailamereis Gaizafriþus Gaizahardus Gaizalaifs Gaizalaiks Gaizamers Gaizareiks Gaizawalds Gaizaweig Gaizawins Gaizawulfs Gaujaharjis Gaujareiks 
+			Gauts Geila Genobalþs Geislamers Geislamereis Gibareiks Gibawulþus GibikaGudagibans Gudahardus Gudareiks Gunþibalþs Gunþimereis Gutawins Haifstawulfs Harjabrands 
+			Harjafidails Harjafriþus Harjawulfs Harjaweig Hildibadus Hildibalþs Hildireiks Hlûdaharjis Hlûdaweig Hroþabairhts Hroþireiks Hunibairhts Hunifriþus Hunila 
+			Hunimunþs Hunireiks Ibrawulfs Ingild Juggareiks Kinþila Kniwa Konigasts Konimunds Liuba Liubageis Liubagild Liudibairhts Liudibrands Liudigais Liudiwulfs 
+			Liubeis Ludawulfs Maloreiks Naudigais Naurþrabairhts Naurþramanna Oþalabairhts Oþalafriþus Oþalareiks Randobalþs Redagais Reikahardus Reikareþs Reikaswinþs 
+			Reikawulfs Reikjamereis Sabbas Segga Sigifriþus Sigimers Siginanþs Sigireiks Kindaswinþs Sigiswulþus Sunjafriþus Sunna Swerila Swinþila Totila Tulga Uftaharjis 
+			Uftila Wagrila Walahrafns Walamers Walhamereis Wamba Wandila Weitimers Widugauja Wiljahilms Wiljareiks Wingureiks Wisibadus Wisuwalds Witjagais Witjareiks Wulfareiks 
+			Wulfila Þaija Þaurismoþs Þiudabalþs Þiudabrands Þiudagais Þiudageisls Þiudahaifsts Þiudaharjis Þiudahaþus Þiudahilms Þiudahrabns Þiudalaifs Þiudamereis Þiudamers 
+			Þiudareiks Þiudawulfs Þiudeis  Þrafstila Þrasamunds Þrasareiks
+			# Greek/Christian imports
+			Aiþa Manuel Xrwsaustaumus Xristufaurus Ailaiwþerjus Herakljus Þaiaugnostus Pantailaiema Þaiaudausjus Staifanus Niketas Mixael Kwrillus Dawiþ Ambrwsjus
+			Hailladjus Aiwlaugjus Aiwdaukimus Ailpidjus Agaþaggailus Saulaumo Sokrates Gregaurius Gaiwargius Samuel Dauruþaius Filippus Paúrfirjus Áiþþius Þaddaius 
+			Elias Staifanus Laiwanidas Demetrjus Maiþaudjus Timauþaius Andraias Aiwgainjus Aiwsaibjus Damjanus Audwssaius Flâwjus Kâjus Herâkleitus Iûljus Mârkus Antonjus
+			Mârteinus Hadriânus Anastasjus Nauel
+			# Turkic Loans
+			Arslan Atakan Auzan Aurhan Auguz Gauxan Kagataï Saifilaï 
 		}
 		female_names = {
-			Agape Photine Sotiria Leontia Margarita Margaret Maria Maria Markia Marcia Martha Martha Melissa Melisende Nikarete 
-			Nikoletta Nonna Parthena Pavlina Paulina Pelagia Petronia Petronia Philippa Philippa Phyllis 
-			Pulcheria Pulcheria Rhodanthe Romane Romylia Sergia Sergia Sibylla Sibylla
-			Simonis Sophia Sophia Stephania Stephania Thekla Theochariste Theodora Theodora Theodosia 
-			Theodosia Theognosia Theoktiste Theophano Thomais Valeria Valeria Viviana Viviana Xene Zenobia 
+			Aileisabaiþ Airmanalinda Aiuwa Aiwwa Aizaliubo Amalabairga Amalafriþa Amalasunþa Amalaswinþa Anna Ansa Anselbairga Ansia Ansigardi Ansihilma Audafleda Austraguto 
+			Aþala Aþalabairga Aþalabairhta Aþalagunþi Aþalahaidus Aþalahaiþi Aþalahildi Aþalalinþi Aþalamodi Aþalaruna Aþalaxeisa Aþalaþruþi Aþawulfa Bado Brunhilda 
+			Brunihildi Egilona Friþunanþa Gairbairga Gaisahildi Gaisaþruþi Gaizaþrûþs Gaujaswinþa Geislatruda Glismoda Godaliuva Greimahildi Gudagiba Gunþiruna Gunþibairga 
+			Guntruda Gunþiruna Hildibairhta Hildigardi Hildigards Hildigunþi Hildiko Hildiruna Hildiwara Hildiþruþi Hlûdahilda Hrogilo Hroþaswinþa Hunibairhta Ibragardi 
+			Ibragunþs Ibrahildi Imma Ingunþs Krimhilda Liubaguta Liudibairga Liudigardi Liudiwina Mahtihilds Mahtiswinþa Marikreitus Marja Marþa Matasuntþa Menia Oþalareika Ragnahilda 
+			Raibaikka Reikabairga Rodelinda Rosamunda Rotruda Rumetruda Sarra Sigiruna Sigizaruna Sunigilda Sunilda Tilariss Wiljahildi Þiudabairga Þiudagardi Þiudagunþi Þiudaguta Þiudaguto 
+			Þiudahildi Þiudalinda Þiudalinþi Þiudamodi Þiudananþa Þiudarada Þiudaruna 
+			# Greek/Christian imports
+			Fwba Roksana Mailodja Aikatarina Kandaka Eirena Iudiþ Maria Wikturja Jûlia Aleiwia Qainaiwaira Anna Aïlaina Sena Paraskaiwa Râxel
+			# Turkic Loans
+			Auzlaim Aïla Sejlan Terxen Saihnaz Jasar Jeildeiz Zaihra Kausaim Sairap Hwma
 		}
 	}
 	dynasty_names = { 

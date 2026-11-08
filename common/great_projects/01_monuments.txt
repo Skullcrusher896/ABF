@@ -40,6 +40,11 @@ hagia_sophia = {
 			province_is_or_accepts_religion = {
 				religion = nestorian
 			}
+			# TLW [[[
+			province_is_or_accepts_religion = {
+				religion = sol_invictus
+			}
+			# ]]]
 			province_is_or_accepts_religion_group = {
 				religion_group = muslim
 			}
@@ -80,6 +85,11 @@ hagia_sophia = {
 			province_is_or_accepts_religion = {
 				religion = nestorian
 			}
+			# TLW [[[
+			province_is_or_accepts_religion = {
+				religion = sol_invictus
+			}
+			# ]]]
 			province_is_or_accepts_religion_group = {
 				religion_group = muslim
 			}
@@ -101,6 +111,11 @@ hagia_sophia = {
 			province_is_or_accepts_religion = {
 				religion = nestorian
 			}
+			# TLW [[[
+			province_is_or_accepts_religion = {
+				religion = sol_invictus
+			}
+			# ]]]
 			province_is_or_accepts_religion_group = {
 				religion_group = muslim
 			}
@@ -5056,7 +5071,18 @@ alhambra = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {	
+		on_upgraded = {
+			# ABMP
+			if = {
+				limit = {
+					owner = {
+						is_or_was_tag = {
+							tag = WAL
+						}
+					}
+				}
+				custom_tooltip = faster_romanianization_of_iberia_tooltip
+			}
 		}
 	}
 }
@@ -7244,13 +7270,13 @@ pyramid_of_cheops = {
 				culture = egyptian_greek
 				province_is_or_accepts_culture = yes
 			}
-			AND = {
-				mission_completed = rmr_egyptian_ambition
-				OR = {
-					tag = RMR
-					was_tag = RMR
-				}
-			}
+            AND = {
+                mission_completed = rmr_egyptian_ambition
+                OR = {
+                    tag = RMR
+                    was_tag = RMR
+                }
+            }
 		}
 	}
 
@@ -7282,12 +7308,12 @@ pyramid_of_cheops = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				mission_completed = rmr_egyptian_ambition
-				OR = {
-					tag = RMR
-					was_tag = RMR
-				}
-			}
+                mission_completed = rmr_egyptian_ambition
+                OR = {
+                    tag = RMR
+                    was_tag = RMR
+                }
+            }
 		}
 	}
 
@@ -7309,12 +7335,12 @@ pyramid_of_cheops = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				mission_completed = rmr_egyptian_ambition
-				OR = {
-					tag = RMR
-					was_tag = RMR
-				}
-			}
+                mission_completed = rmr_egyptian_ambition
+                OR = {
+                    tag = RMR
+                    was_tag = RMR
+                }
+            }
 		}
 	}
 
@@ -7380,6 +7406,19 @@ pyramid_of_cheops = {
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
+		# ABMP
+		conditional_modifier = {
+			trigger = { 
+				owner = { 
+					OR = {
+						has_impaled_nizzarids_ruler = yes 
+						has_impaled_egypt_ruler = yes
+						has_impaled_abbasids_ruler = yes
+					}
+				} 
+			}
+			modifier = { monthly_terror_power = 0.02 }
+		}
 	}
 
 	tier_2 = {
@@ -7410,6 +7449,22 @@ pyramid_of_cheops = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+		}
+		# ABMP
+		conditional_modifier = {
+			trigger = { 
+				owner = { 
+					OR = {
+						has_impaled_nizzarids_ruler = yes 
+						has_impaled_egypt_ruler = yes
+						has_impaled_abbasids_ruler = yes
+					}
+				} 
+			}
+			modifier = { 
+				monthly_terror_power = 0.03
+				terror_power_gain_modifier = 0.10
+		 	}
 		}
 	}
 
@@ -7442,6 +7497,22 @@ pyramid_of_cheops = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {	
+		}
+		# ABMP
+		conditional_modifier = {
+			trigger = { 
+				owner = { 
+					OR = {
+						has_impaled_nizzarids_ruler = yes 
+						has_impaled_egypt_ruler = yes
+						has_impaled_abbasids_ruler = yes
+					}
+				} 
+			}
+			modifier = { 
+				monthly_terror_power = 0.05
+				terror_power_gain_modifier = 0.25
+		 	}
 		}
 	}
 }
@@ -8324,6 +8395,11 @@ kiev_pechersk_lavra = {
 			province_is_or_accepts_religion = {
 				religion = orthodox
 			}
+			# TLW [[[
+			province_is_or_accepts_religion = {
+				religion = sol_invictus
+			}
+			# ]]]
 		}
 	}
 
@@ -8364,6 +8440,11 @@ kiev_pechersk_lavra = {
 			province_is_or_accepts_religion = {
 				religion = orthodox
 			}
+			# TLW [[[
+			province_is_or_accepts_religion = {
+				religion = sol_invictus
+			}
+			# ]]]
 		}
 	}
 
@@ -8393,6 +8474,20 @@ kiev_pechersk_lavra = {
 			### ]]]
 			province_is_or_accepts_religion = {
 				religion = orthodox
+			}
+			# TLW [[[
+			province_is_or_accepts_religion = {
+				religion = sol_invictus
+			}
+			# ]]]
+			owner = {
+				AND = {
+					OR = {
+						tag = PLN
+						was_tag = PLN
+					}
+					mission_completed = pol_catholic_mother_of_cities
+				}
 			}
 		}
 	}
@@ -9380,7 +9475,11 @@ versailles = {
 
 	#can we build it?
 	build_trigger = {
-		culture_group = french
+		OR = {
+			culture_group = french
+			# ABMP
+			culture = galici
+		}
 		province_is_or_accepts_culture = yes
 	}
 
@@ -9396,13 +9495,21 @@ versailles = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = french
+		OR = {
+			culture_group = french
+			# ABMP
+			culture = galici
+		}
 		province_is_or_accepts_culture = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = french
+		OR = {
+			culture_group = french
+			# ABMP
+			culture = galici
+		}
 		province_is_or_accepts_culture = yes
 	}
 
@@ -9534,7 +9641,18 @@ versailles = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {	
+		on_upgraded = {
+			# ABMP
+			if = {
+				limit = {
+					owner = {
+						is_or_was_tag = {
+							tag = WAL
+						}
+					}
+				}
+				custom_tooltip = faster_romanianization_of_france_tooltip
+			}
 		}
 	}
 }
@@ -9568,7 +9686,11 @@ el_escorial = {
 
 	#can we build it?
 	build_trigger = {
-		culture_group = iberian
+		OR = {
+			culture_group = iberian
+			# ABMP
+			culture = hispani
+		}
 		province_is_or_accepts_culture = yes
 	}
 
@@ -9584,13 +9706,21 @@ el_escorial = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = iberian
+		OR = {
+			culture_group = iberian
+			# ABMP
+			culture = hispani
+		}
 		province_is_or_accepts_culture = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = iberian
+		OR = {
+			culture_group = iberian
+			# ABMP
+			culture = hispani
+		}
 		province_is_or_accepts_culture = yes
 	}
 
@@ -11324,6 +11454,15 @@ bran_castle = {
 		}
 		on_upgraded = {
 		}
+		# ABMP
+		conditional_modifier = {
+			trigger = { owner= { has_bran_castle_bonus = yes } }
+			modifier = {
+				fort_maintenance_modifier = -0.1
+				garrison_size = 0.05
+				garrison_damage = 0.25
+			}
+		}
 	}
 
 	tier_2 = {
@@ -11344,6 +11483,15 @@ bran_castle = {
 		}
 		on_upgraded = {
 		}
+		# ABMP
+		conditional_modifier = {
+			trigger = { owner= { has_bran_castle_bonus = yes } }
+			modifier = {
+				fort_maintenance_modifier = -0.15
+				garrison_size = 0.1
+				garrison_damage = 0.50
+			}
+		}
 	}
 
 	tier_3 = {
@@ -11363,6 +11511,15 @@ bran_castle = {
 			global_garrison_growth = 0.3
 		}
 		on_upgraded = {
+		}
+		# ABMP
+		conditional_modifier = {
+			trigger = { owner= { has_bran_castle_bonus = yes } }
+			modifier = {
+				fort_maintenance_modifier = -0.25
+				garrison_size = 0.2
+				garrison_damage = 1
+			}
 		}
 	}
 }
@@ -11812,14 +11969,22 @@ chan_chan_citadel = {
 doges_palace = {
 	start = 112 #Venice
 	date = 1340.01.01
-	time = { months = 0	}
-	build_cost = 0
+	time = { months = 240 }
+	build_cost = 2500
 	can_be_moved = no
 	move_days_per_unit_distance = 10
 	starting_tier = 2
 	type = monument
 
 	build_trigger = {
+		# ABMP
+		hidden_trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = cant_rebuild_venetian_gp
+				}
+			}
+		}
 	}
 
 	on_built = {
@@ -15332,6 +15497,9 @@ rila_monasteries = {
 	type = monument
 
 	build_trigger = {
+		hidden_trigger = { # ABMP
+			is_great_project_destroyed = no
+		}
 		province_is_or_accepts_religion = {
 			religion = orthodox
 		}
@@ -15344,12 +15512,18 @@ rila_monasteries = {
 	}
 
 	can_use_modifiers_trigger = {
+		hidden_trigger = { # ABMP
+			is_great_project_destroyed = no
+		}
 		province_is_or_accepts_religion = {
 			religion = orthodox
 		}
 	}
 
 	can_upgrade_trigger = {
+		hidden_trigger = { # ABMP
+			is_great_project_destroyed = no
+		}
 		province_is_or_accepts_religion = {
 			religion = orthodox
 		}
@@ -20352,13 +20526,21 @@ al_azhar_university = {
 venetian_arsenal_gp = {
 	start = 112 
 	date = 1177.3.2
-	time = { months = 0	}
-	build_cost = 0
+	time = { months = 240 }
+	build_cost = 2500
 	can_be_moved = no
 	move_days_per_unit_distance = 10
 	starting_tier = 1
 	type = monument
 	build_trigger = {
+		# ABMP
+		hidden_trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = cant_rebuild_venetian_gp
+				}
+			}
+		}
 	}
 	on_built = {
 	}
@@ -20779,10 +20961,19 @@ schonbrunn_palace = {
 		# AB [[[
 		conditional_modifier = {
 			trigger = {
-				custom_trigger_tooltip = {
-					tooltip = TIR_SCHONBRUNN_CONDITION
-					owner = {
-						has_country_flag = tir_unlock_schonbrunn_flag
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = TIR_SCHONBRUNN_CONDITION
+						owner = {
+							has_country_flag = tir_unlock_schonbrunn_flag
+						}
+					}
+					# ABMP
+					custom_trigger_tooltip = {
+						tooltip = rem_SCHONBRUNN_CONDITION
+						owner = {
+							has_country_flag = unlock_schonbrunn_bonus
+						}
 					}
 				}
 			}
@@ -20809,10 +21000,19 @@ schonbrunn_palace = {
 		# AB [[[
 		conditional_modifier = {
 			trigger = {
-				custom_trigger_tooltip = {
-					tooltip = TIR_SCHONBRUNN_CONDITION
-					owner = {
-						has_country_flag = tir_unlock_schonbrunn_flag
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = TIR_SCHONBRUNN_CONDITION
+						owner = {
+							has_country_flag = tir_unlock_schonbrunn_flag
+						}
+					}
+					# ABMP
+					custom_trigger_tooltip = {
+						tooltip = rem_SCHONBRUNN_CONDITION
+						owner = {
+							has_country_flag = unlock_schonbrunn_bonus
+						}
 					}
 				}
 			}

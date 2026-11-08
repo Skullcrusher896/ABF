@@ -120,6 +120,12 @@ estate_cossacks = {
 			}
 		}
 	}
+	custom_name = {
+		desc = estate_cazacii
+		trigger = {
+			culture_group = romanian_culture_group
+		}
+	}
 	# }}}
 
 	# Influence modifiers
@@ -167,6 +173,9 @@ estate_cossacks = {
 		estate_cossacks_exempt_from_bureaucracy
 		estate_cossacks_military_service
 		estate_cossacks_expand_cossacks_raiders
+		# ABMP [[[
+		estate_cossacks_monopoly_on_steppe_herds
+		# ]]]
 		### ABF [[[
 		#---PLN/Catholic--#
 		estate_cossacks_abf_pol_cossack_szlachta

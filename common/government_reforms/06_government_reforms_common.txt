@@ -46,6 +46,16 @@ parliamentary_reform = {
 		is_revolutionary = no
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		NOT = { has_government_attribute = english_parliament }
+		NOT = { has_government_attribute = romanian_elective_monarchy }
+		NOT = {
+			has_reform = wallachian_autocracy
+		}
+		NOT = {
+			has_reform = dacian_autocracy
+		}
+		NOT = {
+			has_reform = dacian_roman_autocracy
+		}
 		NOT = { #has a special "senate" themed reform
 			OR = {
 				tag = BYZ
@@ -1924,12 +1934,12 @@ cavalry_warfare_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_unlocked_government_reform = { government_reform = legacy_of_the_seljuk_reform } }
-		NOT = {
-			OR = {
-				culture_group = turko_semitic
-				primary_culture = bedouin_arabic
-			}
-		}
+        NOT = {
+            OR = {
+                culture_group = turko_semitic
+                primary_culture = bedouin_arabic
+            }
+        }
 	}
 	trigger = {
 		if = {
@@ -4543,7 +4553,15 @@ superiority_of_the_state_reform = {
 		NOT = { has_unlocked_government_reform = { government_reform = divided_aristocracy_reform } }
 	}
 	trigger = {
-		full_idea_group = court_ideas
+		OR = {
+			full_idea_group = court_ideas
+			custom_trigger_tooltip = {
+				tooltip = unlocked_superiority_of_the_state_reform_tt
+				has_unlocked_government_reform = {
+					government_reform = superiority_of_the_state_reform
+				}
+			}
+		}
 	}
 	modifiers = {
 		all_estate_influence_modifier = -0.1
