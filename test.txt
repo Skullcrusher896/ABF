@@ -1,0 +1,12 @@
+every_province = {
+				limit = {
+					superregion = north_america_superregion
+				}
+				if = {
+					limit = {
+						has_building = fort_15th
+					}
+					remove_building = fort_15th
+				}
+				cede_province = ---
+			}

@@ -1909,15 +1909,6 @@ ab_wal_2 = {
 				target = italy_region
 			}
 			custom_tooltip = AB_EMPTY
-			define_advisor = {
-				type = patriarch
-				skill = 3
-				cost_multiplier = 0.25
-				religion = orthodox
-				culture = umbrian
-				location = 118
-				min_age = 40
-			}
 			add_patriarch_authority = 0.2
 			set_country_flag = patriarch_of_rome
 			custom_tooltip = patriarch_of_rome_tooltip
@@ -3644,7 +3635,6 @@ ab_wal_3 = {
 				}
 				is_most_developed_orthodox_province = yes
 			}
-			has_orthodox_religious_icon_trigger = yes
 			patriarch_authority = 0.5
 		}
 		effect = {
@@ -3671,12 +3661,6 @@ ab_wal_3 = {
 					name = wallachia_patriarchate_of_dacia
 					duration = -1
 				}
-			}
-			define_advisor = {
-				type = patriarch
-				skill = 2
-				cost_multiplier = 0.25
-				location = 161
 			}
 		}
 	}
@@ -4142,16 +4126,6 @@ ab_wal_4 = {
 				amount = 10
 			}
 			custom_tooltip = AB_EMPTY
-			define_advisor = {
-				type = patriarch
-				skill = 1
-				cost_multiplier = 0.25
-				culture = greek
-				religion = orthodox
-				age = 40
-				name = "The Patriarch of Constantinopol"
-				location = 151
-			}
 			custom_tooltip = AB_EMPTY
 			custom_tooltip = patriarch_constantinople_buff
 			set_country_flag = patriarch_of_constantinople
@@ -4464,16 +4438,6 @@ ab_wal_4 = {
 				target = basra_area
 			}
 			custom_tooltip = tooltip_line_divider
-			define_advisor = {
-				type = patriarch
-				skill = 2
-				cost_multiplier = 0.25
-				culture = greek
-				religion = orthodox
-				location = 2313
-				age = 40
-				name = "The Patriarch of Antiohia"
-			}
 			custom_tooltip = AB_EMPTY
 			set_country_flag = patriarch_of_antioch
 			custom_tooltip = patriarch_of_antioch_bonus_tooltip
@@ -4526,16 +4490,6 @@ ab_wal_4 = {
 				target = saharan_oases
 			}
 			custom_tooltip = tooltip_line_divider
-			define_advisor = {
-				type = patriarch
-				skill = 3
-				cost_multiplier = 0.25
-				culture = al_suryah_arabic
-				religion = orthodox
-				age = 40
-				name = "The Patriarch of Ierusalim"
-				location = 151
-			}
 			custom_tooltip = AB_EMPTY
 			add_patriarch_authority = 0.1
 			custom_tooltip = AB_EMPTY
@@ -4591,16 +4545,6 @@ ab_wal_4 = {
 				target = ouled_nail_area
 			}
 			custom_tooltip = tooltip_line_divider
-			define_advisor = {
-				type = patriarch
-				skill = 3
-				cost_multiplier = 0.25
-				culture = al_misr_arabic
-				religion = orthodox
-				age = 40
-				name = "The Patriarch of Alexandria"
-				location = 358
-			}
 			add_patriarch_authority = 0.1
 			set_country_flag = patriarch_of_alexandria
 			custom_tooltip = patriarch_of_alexandria_bonus_tooltip

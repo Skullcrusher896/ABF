@@ -64,16 +64,35 @@ country_event = {
 	}
 }
 
-#Version Info
+# Remove Buniq
 country_event = {
 	id = tlw_start.1
 	title = tlw_start.1.t
 	desc = tlw_start.1.d
-	picture = AB_PARM_eventPicture
+	picture = CULTURE_eventPicture  
 	
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
 		name = tlw_start.1.a
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = north_america_superregion
+				}
+				if = {
+					limit = {
+						has_building = fort_15th
+					}
+					remove_building = fort_15th
+				}
+				cede_province = ---
+			}
+		}
+	}
+
+	option = {
+		name = tlw_start.1.b
 	}
 }

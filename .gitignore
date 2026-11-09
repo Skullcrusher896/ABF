@@ -1,0 +1,4 @@
+# Per-user Claude Code config (AB_PATH etc.)
+.claude/settings.local.json
+CLAUDE.local.md
+__pycache__/
