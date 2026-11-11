@@ -53,20 +53,10 @@ Ante Bellum: Actum seeks to create a more lived-in and dynamic world. It gives n
 [/list]
 
 [h2] [u]New Mission Trees[/u] [/h2]
-[list]
-  [*] Rome
-  [*] Carthage
-  [*] Punic League (Dylamea, Buhutan, Kataqart)
-  [*] Hylinia
-  [*] Visigoths
-  [*] Epirus
-  [*] Catholic Poland (Polans)
-  [*] Orthodox Poland (Lendia) [i]New Formable Tag: Wszechrus[/i]
-  [*] Zaporizhia/Hetmanate
-  [*] Livonia
-  [*] Rob/Zun [i](switch between the Persian and Indian paths at any time with the "Mission Switch" button)[/i]
-  [*] Tocharia (Three Paths: [i]Kushans: India, Yuezhi: China, Bactria: Persia[/i], available to all nations that can form Tocharia)
-[/list]
+
+[url=https://ab-map.suoncha.com/#actum][img]https://raw.githubusercontent.com/suoncha/eu4-antebellum-mission-map/main/actum-preview.png[/img][/url]
+
+[b][url=https://ab-map.suoncha.com/#actum] Explore every Actum mission tree on the Interactive Mission Map [/url][/b]
 
 ... and loads of content not detailed here!
 
